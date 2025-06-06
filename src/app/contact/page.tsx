@@ -9,33 +9,83 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      {/* Hero Section - Premium Green Theme */}
-      <section className="relative min-h-[50vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
+      {/* Hero Section - Redesigned with More Personality */}
+      <section className="relative min-h-[60vh] lg:min-h-[50vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-sage-light/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '5s' }}></div>
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s', animationDelay: '4s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-32 lg:pb-24">
           <div className="text-center">
+            {/* Animated Icons Row - Desktop Only */}
+            <div className="hidden lg:flex justify-center items-center gap-8 mb-8">
+              <div className="transform hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center text-3xl shadow-xl border border-white/20 animate-pulse" style={{ animationDuration: '3s' }}>📞</div>
+              </div>
+              <div className="transform hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center text-4xl shadow-xl border border-white/20 animate-pulse" style={{ animationDuration: '3s', animationDelay: '1s' }}>🛠️</div>
+              </div>
+              <div className="transform hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center text-3xl shadow-xl border border-white/20 animate-pulse" style={{ animationDuration: '3s', animationDelay: '2s' }}>🚀</div>
+              </div>
+            </div>
+            
+            {/* Mobile Icons - Simplified */}
+            <div className="flex lg:hidden justify-center items-center gap-4 mb-6">
+              <div className="text-4xl">📞</div>
+              <div className="text-5xl">🛠️</div>
+              <div className="text-4xl">🚀</div>
+            </div>
+            
+            {/* Badge */}
             <div className="mb-6">
-              <span className="inline-block bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
-                Free 15-Minute Strategy Call
+              <span className="inline-flex items-center bg-accent text-white px-6 py-3 rounded-full font-bold text-sm sm:text-base shadow-2xl">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5H6a1 1 0 100 2h4.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
+                </svg>
+                No BS • 15 Minutes • Real Solutions
               </span>
             </div>
-            <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-none">
-              Ready to Fix
-              <span className="block bg-gradient-to-r from-white via-accent via-sage-light to-white bg-clip-text text-transparent pb-2" style={{ 
-                backgroundSize: '600% 600%',
-                animation: 'gradient 3s ease infinite'
+            
+            {/* Main Heading with Better Mobile Sizing */}
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-6 leading-[0.9]">
+              <span className="block mb-2">Let's Skip the</span>
+              <span className="block bg-gradient-to-r from-accent via-white to-sage-light bg-clip-text text-transparent pb-2" style={{ 
+                backgroundSize: '200% 200%',
+                animation: 'gradient 4s ease infinite'
               }}>
-                What's Broken?
+                Song & Dance
               </span>
             </h1>
-            <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-              I'll do my homework before we talk, so we can skip the fluff and focus on solutions that actually work for your business.
+            
+            {/* Subheading with Personality */}
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-tight">
+              You tell me what's broken. I'll tell you how to fix it.
+              <span className="block mt-2 text-base sm:text-lg lg:text-xl text-white/70">
+                No discovery calls, no upsells, no "let me check with my team."
+              </span>
             </p>
+            
+            {/* CTAs with Visual Interest */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a 
+                href="#book-call" 
+                className="group px-8 py-5 sm:px-10 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500 w-full sm:w-auto"
+              >
+                <span className="flex items-center justify-center">
+                  Book Your Fix-It Call
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </a>
+              <div className="text-white/80 text-sm sm:text-base">
+                or email <a href="mailto:tom@ibuildcalm.com" className="font-semibold underline hover:text-white transition-colors">tom@ibuildcalm.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
