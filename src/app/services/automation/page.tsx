@@ -20,16 +20,16 @@ export default function AutomationServices() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-28 lg:pt-32 pb-16 lg:pb-20">
           <div className="text-center">
             {/* Visual time-saving stat */}
-            <div className="mb-8">
-              <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
-                <span className="text-3xl font-bold">10+ Hours</span>
-                <span className="mx-3 text-gray-300">|</span>
-                <span className="text-lg font-medium">Saved Every Week</span>
+            <div className="mb-10 sm:mb-8">
+              <div className="inline-flex items-center bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-2xl">
+                <span className="text-2xl sm:text-3xl font-bold">10+ Hours</span>
+                <span className="mx-2 sm:mx-3 text-gray-300">|</span>
+                <span className="text-base sm:text-lg font-medium">Saved Every Week</span>
               </div>
             </div>
             
             {/* Main message - tighter, punchier */}
-            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-4 leading-[0.9]">
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-6 sm:mb-4 leading-[0.9]">
               Stop Doing Tasks
               <span className="block bg-gradient-to-r from-accent via-white to-sage-light bg-clip-text text-transparent mt-2" style={{ 
                 backgroundSize: '200% 200%',
@@ -40,34 +40,34 @@ export default function AutomationServices() {
             </h1>
             
             {/* Supporting text - more concise */}
-            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-tight">
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 sm:mb-10 max-w-2xl mx-auto leading-tight">
               Stop copying data between spreadsheets. Let automation handle the boring stuff.
             </p>
             
             {/* Package options - visual hierarchy */}
-            <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
-                <span className="text-white font-bold text-lg">Lead Response</span>
+            <div className="flex flex-wrap justify-center gap-4 mb-12 sm:mb-10">
+              <div className="bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-2 sm:py-3 rounded-xl border border-white/20">
+                <span className="text-white font-bold text-base sm:text-lg">Lead Response</span>
+                <span className="text-white/70 mx-2 hidden sm:inline">•</span>
+                <span className="text-accent font-bold sm:inline hidden">$797</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-2 sm:py-3 rounded-xl border border-white/20 hidden sm:block">
+                <span className="text-white font-bold text-base sm:text-lg">Appointments</span>
                 <span className="text-white/70 mx-2">•</span>
                 <span className="text-accent font-bold">$797</span>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
-                <span className="text-white font-bold text-lg">Appointments</span>
-                <span className="text-white/70 mx-2">•</span>
-                <span className="text-accent font-bold">$797</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
-                <span className="text-white font-bold text-lg">Complete System</span>
-                <span className="text-white/70 mx-2">•</span>
-                <span className="text-accent font-bold">$1,797</span>
+              <div className="bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-2 sm:py-3 rounded-xl border border-white/20">
+                <span className="text-white font-bold text-base sm:text-lg">Complete System</span>
+                <span className="text-white/70 mx-2 sm:inline hidden">•</span>
+                <span className="text-accent font-bold sm:inline">$1,797</span>
               </div>
             </div>
             
             {/* CTAs - clearer hierarchy */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col items-center">
               <Link 
                 href="/contact" 
-                className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
+                className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500 mb-4"
               >
                 <span className="flex items-center justify-center">
                   Start Automating Now
@@ -78,7 +78,13 @@ export default function AutomationServices() {
               </Link>
               <Link 
                 href="#automation-packages" 
-                className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
+                className="sm:hidden text-white/80 hover:text-white font-medium underline underline-offset-4 decoration-white/30 hover:decoration-white transition-all duration-300"
+              >
+                See How It Works ↓
+              </Link>
+              <Link 
+                href="#automation-packages" 
+                className="hidden sm:flex group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
               >
                 <span className="flex items-center justify-center">
                   See How It Works

@@ -14,14 +14,9 @@ export default function NotFound() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             {/* 404 Visual */}
-            <div className="mb-8">
-              <div className="text-9xl sm:text-[12rem] lg:text-[16rem] font-black text-white/10 leading-none select-none">
+            <div className="mb-12">
+              <div className="text-[10rem] sm:text-[12rem] lg:text-[16rem] font-black text-white/20 leading-none select-none">
                 404
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-6xl sm:text-7xl lg:text-8xl font-black text-white mb-4">
-                  Oops!
-                </div>
               </div>
             </div>
 

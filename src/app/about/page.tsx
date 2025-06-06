@@ -10,87 +10,120 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      {/* Hero Section - Premium Green Theme */}
-      <section className="relative min-h-[80vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
+      {/* Hero Section - Redesigned for Mobile Impact */}
+      <section className="relative min-h-[70vh] lg:min-h-[60vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-sage-light/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '5s' }}></div>
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '2s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Tom's Story - Left Side */}
-            <div className="text-center lg:text-left">
-              <div className="mb-6">
-                <span className="inline-block bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
-                  The Story Behind Built By Tom
-                </span>
-              </div>
-              <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-none">
-                From $17M Chaos
-                <span className="block bg-gradient-to-r from-white via-accent via-sage-light to-white bg-clip-text text-transparent pb-2" style={{ 
-                  backgroundSize: '600% 600%',
-                  animation: 'gradient 3s ease infinite'
-                }}>
-                  To Building Calm
-                </span>
-              </h1>
-              <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
-                I didn&apos;t start out as a &apos;web guy&apos; or a systems expert. My journey began in the trenches.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-                <Link 
-                  href="/contact" 
-                  className="group px-12 py-6 bg-white text-primary text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
-                >
-                  <span className="flex items-center">
-                    Let&apos;s Work Together
-                    <svg className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                </Link>
-                <Link 
-                  href="#story" 
-                  className="group px-8 py-6 border-2 border-white/40 text-white text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
-                >
-                  Read My Story
-                  <svg className="w-5 h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                  </svg>
-                </Link>
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-28 lg:pt-32 pb-16 lg:pb-20">
+          <div className="text-center">
+            {/* Value badge - impactful */}
+            <div className="mb-8">
+              <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
+                <span className="text-3xl font-bold">Built & Sold</span>
+                <span className="mx-3 text-gray-300">|</span>
+                <span className="text-lg font-medium">$17M Business</span>
               </div>
             </div>
-
-            {/* Tom's Photo - Right Side */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                {/* Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-3xl blur-xl transform scale-110"></div>
-                
-                {/* Photo Container */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-3 border-white/20 shadow-2xl">
+            
+            {/* Small circular photo on mobile */}
+            <div className="mb-6 lg:hidden">
+              <div className="relative inline-block">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-full blur-xl"></div>
+                <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
                   <Image 
                     src="/tom-headshot.png" 
                     alt="Tom - Founder of Built By Tom"
-                    width={384}
-                    height={384}
+                    width={128}
+                    height={128}
                     className="w-full h-full object-cover"
                     priority
                   />
-                  
-                  {/* Credibility Badge */}
-                  <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 border border-white/50">
-                    <div className="flex items-center">
-                      <div className="w-3 h-3 bg-secondary rounded-full mr-3"></div>
-                      <div>
-                        <div className="font-bold text-foreground text-sm">20+ Years Operations</div>
-                        <div className="text-text-light text-xs">Restaurant GM → $17M Amazon FBA → Built By Tom</div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
+              </div>
+            </div>
+            
+            {/* Main message - punchier */}
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-4 leading-[0.9]">
+              I've Been Where
+              <span className="block bg-gradient-to-r from-accent via-white to-sage-light bg-clip-text text-transparent mt-2" style={{ 
+                backgroundSize: '200% 200%',
+                animation: 'gradient 3s ease infinite'
+              }}>
+                You Are Now
+              </span>
+            </h1>
+            
+            {/* Supporting text - concise with credibility */}
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-tight">
+              Drowning in manual tasks. Losing customers to chaos. I fixed it for myself. Now I fix it for you.
+            </p>
+            
+            {/* Credibility points */}
+            <div className="flex flex-wrap justify-center gap-6 mb-10">
+              <div className="flex items-center text-white/80">
+                <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium">20+ Years in the Trenches</span>
+              </div>
+              <div className="flex items-center text-white/80">
+                <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium">Built Custom WMS</span>
+              </div>
+              <div className="flex items-center text-white/80">
+                <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium">Real Solutions</span>
+              </div>
+            </div>
+            
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                href="/contact" 
+                className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
+              >
+                <span className="flex items-center justify-center">
+                  Let's Fix Your Business
+                  <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </Link>
+              <Link 
+                href="#story" 
+                className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
+              >
+                <span className="flex items-center justify-center">
+                  Read My Story
+                  <svg className="w-4 sm:w-5 h-4 sm:h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </span>
+              </Link>
+            </div>
+          </div>
+          
+          {/* Desktop photo - hidden on mobile */}
+          <div className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 w-96">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-3xl blur-xl transform scale-110"></div>
+              <div className="relative w-80 h-80 rounded-3xl overflow-hidden border-3 border-white/20 shadow-2xl">
+                <Image 
+                  src="/tom-headshot.png" 
+                  alt="Tom - Founder of Built By Tom"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>

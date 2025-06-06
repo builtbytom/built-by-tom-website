@@ -21,16 +21,16 @@ export default function WebsiteServices() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-28 lg:pt-32 pb-16 lg:pb-20">
           <div className="text-center">
             {/* Price prominent but integrated */}
-            <div className="mb-8">
-              <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
-                <span className="text-3xl font-bold">$3,500</span>
-                <span className="mx-3 text-gray-300">|</span>
-                <span className="text-lg font-medium">Complete Website Fix</span>
+            <div className="mb-10 sm:mb-8">
+              <div className="inline-flex items-center bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-2xl">
+                <span className="text-2xl sm:text-3xl font-bold">$3,500</span>
+                <span className="mx-2 sm:mx-3 text-gray-300">|</span>
+                <span className="text-base sm:text-lg font-medium">Complete Website Fix</span>
               </div>
             </div>
             
             {/* Main message - tighter spacing */}
-            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-4 leading-[0.9]">
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-6 sm:mb-4 leading-[0.9]">
               Your Website Is
               <span className="block bg-gradient-to-r from-red-400 via-accent to-white bg-clip-text text-transparent mt-2" style={{ 
                 backgroundSize: '200% 200%',
@@ -41,25 +41,25 @@ export default function WebsiteServices() {
             </h1>
             
             {/* Supporting text - more concise */}
-            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-tight">
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 sm:mb-10 max-w-2xl mx-auto leading-tight">
               67% of people will leave if your site looks outdated or doesn&apos;t work on their phone.
             </p>
             
             {/* Trust points - visual hierarchy */}
-            <div className="flex flex-wrap justify-center gap-6 mb-10">
+            <div className="flex flex-wrap justify-center gap-6 mb-12 sm:mb-10">
               <div className="flex items-center text-white/80">
                 <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span className="font-medium">3-Week Delivery</span>
               </div>
-              <div className="flex items-center text-white/80">
+              <div className="hidden sm:flex items-center text-white/80">
                 <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span className="font-medium">No Monthly Fees</span>
               </div>
-              <div className="flex items-center text-white/80">
+              <div className="hidden sm:flex items-center text-white/80">
                 <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
@@ -68,10 +68,10 @@ export default function WebsiteServices() {
             </div>
             
             {/* CTAs - stronger hierarchy */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col items-center">
               <Link 
                 href="/contact" 
-                className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
+                className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500 mb-4"
               >
                 <span className="flex items-center justify-center">
                   Fix My Website Now
@@ -82,7 +82,13 @@ export default function WebsiteServices() {
               </Link>
               <Link 
                 href="#transformations" 
-                className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
+                className="sm:hidden text-white/80 hover:text-white font-medium underline underline-offset-4 decoration-white/30 hover:decoration-white transition-all duration-300"
+              >
+                See Real Results ↓
+              </Link>
+              <Link 
+                href="#transformations" 
+                className="hidden sm:flex group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
               >
                 <span className="flex items-center justify-center">
                   See Real Results
