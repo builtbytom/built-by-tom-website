@@ -5,8 +5,8 @@ import ScorecardSection from '../components/ScorecardSection';
 export default function Home() {
   return (
     <>
-      {/* Hero Section - Green Theme, Message-Focused */}
-      <section className="relative min-h-screen bg-gradient-to-br from-primary via-slate-800 to-primary overflow-hidden">
+      {/* Hero Section - Optimized for Mobile Impact */}
+      <section className="relative min-h-screen lg:min-h-screen bg-gradient-to-br from-primary via-slate-800 to-primary overflow-hidden">
         {/* Subtle Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-secondary/15 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '5s' }}></div>
@@ -14,14 +14,39 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-white/8 rounded-full blur-2xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
-          <div className="grid lg:grid-cols-3 gap-16 items-center">
-            {/* Main Content - 2/3 width */}
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-32 pb-16 lg:pb-20">
+          {/* Mobile-First Layout */}
+          <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-16 lg:items-center">
+            
+            {/* Mobile: Photo at top for trust, Desktop: Main content first */}
+            <div className="lg:hidden mb-8">
+              <div className="flex justify-center">
+                <div className="relative">
+                  {/* Photo Container - Compact on mobile */}
+                  <div className="relative w-32 h-32 rounded-2xl overflow-hidden border-3 border-white/20 shadow-xl">
+                    <Image 
+                      src="/tom-headshot.png" 
+                      alt="Tom - Built By Tom Founder"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
+                  </div>
+                  {/* Quick credibility */}
+                  <div className="absolute -bottom-2 -right-2 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 text-xs font-bold text-foreground shadow-lg">
+                    $17M Built
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Main Content - Tighter spacing on mobile */}
             <div className="lg:col-span-2 text-center lg:text-left">
-              {/* Main Headline - Message First */}
-              <h1 className="font-display font-black text-6xl sm:text-7xl lg:text-8xl text-white mb-6 leading-none tracking-tight">
+              {/* Main Headline - Bigger impact on mobile */}
+              <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-8xl text-white mb-3 sm:mb-6 leading-[0.9] tracking-tight">
                 I Build
-                <span className="block bg-gradient-to-r from-white via-accent via-sage-light via-secondary to-white bg-clip-text text-transparent" style={{ 
+                <span className="block bg-gradient-to-r from-white via-accent via-sage-light via-secondary to-white bg-clip-text text-transparent mt-1" style={{ 
                   backgroundSize: '600% 600%',
                   animation: 'gradient 3s ease infinite'
                 }}>
@@ -29,25 +54,25 @@ export default function Home() {
                 </span>
               </h1>
 
-              {/* Subheadline */}
-              <p className="text-2xl lg:text-3xl text-white font-semibold mb-4 tracking-wide">
+              {/* Subheadline - Punchier on mobile */}
+              <p className="text-xl sm:text-2xl lg:text-3xl text-white font-bold mb-3 sm:mb-4 tracking-wide">
                 Fix the mess. Build what&apos;s missing.
               </p>
 
-              {/* Supporting Text */}
-              <p className="text-lg lg:text-xl text-white/90 mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              {/* Supporting Text - Shorter on mobile */}
+              <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 sm:mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                 Websites and systems that just work. Built in days, not months.
               </p>
 
-              {/* Clean CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+              {/* Clean CTA Buttons - Stack on mobile */}
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
                 <Link 
                   href="/contact" 
-                  className="group px-12 py-6 bg-white text-primary text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
+                  className="group px-8 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
                 >
-                  <span className="flex items-center">
+                  <span className="flex items-center justify-center">
                     Start Here
-                    <svg className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </span>
@@ -55,18 +80,42 @@ export default function Home() {
                 
                 <Link 
                   href="#services" 
-                  className="group px-8 py-6 border-2 border-white/40 text-white text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
+                  className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
                 >
-                  See How I Help
-                  <svg className="w-5 h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                  </svg>
+                  <span className="flex items-center justify-center">
+                    See How I Help
+                    <svg className="w-4 sm:w-5 h-4 sm:h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                  </span>
                 </Link>
+              </div>
+
+              {/* Mobile trust indicators */}
+              <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 text-sm text-white/80">
+                <div className="flex items-center">
+                  <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>20+ Years Experience</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Built in Days</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>No BS</span>
+                </div>
               </div>
             </div>
 
-            {/* Tom's Photo - Smaller, Supporting Role */}
-            <div className="lg:col-span-1 flex justify-center lg:justify-end">
+            {/* Desktop: Tom's Photo - Hidden on mobile since we show it at top */}
+            <div className="hidden lg:flex lg:col-span-1 justify-center lg:justify-end">
               <div className="relative">
                 {/* Subtle Glow */}
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-2xl blur-xl transform scale-110"></div>
