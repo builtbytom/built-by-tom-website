@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ScorecardSection from '../components/ScorecardSection';
 import WhatTomFixesPreview from '../components/WhatTomFixesPreview';
-import TomFixAssessment from '../components/TomFixAssessment';
 
 export default function Home() {
   return (
@@ -157,9 +156,6 @@ export default function Home() {
 
       {/* Quick Problem Preview */}
       <WhatTomFixesPreview />
-
-      {/* Interactive Assessment */}
-      <TomFixAssessment />
 
       {/* Services Section - Fixed Alignment + Green Theme */}
       <section id="services" className="py-24 bg-gradient-to-br from-background to-white">

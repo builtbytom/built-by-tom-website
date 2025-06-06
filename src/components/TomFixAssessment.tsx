@@ -242,7 +242,7 @@ export default function TomFixAssessment() {
 
           <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-gray-100 mb-8">
             <h3 className="font-bold text-2xl text-foreground mb-6">
-              Here's what Tom would do:
+              Here's what I would do:
             </h3>
             <ul className="space-y-4 mb-8">
               {result.whatTomWouldDo.map((item, index) => (
