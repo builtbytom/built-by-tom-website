@@ -161,14 +161,14 @@ export default function Home() {
       <section id="services" className="py-24 bg-white relative overflow-hidden">
         {/* Colorful background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-40 right-10 w-48 h-48 bg-secondary/15 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-sage-light/8 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-teal-500/20 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-40 right-10 w-48 h-48 bg-purple-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-500/15 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full font-bold text-sm mb-6">
+            <div className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-full font-bold text-sm mb-6">
               <span className="text-2xl mr-2">🚀</span>
               Three Ways to Escape the Chaos
             </div>
@@ -183,10 +183,10 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Website Service - Blue Theme */}
             <div className="group relative h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/15 to-secondary/8 rounded-3xl transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500"></div>
-              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-primary/20 h-full flex flex-col group-hover:shadow-primary/20 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-blue-600/10 rounded-3xl transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-teal-200 h-full flex flex-col group-hover:shadow-teal-300/50 transition-all duration-300">
                 <div className="relative mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '3s' }}>
+                  <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '3s' }}>
                     <span className="text-3xl">🌐</span>
                   </div>
                   <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full animate-bounce flex items-center justify-center">
@@ -199,20 +199,20 @@ export default function Home() {
                 <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
                   Clean, fast sites that turn “browsers” into buyers. Built in 3 weeks, not 3 months of back-and-forth hell.
                 </p>
-                <div className="bg-primary/5 rounded-xl p-4 mb-8 border border-primary/20">
-                  <div className="text-sm text-primary font-semibold flex items-center">
+                <div className="bg-teal-50 rounded-xl p-4 mb-8 border border-teal-200">
+                  <div className="text-sm text-teal-800 font-semibold flex items-center">
                     <span className="text-lg mr-2">🏁</span>
                     3-week delivery • Mobile-first • Google loves it
                   </div>
                 </div>
                 <div className="mb-8">
-                  <div className="text-4xl font-bold text-primary mb-2">$3,500</div>
+                  <div className="text-4xl font-bold text-teal-700 mb-2">$3,500</div>
                   <div className="text-sm text-text-light">One-time fee, no monthly hostage situation</div>
                 </div>
                 <div className="mt-auto">
                   <Link 
                     href="/services/website" 
-                    className="block w-full text-center bg-gradient-to-r from-primary to-secondary text-white py-4 px-8 rounded-xl font-bold hover:from-primary/90 hover:to-secondary/90 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 transform hover:scale-105"
+                    className="block w-full text-center bg-gradient-to-r from-teal-600 to-blue-700 text-white py-4 px-8 rounded-xl font-bold hover:from-teal-700 hover:to-blue-800 hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300 transform hover:scale-105"
                   >
                     Fix My Website →
                   </Link>
@@ -222,10 +222,10 @@ export default function Home() {
 
             {/* Automation Service - Purple Theme */}
             <div className="group relative h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/15 to-sage-light/8 rounded-3xl transform group-hover:scale-105 group-hover:-rotate-1 transition-all duration-500"></div>
-              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-secondary/20 h-full flex flex-col group-hover:shadow-secondary/20 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-indigo-600/10 rounded-3xl transform group-hover:scale-105 group-hover:-rotate-1 transition-all duration-500"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-purple-200 h-full flex flex-col group-hover:shadow-purple-300/50 transition-all duration-300">
                 <div className="relative mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-secondary to-sage-light rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}>
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-700 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}>
                     <span className="text-3xl">🤖</span>
                   </div>
                   <div className="absolute -top-2 -right-2 w-6 h-6 bg-orange-500 rounded-full animate-spin flex items-center justify-center" style={{ animationDuration: '2s' }}>
@@ -238,20 +238,20 @@ export default function Home() {
                 <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
                   Automate the soul-crushing stuff. Appointment reminders, follow-ups, all that “I should really do this” work.
                 </p>
-                <div className="bg-secondary/5 rounded-xl p-4 mb-8 border border-secondary/20">
-                  <div className="text-sm text-secondary font-semibold flex items-center">
+                <div className="bg-purple-50 rounded-xl p-4 mb-8 border border-purple-200">
+                  <div className="text-sm text-purple-800 font-semibold flex items-center">
                     <span className="text-lg mr-2">⏰</span>
                     Save 10+ hours/week • No copy-paste hell • Actually works
                   </div>
                 </div>
                 <div className="mb-8">
-                  <div className="text-4xl font-bold text-secondary mb-2">$797</div>
+                  <div className="text-4xl font-bold text-purple-700 mb-2">$797</div>
                   <div className="text-sm text-text-light">per automation package</div>
                 </div>
                 <div className="mt-auto">
                   <Link 
                     href="/services/automation" 
-                    className="block w-full text-center bg-gradient-to-r from-secondary to-sage-light text-white py-4 px-8 rounded-xl font-bold hover:from-secondary/90 hover:to-sage-light/90 hover:shadow-xl hover:shadow-secondary/30 transition-all duration-300 transform hover:scale-105"
+                    className="block w-full text-center bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-4 px-8 rounded-xl font-bold hover:from-purple-800 hover:to-indigo-800 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-105"
                   >
                     Automate My Chaos →
                   </Link>
@@ -261,10 +261,10 @@ export default function Home() {
 
             {/* Complete System - Orange Theme */}
             <div className="group relative h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/15 to-primary/8 rounded-3xl transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500"></div>
-              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-accent/20 h-full flex flex-col group-hover:shadow-accent/20 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-green-700/10 rounded-3xl transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-emerald-200 h-full flex flex-col group-hover:shadow-emerald-300/50 transition-all duration-300">
                 <div className="relative mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '2s', animationDelay: '1s' }}>
+                  <div className="w-20 h-20 bg-gradient-to-br from-emerald-700 to-green-800 rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '2s', animationDelay: '1s' }}>
                     <span className="text-3xl">🚀</span>
                   </div>
                   <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full animate-ping flex items-center justify-center">
@@ -277,20 +277,20 @@ export default function Home() {
                 <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
                   All three automation packages working together. Your entire business runs itself while you do the work you actually love.
                 </p>
-                <div className="bg-accent/5 rounded-xl p-4 mb-8 border border-accent/20">
-                  <div className="text-sm text-accent font-semibold flex items-center">
+                <div className="bg-emerald-50 rounded-xl p-4 mb-8 border border-emerald-200">
+                  <div className="text-sm text-emerald-800 font-semibold flex items-center">
                     <span className="text-lg mr-2">🏆</span>
                     Save $594 vs separate • All automation packages • 60-day hand-holding
                   </div>
                 </div>
                 <div className="mb-8">
-                  <div className="text-4xl font-bold text-accent mb-2">$1,797</div>
+                  <div className="text-4xl font-bold text-emerald-700 mb-2">$1,797</div>
                   <div className="text-sm text-text-light">Complete automation transformation</div>
                 </div>
                 <div className="mt-auto">
                   <Link 
                     href="/services/complete-system" 
-                    className="block w-full text-center bg-gradient-to-r from-accent to-primary text-white py-4 px-8 rounded-xl font-bold hover:from-accent/90 hover:to-primary/90 hover:shadow-xl hover:shadow-accent/30 transition-all duration-300 transform hover:scale-105"
+                    className="block w-full text-center bg-gradient-to-r from-emerald-700 to-green-800 text-white py-4 px-8 rounded-xl font-bold hover:from-emerald-800 hover:to-green-900 hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-300 transform hover:scale-105"
                   >
                     Transform Everything →
                   </Link>
