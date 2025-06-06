@@ -10,61 +10,86 @@ export const metadata: Metadata = {
 export default function WebsiteServices() {
   return (
     <>
-      {/* Hero Section - Premium Green Theme */}
-      <section className="relative min-h-[60vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
+      {/* Hero Section - Redesigned for Impact */}
+      <section className="relative min-h-[70vh] lg:min-h-[60vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-sage-light/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '5s' }}></div>
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '2s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-28 lg:pt-32 pb-16 lg:pb-20">
           <div className="text-center">
-            <div className="mb-6">
-              <span className="inline-block bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
-                Website Services • $3,500 Flat Rate
-              </span>
+            {/* Price prominent but integrated */}
+            <div className="mb-8">
+              <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
+                <span className="text-3xl font-bold">$3,500</span>
+                <span className="mx-3 text-gray-300">|</span>
+                <span className="text-lg font-medium">Complete Website Fix</span>
+              </div>
             </div>
-            <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-none">
+            
+            {/* Main message - tighter spacing */}
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-4 leading-[0.9]">
               Your Website Is
-              <span className="block bg-gradient-to-r from-white via-accent via-sage-light to-white bg-clip-text text-transparent pb-2" style={{ 
-                backgroundSize: '600% 600%',
+              <span className="block bg-gradient-to-r from-red-400 via-accent to-white bg-clip-text text-transparent mt-2" style={{ 
+                backgroundSize: '200% 200%',
                 animation: 'gradient 3s ease infinite'
               }}>
                 Costing You Customers
               </span>
             </h1>
-            <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-              67% of people judge your business by your website. If it looks old, confusing, or doesn&apos;t work on their phone, they&apos;re gone.
+            
+            {/* Supporting text - more concise */}
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-tight">
+              67% of people will leave if your site looks outdated or doesn&apos;t work on their phone.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-12 border border-white/20 max-w-2xl mx-auto">
-              <div className="flex items-center justify-center text-white">
-                <svg className="w-6 h-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+            
+            {/* Trust points - visual hierarchy */}
+            <div className="flex flex-wrap justify-center gap-6 mb-10">
+              <div className="flex items-center text-white/80">
+                <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-lg font-semibold">No Monthly Fees • You Own It Outright • Just Pay for Your Domain</span>
+                <span className="font-medium">3-Week Delivery</span>
+              </div>
+              <div className="flex items-center text-white/80">
+                <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium">No Monthly Fees</span>
+              </div>
+              <div className="flex items-center text-white/80">
+                <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium">You Own Everything</span>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            
+            {/* CTAs - stronger hierarchy */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact" 
-                className="group px-12 py-6 bg-white text-primary text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
+                className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
               >
-                <span className="flex items-center">
+                <span className="flex items-center justify-center">
                   Fix My Website Now
-                  <svg className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
               </Link>
               <Link 
                 href="#transformations" 
-                className="group px-8 py-6 border-2 border-white/40 text-white text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
+                className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
               >
-                See Real Transformations
-                <svg className="w-5 h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
+                <span className="flex items-center justify-center">
+                  See Real Results
+                  <svg className="w-4 sm:w-5 h-4 sm:h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </span>
               </Link>
             </div>
           </div>
