@@ -309,14 +309,9 @@ export default function About() {
                   <div className="ml-8 flex-1">
                     <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 shadow-2xl border border-primary/20">
                       <h3 className="font-display font-bold text-2xl text-foreground mb-4">The Soul-Crushing Truth</h3>
-                      <p className="text-lg text-foreground leading-relaxed mb-6">
+                      <p className="text-lg text-foreground leading-relaxed">
                         And that was just one hat. Like you, I was also doing the hiring, the firing, the banking, the vendor battles... all of it. That&apos;s where I learned, firsthand, how much broken tech and clunky systems can drain not just your bottom line, but your soul.
                       </p>
-                      <div className="bg-white rounded-xl p-6 border-l-4 border-primary">
-                        <p className="text-lg text-foreground font-medium italic">
-                          &ldquo;I learned, firsthand, how much broken tech and clunky systems can drain not just your bottom line, but your soul.&rdquo;
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -325,12 +320,12 @@ export default function About() {
 
             <div className="text-center mt-16">
               <Link 
-                href="#what-i-learned" 
+                href="/contact" 
                 className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
               >
-                What I learned from all this chaos
+                Let&apos;s Fix Your Business Chaos
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
             </div>
