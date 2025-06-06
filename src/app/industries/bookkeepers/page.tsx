@@ -2,59 +2,59 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Landscaping Business Websites & Automation | Built By Tom - North Haven, CT',
-  description: 'Stop losing landscaping jobs to price shoppers and phone tag. Get a website that filters out cheap customers and automation that books jobs while you work.',
-  keywords: 'landscaper website new haven county, landscaping business automation ct, lawn care scheduling system, landscaper pricing website connecticut',
+  title: 'Bookkeeping & Accounting Business Websites & Automation | Built By Tom - North Haven, CT',
+  description: 'Stop being the bottleneck in your accounting firm. Get systems that document processes, automate client onboarding, and let you take a vacation.',
+  keywords: 'bookkeeper website new haven county, accounting business automation ct, client portal bookkeeping, accountant workflow automation connecticut',
 };
 
-export default function LandscapersPage() {
+export default function BookkeepersPage() {
   const painPoints = [
     {
-      icon: '💸',
-      title: 'Everyone Shops Price First',
-      problem: '"How much to cut my grass?" before they even give you their address. You get calls comparing you to "the guy with a truck who works for $25." You know you can\'t work for that, but explaining why quality costs more takes forever—and they\'ve usually hung up by then.'
+      icon: '🧠',
+      title: 'Everything Lives in Your Head',
+      problem: '"Where\'s the Johnson file?" "How do we onboard new clients?" "What\'s our process for year-end?" You know the answers-but explaining it all takes longer than just doing it yourself. So you keep doing it yourself, and nothing gets documented.'
     },
     {
-      icon: '📞',
-      title: 'Playing Phone Tag All Day',
-      problem: 'You\'re on a mower, they call. You call back, they\'re at work. You text, they want to "talk first." By the time you actually connect with someone, they\'ve moved on to the next guy or forgot they even called. Meanwhile, you\'ve wasted your whole lunch break trying to call people back.'
+      icon: '🔄',
+      title: 'New Clients = Groundhog Day',
+      problem: 'Every onboarding is a repeat. You\'re chasing the same missing docs, answering the same questions you answered last week (and the week before that).'
     },
     {
-      icon: '📅',
-      title: 'The Scheduling Nightmare',
-      problem: '"Can you come Tuesday?" Actually, make it Wednesday. "Is Monday better?" Never mind, they found someone else. You give someone a quote on Tuesday. They say they\'ll "think about it." Call back Thursday wanting to schedule for "sometime next week." Then wonder why you\'re not there Friday morning.'
+      icon: '🤦‍♀️',
+      title: 'Can\'t Trust Anyone to Do It Right',
+      problem: 'You try to delegate. Two hours later, you\'ve redone the whole job, and you\'re back to being the bottleneck.'
     },
     {
-      icon: '🚛',
-      title: 'Competing with "Guy with a Truck"',
-      problem: 'You\'re licensed, insured, and professional. But customers keep choosing whoever\'s cheapest. You bid $150 for a job that takes skill and the right equipment. "Guy with a truck" says he\'ll do it for $50. Customer goes with him, then calls you three weeks later asking if you can "fix what he messed up."'
+      icon: '☎️',
+      title: 'The Never-Ending Question Parade',
+      problem: 'Clients keep calling: "When will my reports be ready?" "What do you need from me?" "Can you explain this again?" You spend as much time managing confusion as you do actually working.'
     }
   ];
 
   const solutions = [
     {
-      icon: '💰',
-      title: 'Put Pricing Ranges Right on Your Website',
-      description: 'Stop playing the "call for pricing" game. Show ranges like "$75-$125 for typical residential lawn service" right on your site. The tire-kickers will filter themselves out, and serious customers will actually call.',
-      result: 'Stop answering calls from people who want $20 lawn cuts'
+      icon: '📋',
+      title: 'Automated Client Onboarding',
+      description: 'No more explaining the same steps 50 times. New clients get a step-by-step sequence-what you need, when you need it, and how to send it over.',
+      result: 'Stop chasing missing docs'
     },
     {
-      icon: '📱',
-      title: 'Text-Based Scheduling That Actually Works',
-      description: 'Send a text with your quote and available times. They text back a time. You confirm. Done. No more playing phone tag while you\'re trying to work.',
-      result: 'Book jobs without stopping work'
+      icon: '🏪',
+      title: 'Self-Serve Client Portals',
+      description: 'Clients see reports, upload files, and check status-without calling you.',
+      result: 'Cut \'Where\'s my stuff?\' calls in half'
     },
     {
-      icon: '🤖',
-      title: 'Automated Follow-Ups',
-      description: 'When someone gets a quote, they automatically get follow-up texts—fertilization reminders, seasonal services, snow removal prep—all automated. Your customers think you\'re reading their mind.',
-      result: 'Fill your schedule before competitors wake up'
+      icon: '📚',
+      title: 'Staff Training That Sticks',
+      description: 'Document your process once. Train every new person the same way, every time.',
+      result: 'Delegate without losing sleep'
     },
     {
-      icon: '📸',
-      title: 'Show Your Actual Work',
-      description: 'Before/after photos that load fast on phones. Let your work speak for itself instead of trying to explain why you\'re worth more than the "guy with a truck."',
-      result: 'Quality customers find quality work'
+      icon: '📡',
+      title: 'Automated Status Updates',
+      description: 'Clients get alerts when reports are ready, when you need docs, or when a deadline is coming up.',
+      result: 'Spend less time project-managing, more time accounting'
     }
   ];
 
@@ -70,27 +70,27 @@ export default function LandscapersPage() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
             <div className="flex justify-center items-center mb-6">
-              <div className="text-5xl">🌱</div>
+              <div className="text-5xl">📊</div>
               <div className="mx-4 bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
-                Landscaping Business
+                Bookkeeping & Accounting
               </div>
-              <div className="text-5xl">🌿</div>
+              <div className="text-5xl">💼</div>
             </div>
             
             <div className="mb-8">
               <span className="inline-flex items-center bg-accent text-white px-6 py-3 rounded-full font-bold text-lg">
-                🎯 Built for Landscaping Pros
+                📈 Built for Financial Pros
               </span>
             </div>
             
             <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-              "Everyone Wants It Cheap!"
+              "I'm Wearing Every Hat"
               <span className="block text-3xl sm:text-4xl lg:text-5xl text-white/80 mt-4 font-semibold">
-                ...But You Can't Work for Nothing
+                ...and My Business Can't Run Without Me
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-              Every landscaper I talk to deals with the same headaches. Price shoppers calling for $20 lawn cuts. Customers who can't figure out scheduling. Let me guess when you say no, they're calling the next guy on Google instead of actually working with you.
+              Every bookkeeper and accountant I talk to says the same thing: You got into this to help people manage their money-now you barely have time to manage your own. Can't take a vacation, can't step away for a day, because everything falls apart without you. Sound familiar?
             </p>
           </div>
         </div>
@@ -100,9 +100,9 @@ export default function LandscapersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-6xl mb-6">😤</div>
+            <div className="text-6xl mb-6">😩</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              The Same Problems Every Landscaping Business Faces
+              The Real Problems Accounting Businesses Face
             </h2>
           </div>
 
@@ -110,7 +110,6 @@ export default function LandscapersPage() {
             {painPoints.map((point, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-100">
                 <div className="flex items-center mb-4">
-                  <div className="text-5xl mr-4">{point.icon}</div>
                   <h3 className="font-bold text-2xl text-foreground">
                     <span className="text-5xl mr-2">{point.icon}</span> {point.title}
                   </h3>
@@ -128,9 +127,9 @@ export default function LandscapersPage() {
       <section className="py-20 bg-gradient-to-br from-background to-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-5xl mb-6">✨</div>
+            <div className="text-5xl mb-6">💡</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              Here's What Actually Works for Landscapers
+              Here's What Actually Works
             </h2>
           </div>
 
@@ -138,7 +137,6 @@ export default function LandscapersPage() {
             {solutions.map((solution, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <div className="flex items-center mb-4">
-                  <div className="text-5xl mr-4">{solution.icon}</div>
                   <h3 className="font-bold text-2xl text-foreground">
                     <span className="text-5xl mr-2">{solution.icon}</span> {solution.title}
                   </h3>
@@ -161,18 +159,18 @@ export default function LandscapersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-5xl mb-6">🏡</div>
+            <div className="text-5xl mb-6">🏛️</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              Landscaping in New Haven County
+              Accounting in New Haven County
             </h2>
           </div>
 
           <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/20">
             <p className="text-lg text-foreground mb-6 leading-relaxed">
-              I work with landscapers in towns like yours to price services correctly in Hamden, I know this market. Cheshire customers want premium service. Branford properties need someone who shows up year-round. East Haven jobs need solid value, and New Haven clients want proof you can handle city properties.
+              I work with bookkeepers and accountants who help everyone from Yale-area startups to Cheshire family businesses. Your clients want to trust you and understand what's happening-without calling you every week.
             </p>
             <p className="text-lg text-text-light leading-relaxed">
-              Your customers are looking at photos of their yards on Nextdoor, Googling "landscaper near me" on a lunch, and asking neighbors who cut their grass. If you're not showing up naturally across all those channels, you're losing business to whoever is.
+              Most are juggling their own chaos. If your systems make their life easier, they'll stick around. If working with you is a headache, they'll look for someone less stressful.
             </p>
           </div>
         </div>
@@ -187,30 +185,28 @@ export default function LandscapersPage() {
               What This Costs
             </h2>
             <p className="text-xl text-text-light">
-              No surprises, no monthly fees that eat your profits.
+              No surprise fees, no monthly charges eating into your profit.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="text-5xl mb-4">🌐</div>
               <h3 className="font-bold text-2xl text-foreground mb-4">
-                <span className="text-5xl mr-2">🌐</span> Basic Setup
+                <span className="text-5xl mr-2">🌐</span> The Local Website Fix
               </h3>
-              <div className="text-3xl font-bold text-primary mb-2">$3,500 - $4,500</div>
+              <div className="text-3xl font-bold text-primary mb-2">$3,500</div>
               <p className="text-text-light">
-                Professional site, Google My Business optimization, basic contact forms. Get found, look professional.
+                A deliberate, professional website that positions you as the trusted local expert-clear, clean, and built to attract the right clients.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="text-5xl mb-4">⚡</div>
               <h3 className="font-bold text-2xl text-foreground mb-4">
                 <span className="text-5xl mr-2">⚡</span> Complete Automation System
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                I'll set up a complete automation system tailored to your business, lead capture, email flows, internal alerts, whatever you need. Want both? We'll figure out a package that makes sense.
+                Custom-tailored client onboarding, document collection, status updates, staff workflows-the works. Want both? We'll figure out a package that fits.
               </p>
             </div>
           </div>
@@ -225,19 +221,19 @@ export default function LandscapersPage() {
         }}></div>
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
-          <div className="text-6xl mb-8">🎯</div>
+          <div className="text-6xl mb-8">🏖️</div>
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Stop Losing Good Jobs to Bad Systems
+            Take Your Business Back
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            If you're tired of chasing clients while you're on a mower, losing jobs during phone tag, and explaining why you're not the cheapest—let's fix it.
+            If you're tired of working every weekend, being the only person who can do anything right, and feeling like your business owns you-let's fix it.
           </p>
           
           <Link 
             href="/contact" 
             className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
           >
-            Let's Fix Your Phone Problem
+            Let's Talk About Getting Your Life Back
             <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

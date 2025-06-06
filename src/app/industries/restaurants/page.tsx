@@ -2,59 +2,103 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Landscaping Business Websites & Automation | Built By Tom - North Haven, CT',
-  description: 'Stop losing landscaping jobs to price shoppers and phone tag. Get a website that filters out cheap customers and automation that books jobs while you work.',
-  keywords: 'landscaper website new haven county, landscaping business automation ct, lawn care scheduling system, landscaper pricing website connecticut',
+  title: 'Restaurant Business Websites & Automation | Built By Tom - North Haven, CT',
+  description: 'Stop losing money to empty tables, inventory chaos, and scheduling nightmares. Get systems that actually work for restaurants, from someone who ran one.',
+  keywords: 'restaurant website new haven county, restaurant automation ct, restaurant online ordering system, restaurant staff scheduling connecticut',
 };
 
-export default function LandscapersPage() {
+export default function RestaurantsPage() {
   const painPoints = [
     {
-      icon: '💸',
-      title: 'Everyone Shops Price First',
-      problem: '"How much to cut my grass?" before they even give you their address. You get calls comparing you to "the guy with a truck who works for $25." You know you can\'t work for that, but explaining why quality costs more takes forever—and they\'ve usually hung up by then.'
+      icon: '🔄',
+      title: 'Getting Customers In (and Keeping Them Coming Back)',
+      problem: 'Some nights you\'re packed, other nights you\'re watching empty tables and hoping for takeout orders. You need regulars, not just a busy Saturday. If booking or ordering is a hassle, customers just try somewhere else.'
     },
     {
-      icon: '📞',
-      title: 'Playing Phone Tag All Day',
-      problem: 'You\'re on a mower, they call. You call back, they\'re at work. You text, they want to "talk first." By the time you actually connect with someone, they\'ve moved on to the next guy or forgot they even called. Meanwhile, you\'ve wasted your whole lunch break trying to call people back.'
+      icon: '📋',
+      title: 'Table Turns & Lost Orders',
+      problem: 'Tables waiting forever for the check, orders vanishing between the floor and the kitchen. You can\'t grow if you\'re always chasing down missing tickets or holding a line at the host stand.'
     },
     {
-      icon: '📅',
-      title: 'The Scheduling Nightmare',
-      problem: '"Can you come Tuesday?" Actually, make it Wednesday. "Is Monday better?" Never mind, they found someone else. You give someone a quote on Tuesday. They say they\'ll "think about it." Call back Thursday wanting to schedule for "sometime next week." Then wonder why you\'re not there Friday morning.'
+      icon: '👥',
+      title: 'Scheduling: Herding Cats (with Aprons)',
+      problem: '"Who\'s closing tonight?" "Can someone cover Sunday?" "Why did no one show up for brunch?" Building the schedule is a full-time job. Keeping everyone happy and actually staffed? That\'s another story.'
     },
     {
-      icon: '🚛',
-      title: 'Competing with "Guy with a Truck"',
-      problem: 'You\'re licensed, insured, and professional. But customers keep choosing whoever\'s cheapest. You bid $150 for a job that takes skill and the right equipment. "Guy with a truck" says he\'ll do it for $50. Customer goes with him, then calls you three weeks later asking if you can "fix what he messed up."'
+      icon: '📦',
+      title: 'Inventory & Ordering Chaos',
+      problem: '"Did we order enough wings?" "Who 86\'d the spinach?" "Why do we keep running out of limes?" You lose hours every week updating the spreadsheet, and someone always forgets something.'
+    },
+    {
+      icon: '💻',
+      title: 'The POS Never Matches Reality',
+      problem: 'Menu prices change daily, specials need updating, and staff ring things under the wrong buttons because it\'s easier. You spend more time fixing POS buttons than running your business.'
+    },
+    {
+      icon: '🕵️',
+      title: 'Employee Theft (Nobody Wants to Talk About It)',
+      problem: 'Food goes out without a ticket. "Discounts" for friends. Drinks that never hit the register. You know it\'s happening, even if nobody talks about it.'
+    },
+    {
+      icon: '💰',
+      title: 'Food Costs That Make No Sense',
+      problem: 'Prices jump every week. You have no idea what you actually made on last night\'s special. Profit margins are a mystery, and you\'re tired of guessing.'
+    },
+    {
+      icon: '🔧',
+      title: 'Equipment Breaks Down—Because Nobody Remembers Service',
+      problem: 'The fryer dies on Friday night, again. Nobody scheduled the oil change, again. Every service call is a mini crisis.'
     }
   ];
 
   const solutions = [
     {
-      icon: '💰',
-      title: 'Put Pricing Ranges Right on Your Website',
-      description: 'Stop playing the "call for pricing" game. Show ranges like "$75-$125 for typical residential lawn service" right on your site. The tire-kickers will filter themselves out, and serious customers will actually call.',
-      result: 'Stop answering calls from people who want $20 lawn cuts'
-    },
-    {
       icon: '📱',
-      title: 'Text-Based Scheduling That Actually Works',
-      description: 'Send a text with your quote and available times. They text back a time. You confirm. Done. No more playing phone tag while you\'re trying to work.',
-      result: 'Book jobs without stopping work'
+      title: 'Automated Reservations & Online Ordering',
+      description: 'Fill seats, take orders, and send instant confirmations—no more phone tag or missed orders.',
+      result: 'Fewer empty tables, more happy regulars'
     },
     {
-      icon: '🤖',
-      title: 'Automated Follow-Ups',
-      description: 'When someone gets a quote, they automatically get follow-up texts—fertilization reminders, seasonal services, snow removal prep—all automated. Your customers think you\'re reading their mind.',
-      result: 'Fill your schedule before competitors wake up'
+      icon: '📅',
+      title: 'Smart Staff Scheduling Tools',
+      description: 'Get your schedule set and shared, auto-remind staff, fill shifts with a tap. No more last-minute scramble or sticky notes.',
+      result: 'Less stress, fewer "no shows," happier team'
     },
     {
-      icon: '📸',
-      title: 'Show Your Actual Work',
-      description: 'Before/after photos that load fast on phones. Let your work speak for itself instead of trying to explain why you\'re worth more than the "guy with a truck."',
-      result: 'Quality customers find quality work'
+      icon: '⭐',
+      title: 'Review Request Automation',
+      description: 'Happy customers get a "Leave us a review" text or email. Five-star reviews go up, new customers find you.',
+      result: 'Stand out on Google, grow word-of-mouth'
+    },
+    {
+      icon: '🚨',
+      title: 'Inventory & Ordering Reminders',
+      description: 'Set low-inventory alerts. Order what you need, when you need it—before you run out.',
+      result: 'No more "86\'d" panic'
+    },
+    {
+      icon: '🔔',
+      title: 'Scheduled Maintenance Reminders',
+      description: 'Automatic alerts for service and equipment checks. Don\'t wait for the fryer to die on a Friday.',
+      result: 'Fewer breakdowns, more peace of mind'
+    },
+    {
+      icon: '🛡️',
+      title: 'Employee Accountability Tools',
+      description: 'Track "ticketless" kitchen items, log register activity, and get simple reports—without playing cop.',
+      result: 'Less theft, more profit'
+    },
+    {
+      icon: '📖',
+      title: 'Digital Playbooks & Staff Training',
+      description: 'Document your systems once—train every new hire the same way, every time.',
+      result: 'Faster ramp-up, fewer errors'
+    },
+    {
+      icon: '📊',
+      title: 'Manager Dashboards & Communication Hubs',
+      description: 'All the critical info in one spot—no more sticky notes, group texts, or "did anyone tell the kitchen?"',
+      result: 'Run a tighter ship, catch problems before they\'re problems'
     }
   ];
 
@@ -70,27 +114,27 @@ export default function LandscapersPage() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
             <div className="flex justify-center items-center mb-6">
-              <div className="text-5xl">🌱</div>
+              <div className="text-5xl">🍽️</div>
               <div className="mx-4 bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
-                Landscaping Business
+                Restaurant Business
               </div>
-              <div className="text-5xl">🌿</div>
+              <div className="text-5xl">👨‍🍳</div>
             </div>
             
             <div className="mb-8">
               <span className="inline-flex items-center bg-accent text-white px-6 py-3 rounded-full font-bold text-lg">
-                🎯 Built for Landscaping Pros
+                🍽️ Built for Restaurant Owners
               </span>
             </div>
             
             <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-              "Everyone Wants It Cheap!"
+              "Running a Restaurant Feels Like Spinning Plates"
               <span className="block text-3xl sm:text-4xl lg:text-5xl text-white/80 mt-4 font-semibold">
-                ...But You Can't Work for Nothing
+                ...And Sometimes You Drop a Few
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-              Every landscaper I talk to deals with the same headaches. Price shoppers calling for $20 lawn cuts. Customers who can't figure out scheduling. Let me guess when you say no, they're calling the next guy on Google instead of actually working with you.
+              Running a restaurant isn't just food and service—it's late nights, juggling a hundred tasks, and sometimes just hoping nothing breaks before you close. I ran a restaurant for a decade right here in New Haven County. I know what it's like to be short-staffed on a Friday, panic-ordering produce, and fixing the POS when you should be home with your family. If any of this sounds familiar, you're in good company.
             </p>
           </div>
         </div>
@@ -100,9 +144,9 @@ export default function LandscapersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-6xl mb-6">😤</div>
+            <div className="text-6xl mb-6">😩</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              The Same Problems Every Landscaping Business Faces
+              The Real Problems Restaurants Face
             </h2>
           </div>
 
@@ -110,7 +154,6 @@ export default function LandscapersPage() {
             {painPoints.map((point, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-100">
                 <div className="flex items-center mb-4">
-                  <div className="text-5xl mr-4">{point.icon}</div>
                   <h3 className="font-bold text-2xl text-foreground">
                     <span className="text-5xl mr-2">{point.icon}</span> {point.title}
                   </h3>
@@ -130,7 +173,7 @@ export default function LandscapersPage() {
           <div className="text-center mb-16">
             <div className="text-5xl mb-6">✨</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              Here's What Actually Works for Landscapers
+              What Actually Works for Restaurants
             </h2>
           </div>
 
@@ -138,7 +181,6 @@ export default function LandscapersPage() {
             {solutions.map((solution, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <div className="flex items-center mb-4">
-                  <div className="text-5xl mr-4">{solution.icon}</div>
                   <h3 className="font-bold text-2xl text-foreground">
                     <span className="text-5xl mr-2">{solution.icon}</span> {solution.title}
                   </h3>
@@ -161,18 +203,15 @@ export default function LandscapersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-5xl mb-6">🏡</div>
+            <div className="text-5xl mb-6">🍽️</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              Landscaping in New Haven County
+              Restaurants in New Haven County
             </h2>
           </div>
 
           <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/20">
             <p className="text-lg text-foreground mb-6 leading-relaxed">
-              I work with landscapers in towns like yours to price services correctly in Hamden, I know this market. Cheshire customers want premium service. Branford properties need someone who shows up year-round. East Haven jobs need solid value, and New Haven clients want proof you can handle city properties.
-            </p>
-            <p className="text-lg text-text-light leading-relaxed">
-              Your customers are looking at photos of their yards on Nextdoor, Googling "landscaper near me" on a lunch, and asking neighbors who cut their grass. If you're not showing up naturally across all those channels, you're losing business to whoever is.
+              From diners in Hamden to pizza shops in New Haven, I've lived the grind and seen it all. Whether you're running a neighborhood spot or a busy takeout joint, the headaches don't change—but the solutions can.
             </p>
           </div>
         </div>
@@ -193,24 +232,22 @@ export default function LandscapersPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="text-5xl mb-4">🌐</div>
               <h3 className="font-bold text-2xl text-foreground mb-4">
-                <span className="text-5xl mr-2">🌐</span> Basic Setup
+                <span className="text-5xl mr-2">🌐</span> The Local Restaurant Fix
               </h3>
-              <div className="text-3xl font-bold text-primary mb-2">$3,500 - $4,500</div>
+              <div className="text-3xl font-bold text-primary mb-2">$3,500</div>
               <p className="text-text-light">
-                Professional site, Google My Business optimization, basic contact forms. Get found, look professional.
+                Get found online, streamline bookings, set up key systems, and look as good online as your food tastes.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="text-5xl mb-4">⚡</div>
               <h3 className="font-bold text-2xl text-foreground mb-4">
                 <span className="text-5xl mr-2">⚡</span> Complete Automation System
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                I'll set up a complete automation system tailored to your business, lead capture, email flows, internal alerts, whatever you need. Want both? We'll figure out a package that makes sense.
+                Automated inventory alerts, scheduling tools, review requests, staff accountability—so you can run your restaurant instead of it running you. Want both? Let's put together something that fits your menu.
               </p>
             </div>
           </div>
@@ -225,19 +262,19 @@ export default function LandscapersPage() {
         }}></div>
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
-          <div className="text-6xl mb-8">🎯</div>
+          <div className="text-6xl mb-8">🍽️</div>
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Stop Losing Good Jobs to Bad Systems
+            Ready to Stop Spinning Plates and Start Running a Restaurant?
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            If you're tired of chasing clients while you're on a mower, losing jobs during phone tag, and explaining why you're not the cheapest—let's fix it.
+            If you're tired of chasing staff, losing money to "shrinkage," or running out of food at the worst time—let's fix it.
           </p>
           
           <Link 
             href="/contact" 
             className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
           >
-            Let's Fix Your Phone Problem
+            Let's Talk About What's Actually Broken
             <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

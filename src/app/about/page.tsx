@@ -23,9 +23,9 @@ export default function About() {
             {/* Value badge - impactful */}
             <div className="mb-8">
               <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
-                <span className="text-3xl font-bold">Built & Sold</span>
+                <span className="text-3xl font-bold">Scaled to $17M</span>
                 <span className="mx-3 text-gray-300">|</span>
-                <span className="text-lg font-medium">$17M Business</span>
+                <span className="text-lg font-medium">Learned What Works</span>
               </div>
             </div>
             
@@ -288,7 +288,7 @@ export default function About() {
                   </div>
                   <div className="ml-8 flex-1">
                     <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100">
-                      <h3 className="font-display font-bold text-2xl text-foreground mb-4">So I Did What Small Business Owners Do</h3>
+                      <h3 className="font-display font-bold text-2xl text-foreground mb-4">So I Did What Small Business Owners Do: I Figured It Out</h3>
                       <p className="text-lg text-foreground leading-relaxed mb-4">
                         Fueled by about 3,000 YouTube videos and sheer determination, I built a custom Warehouse Management System from scratch using Google Sheets and AppSheet. It wasn&apos;t fancy, but it worked. It tracked every single item, every order, every expiration date.
                       </p>

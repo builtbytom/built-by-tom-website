@@ -2,59 +2,70 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Landscaping Business Websites & Automation | Built By Tom - North Haven, CT',
-  description: 'Stop losing landscaping jobs to price shoppers and phone tag. Get a website that filters out cheap customers and automation that books jobs while you work.',
-  keywords: 'landscaper website new haven county, landscaping business automation ct, lawn care scheduling system, landscaper pricing website connecticut',
+  title: 'Barbershop Business Websites & Automation | Built By Tom - North Haven, CT',
+  description: 'Stop losing money to no-shows and empty chairs. Get online booking that runs itself, automated reminders, and a website that actually brings in customers.',
+  keywords: 'barbershop website new haven county, barber online booking ct, barbershop appointment system, barber shop automation connecticut',
 };
 
-export default function LandscapersPage() {
+export default function BarbershopsPage() {
   const painPoints = [
     {
-      icon: '💸',
-      title: 'Everyone Shops Price First',
-      problem: '"How much to cut my grass?" before they even give you their address. You get calls comparing you to "the guy with a truck who works for $25." You know you can\'t work for that, but explaining why quality costs more takes forever—and they\'ve usually hung up by then.'
+      icon: '👻',
+      title: 'No-Shows and Last-Minute Cancellations',
+      problem: 'People book, forget, and ghost. You lose time, money, and your best customers get stuck waiting. You block out time for someone who doesn\'t show. Meanwhile, three walk-ins came by during that slot and you had to turn them away. Now you\'re sitting there with nothing to do, wondering if you should call the guy who\'s 20 minutes late.'
     },
     {
-      icon: '📞',
-      title: 'Playing Phone Tag All Day',
-      problem: 'You\'re on a mower, they call. You call back, they\'re at work. You text, they want to "talk first." By the time you actually connect with someone, they\'ve moved on to the next guy or forgot they even called. Meanwhile, you\'ve wasted your whole lunch break trying to call people back.'
+      icon: '✂️',
+      title: 'Appointment Booking Is a Hot Mess',
+      problem: 'Walk-ins are great... until everyone walks in at once. You can\'t text with scissors in your hand. Your phone rings while you\'re mid-cut. Someone wants to book for "later today." You\'re trying to remember who\'s coming when while holding sharp objects near someone\'s head. The old appointment book is covered in eraser marks and coffee stains.'
     },
     {
-      icon: '📅',
-      title: 'The Scheduling Nightmare',
-      problem: '"Can you come Tuesday?" Actually, make it Wednesday. "Is Monday better?" Never mind, they found someone else. You give someone a quote on Tuesday. They say they\'ll "think about it." Call back Thursday wanting to schedule for "sometime next week." Then wonder why you\'re not there Friday morning.'
+      icon: '🤷‍♂️',
+      title: 'Nobody Remembers to Come Back',
+      problem: 'Every regular says "See you next time!" and you never see half of them again. Your best customers just... disappear. Three months later they show up looking like a shaggy dog, apologizing for waiting so long. Meanwhile, they probably tried two other places because they forgot you existed.'
     },
     {
-      icon: '🚛',
-      title: 'Competing with "Guy with a Truck"',
-      problem: 'You\'re licensed, insured, and professional. But customers keep choosing whoever\'s cheapest. You bid $150 for a job that takes skill and the right equipment. "Guy with a truck" says he\'ll do it for $50. Customer goes with him, then calls you three weeks later asking if you can "fix what he messed up."'
+      icon: '🎢',
+      title: 'Busy Weeks, Dead Weeks',
+      problem: 'You\'re slammed some days, empty others. Your schedule is a roller coaster. Monday you\'re triple-booked. Thursday you\'re reading magazines. Weather changes, school starts, whatever... your schedule makes no sense and you never know if you\'re going to pay rent this month.'
+    },
+    {
+      icon: '👀',
+      title: 'Online, You\'re Invisible',
+      problem: 'You give a great cut, but the other guy shows up first on Google. People Google "barber near me" and find everyone except you. The place down the street has 50 reviews, you have three. New customers pick whoever they can actually find online.'
     }
   ];
 
   const solutions = [
     {
-      icon: '💰',
-      title: 'Put Pricing Ranges Right on Your Website',
-      description: 'Stop playing the "call for pricing" game. Show ranges like "$75-$125 for typical residential lawn service" right on your site. The tire-kickers will filter themselves out, and serious customers will actually call.',
-      result: 'Stop answering calls from people who want $20 lawn cuts'
-    },
-    {
       icon: '📱',
-      title: 'Text-Based Scheduling That Actually Works',
-      description: 'Send a text with your quote and available times. They text back a time. You confirm. Done. No more playing phone tag while you\'re trying to work.',
-      result: 'Book jobs without stopping work'
+      title: 'Online Booking That Runs Itself',
+      description: 'No more phone tag while you\'re working. Clients see your open times, book themselves, get instant confirmation. You find out when you check your phone between cuts.',
+      result: 'Book appointments without stopping work'
     },
     {
-      icon: '🤖',
-      title: 'Automated Follow-Ups',
-      description: 'When someone gets a quote, they automatically get follow-up texts—fertilization reminders, seasonal services, snow removal prep—all automated. Your customers think you\'re reading their mind.',
-      result: 'Fill your schedule before competitors wake up'
+      icon: '⏰',
+      title: 'Automated Appointment Reminders',
+      description: 'Text reminders the day before cut your no-shows way down. People actually show up, on time, without you having to chase them.',
+      result: 'Stop losing money to ghosts'
     },
     {
-      icon: '📸',
-      title: 'Show Your Actual Work',
-      description: 'Before/after photos that load fast on phones. Let your work speak for itself instead of trying to explain why you\'re worth more than the "guy with a truck."',
-      result: 'Quality customers find quality work'
+      icon: '💬',
+      title: '"Time for a Trim?" Follow-Ups',
+      description: 'Automated check-ins every few weeks keep your regulars coming back. "Hey, it\'s been a while... want to book your next cut?" They feel remembered, not pestered.',
+      result: 'Fill your chair before customers forget you exist'
+    },
+    {
+      icon: '⭐',
+      title: 'Easy Review Requests',
+      description: 'After every good cut, your system asks for a Google review. More reviews mean more new customers finding you instead of the competition.',
+      result: 'Show up when people search for barbers'
+    },
+    {
+      icon: '🔄',
+      title: 'Flexible for Walk-Ins and Appointments',
+      description: 'Handle both without losing your mind. Book appointments, manage walk-ins, fill last-minute cancellations automatically.',
+      result: 'Never turn away good customers because your system is rigid'
     }
   ];
 
@@ -70,27 +81,27 @@ export default function LandscapersPage() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
             <div className="flex justify-center items-center mb-6">
-              <div className="text-5xl">🌱</div>
+              <div className="text-5xl">💈</div>
               <div className="mx-4 bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
-                Landscaping Business
+                Barbershop Business
               </div>
-              <div className="text-5xl">🌿</div>
+              <div className="text-5xl">✂️</div>
             </div>
             
             <div className="mb-8">
               <span className="inline-flex items-center bg-accent text-white px-6 py-3 rounded-full font-bold text-lg">
-                🎯 Built for Landscaping Pros
+                💈 Built for Barber Shops
               </span>
             </div>
             
             <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-              "Everyone Wants It Cheap!"
+              "Booked Solid—or Totally Empty"
               <span className="block text-3xl sm:text-4xl lg:text-5xl text-white/80 mt-4 font-semibold">
-                ...But You Can't Work for Nothing
+                ...and Either Way, You're Tied to the Chair
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-              Every landscaper I talk to deals with the same headaches. Price shoppers calling for $20 lawn cuts. Customers who can't figure out scheduling. Let me guess when you say no, they're calling the next guy on Google instead of actually working with you.
+              Running a barbershop isn't just about cutting hair. It's managing schedules, chasing down no-shows, and answering "Any chance you have a slot this afternoon?" while trying not to nick anyone's ear. Let me guess... some days you're slammed, other days you're staring at an empty shop wondering where everyone went.
             </p>
           </div>
         </div>
@@ -102,7 +113,7 @@ export default function LandscapersPage() {
           <div className="text-center mb-16">
             <div className="text-6xl mb-6">😤</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              The Same Problems Every Landscaping Business Faces
+              The Real Problems Barbershops Face
             </h2>
           </div>
 
@@ -110,7 +121,6 @@ export default function LandscapersPage() {
             {painPoints.map((point, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-100">
                 <div className="flex items-center mb-4">
-                  <div className="text-5xl mr-4">{point.icon}</div>
                   <h3 className="font-bold text-2xl text-foreground">
                     <span className="text-5xl mr-2">{point.icon}</span> {point.title}
                   </h3>
@@ -130,7 +140,7 @@ export default function LandscapersPage() {
           <div className="text-center mb-16">
             <div className="text-5xl mb-6">✨</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              Here's What Actually Works for Landscapers
+              Here's What Actually Works for Barbershops
             </h2>
           </div>
 
@@ -138,7 +148,6 @@ export default function LandscapersPage() {
             {solutions.map((solution, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <div className="flex items-center mb-4">
-                  <div className="text-5xl mr-4">{solution.icon}</div>
                   <h3 className="font-bold text-2xl text-foreground">
                     <span className="text-5xl mr-2">{solution.icon}</span> {solution.title}
                   </h3>
@@ -161,18 +170,18 @@ export default function LandscapersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-5xl mb-6">🏡</div>
+            <div className="text-5xl mb-6">🏪</div>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              Landscaping in New Haven County
+              Barbershops in New Haven County
             </h2>
           </div>
 
           <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/20">
             <p className="text-lg text-foreground mb-6 leading-relaxed">
-              I work with landscapers in towns like yours to price services correctly in Hamden, I know this market. Cheshire customers want premium service. Branford properties need someone who shows up year-round. East Haven jobs need solid value, and New Haven clients want proof you can handle city properties.
+              I work with everything from one-chair shops in East Haven to busy multi-chair places near Yale that flip customers all day. Whether you're cutting hair for college kids or guys who've been coming for 20 years, the same problems keep coming up.
             </p>
             <p className="text-lg text-text-light leading-relaxed">
-              Your customers are looking at photos of their yards on Nextdoor, Googling "landscaper near me" on a lunch, and asking neighbors who cut their grass. If you're not showing up naturally across all those channels, you're losing business to whoever is.
+              Your customers want convenience. If booking with you is harder than booking with the guy down the street, they'll go down the street. Simple as that.
             </p>
           </div>
         </div>
@@ -193,24 +202,22 @@ export default function LandscapersPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="text-5xl mb-4">🌐</div>
               <h3 className="font-bold text-2xl text-foreground mb-4">
-                <span className="text-5xl mr-2">🌐</span> Basic Setup
+                <span className="text-5xl mr-2">🌐</span> The Local Website Fix
               </h3>
-              <div className="text-3xl font-bold text-primary mb-2">$3,500 - $4,500</div>
+              <div className="text-3xl font-bold text-primary mb-2">$3,500</div>
               <p className="text-text-light">
-                Professional site, Google My Business optimization, basic contact forms. Get found, look professional.
+                Get found online, look professional, let people book without calling.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="text-5xl mb-4">⚡</div>
               <h3 className="font-bold text-2xl text-foreground mb-4">
                 <span className="text-5xl mr-2">⚡</span> Complete Automation System
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                I'll set up a complete automation system tailored to your business, lead capture, email flows, internal alerts, whatever you need. Want both? We'll figure out a package that makes sense.
+                Automated reminders, follow-ups, review requests, staff scheduling, whatever you need. Want both? We'll figure out a package that makes sense.
               </p>
             </div>
           </div>
@@ -225,19 +232,19 @@ export default function LandscapersPage() {
         }}></div>
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
-          <div className="text-6xl mb-8">🎯</div>
+          <div className="text-6xl mb-8">💈</div>
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Stop Losing Good Jobs to Bad Systems
+            Stop Chasing Customers While You're Trying to Work
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            If you're tired of chasing clients while you're on a mower, losing jobs during phone tag, and explaining why you're not the cheapest—let's fix it.
+            If you're tired of no-shows, empty chairs, and your phone ringing while you've got scissors in your hand—let's fix it.
           </p>
           
           <Link 
             href="/contact" 
             className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
           >
-            Let's Fix Your Phone Problem
+            Let's Talk About Filling Your Chair
             <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
