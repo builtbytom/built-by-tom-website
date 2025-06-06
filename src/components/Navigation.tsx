@@ -11,7 +11,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white/95 backdrop-blur-md shadow-xl border-b border-gray-200/50 sticky top-0 z-50">
+    <nav className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Premium Logo */}
@@ -23,7 +23,7 @@ const Navigation = () => {
               <div className="font-display font-black text-2xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent group-hover:from-secondary group-hover:to-primary transition-all duration-300">
                 BUILT BY TOM
               </div>
-              <div className="text-xs text-text-light font-medium tracking-wider">North Haven, CT</div>
+              <div className="text-xs text-white/80 font-medium tracking-wider">North Haven, CT</div>
             </Link>
           </div>
 
@@ -32,12 +32,12 @@ const Navigation = () => {
             <div className="ml-10 flex items-center space-x-8">
               <Link 
                 href="/" 
-                className="text-foreground hover:text-primary px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-primary/5 rounded-lg"
+                className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg"
               >
                 Home
               </Link>
               <div className="relative group">
-                <button className="text-foreground hover:text-primary px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-primary/5 rounded-lg flex items-center">
+                <button className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg flex items-center">
                   Services
                   <svg className="ml-2 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -59,13 +59,13 @@ const Navigation = () => {
               </div>
               <Link 
                 href="/about" 
-                className="text-foreground hover:text-primary px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-primary/5 rounded-lg"
+                className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg"
               >
                 About
               </Link>
               <Link 
                 href="/resources" 
-                className="text-foreground hover:text-primary px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-primary/5 rounded-lg"
+                className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg"
               >
                 Resources
               </Link>
@@ -87,7 +87,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-foreground hover:text-primary p-2"
+              className="text-white hover:text-white/80 p-2"
               aria-label="Main menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -104,7 +104,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-white/20">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link 
               href="/" 
