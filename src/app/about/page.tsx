@@ -18,7 +18,7 @@ export default function About() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '2s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Tom's Story - Left Side */}
             <div className="text-center lg:text-left">
@@ -99,7 +99,7 @@ export default function About() {
 
       {/* Experience Overview - Premium Stats */}
       <section id="experience" className="py-24 bg-gradient-to-br from-background to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Built Through
@@ -170,7 +170,7 @@ export default function About() {
 
       {/* The Story - Visual Timeline */}
       <section id="story" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               How Scaling to $17M Taught Me
@@ -307,7 +307,7 @@ export default function About() {
 
       {/* What I Learned - The Pivot */}
       <section id="what-i-learned" className="py-24 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Turns Out, I Like Fixing Things
@@ -369,7 +369,7 @@ export default function About() {
 
       {/* Client Stories - Premium Testimonials */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Real Stories From

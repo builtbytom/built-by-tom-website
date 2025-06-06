@@ -17,7 +17,7 @@ export default function AutomationServices() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '2s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
             <div className="mb-6">
               <span className="inline-block bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
@@ -83,7 +83,7 @@ export default function AutomationServices() {
 
       {/* The Problem With Manual Work */}
       <section className="py-24 bg-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               You&apos;re Drowning in
@@ -158,7 +158,7 @@ export default function AutomationServices() {
 
       {/* Automation in Action - Real Examples */}
       <section className="py-24 bg-gradient-to-br from-background to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Automation That Actually
@@ -272,7 +272,7 @@ export default function AutomationServices() {
 
       {/* Automation Packages */}
       <section id="automation-packages" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Pick Your
@@ -477,7 +477,7 @@ export default function AutomationServices() {
 
       {/* How It Works - Process */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Set It Up Once,
@@ -558,7 +558,7 @@ export default function AutomationServices() {
 
       {/* FAQ Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Common Questions
@@ -615,7 +615,7 @@ export default function AutomationServices() {
           backgroundSize: '60px 60px'
         }}></div>
         
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
             Stop Doing What Robots Should Do
           </h2>

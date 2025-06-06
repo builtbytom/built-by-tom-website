@@ -14,7 +14,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-white/8 rounded-full blur-2xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="grid lg:grid-cols-3 gap-16 items-center">
             {/* Main Content - 2/3 width */}
             <div className="lg:col-span-2 text-center lg:text-left">
@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* Problem Section - Green Theme */}
       <section className="py-24 bg-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8 leading-tight">
               Enough is
@@ -168,7 +168,7 @@ export default function Home() {
 
       {/* Services Section - Fixed Alignment + Green Theme */}
       <section id="services" className="py-24 bg-gradient-to-br from-background to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               How I Help
@@ -280,7 +280,7 @@ export default function Home() {
 
       {/* Interactive Phone Demo - Automation in Action */}
       <section className="py-24 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Phone Demo */}
             <div className="relative">
@@ -484,7 +484,7 @@ export default function Home() {
 
       {/* Psychology-First Design Methodology */}
       <section className="py-24 bg-gradient-to-br from-background to-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Psychology-First
@@ -631,7 +631,7 @@ export default function Home() {
           backgroundSize: '60px 60px'
         }}></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full mb-12 border border-white/20">
             <span className="text-6xl font-bold text-sage-light">$17M</span>
           </div>
@@ -663,7 +663,7 @@ export default function Home() {
 
       {/* Social Proof - Green Theme */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Ready to stop wrestling with tech?
@@ -722,7 +722,7 @@ export default function Home() {
 
       {/* Lead Magnet - Website Scorecard */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white relative">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
           <ScorecardSection />
         </div>
       </section>

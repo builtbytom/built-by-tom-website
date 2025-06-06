@@ -18,7 +18,7 @@ export default function WebsiteServices() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '2s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
             <div className="mb-6">
               <span className="inline-block bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
@@ -73,7 +73,7 @@ export default function WebsiteServices() {
 
       {/* The Truth About Your Website */}
       <section className="py-24 bg-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               The Uncomfortable
@@ -145,7 +145,7 @@ export default function WebsiteServices() {
 
       {/* Portfolio/Transformations Section */}
       <section id="transformations" className="py-24 bg-gradient-to-br from-background to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Websites That Actually
@@ -227,7 +227,7 @@ export default function WebsiteServices() {
 
       {/* Mobile-First Design Section */}
       <section className="py-24 bg-gradient-to-br from-background to-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-primary/10 text-primary px-6 py-2 rounded-full text-sm font-medium mb-6">
               <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -383,7 +383,7 @@ export default function WebsiteServices() {
 
       {/* Google AI Search Section - Key Differentiator */}
       <section className="py-24 bg-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-accent/10 text-accent px-6 py-2 rounded-full text-sm font-medium mb-6">
               <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -493,7 +493,7 @@ export default function WebsiteServices() {
 
       {/* Pricing Section - Premium Design */}
       <section id="pricing" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               One Price.
@@ -611,7 +611,7 @@ export default function WebsiteServices() {
 
       {/* Process Section - Visual Timeline */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               3 Weeks to
@@ -692,7 +692,7 @@ export default function WebsiteServices() {
 
       {/* Bridge to Automation Services */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-3xl p-12 shadow-2xl border border-gray-100 relative overflow-hidden">
               {/* Background Pattern */}
@@ -772,7 +772,7 @@ export default function WebsiteServices() {
 
       {/* FAQ Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
               Common Questions
@@ -834,7 +834,7 @@ export default function WebsiteServices() {
           backgroundSize: '60px 60px'
         }}></div>
         
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
             Your Competition Already Has a Better Website
           </h2>
