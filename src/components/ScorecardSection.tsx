@@ -92,7 +92,7 @@ export default function ScorecardSection() {
                   cx="96"
                   cy="96"
                   r="88"
-                  stroke="#6B8E7B"
+                  stroke="#F97316"
                   strokeWidth="16"
                   fill="none"
                   strokeDasharray={`${2 * Math.PI * 88}`}
