@@ -14,7 +14,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-white/8 rounded-full blur-2xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-32 pb-16 lg:pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-32 pb-8 sm:pb-12 lg:pb-20">
           {/* Mobile-First Layout */}
           <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-16 lg:items-center">
             

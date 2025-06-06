@@ -505,17 +505,17 @@ export default function WebsiteServices() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-12 border-2 border-primary/20 relative shadow-2xl">
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 lg:p-12 border-2 border-primary/20 relative shadow-2xl">
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg">
                 Complete Website Solution
               </div>
               
-              <div className="text-center mb-12">
-                <div className="text-7xl font-bold text-foreground mb-4">$3,500</div>
-                <div className="text-xl text-text-light">Custom-coded • 3-week delivery • Zero monthly fees</div>
+              <div className="text-center mb-12 mt-8">
+                <div className="text-6xl lg:text-7xl font-bold text-foreground mb-4">$3,500</div>
+                <div className="text-lg lg:text-xl text-text-light">Custom-coded • 3-week delivery • Zero monthly fees</div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="grid lg:grid-cols-2 gap-8 mb-12">
                 <div className="space-y-4">
                   <h4 className="font-bold text-lg text-foreground mb-4">What&apos;s Included:</h4>
                   <div className="flex items-start">
