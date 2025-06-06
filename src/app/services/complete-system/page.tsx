@@ -9,53 +9,88 @@ export const metadata: Metadata = {
 export default function CompleteSystemServices() {
   return (
     <>
-      {/* Hero Section - Premium Green Theme */}
-      <section className="relative min-h-[60vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
+      {/* Hero Section - Redesigned for Impact */}
+      <section className="relative min-h-[70vh] lg:min-h-[60vh] bg-gradient-to-br from-primary via-slate-800 to-secondary overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-sage-light/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '5s' }}></div>
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '2s' }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-28 lg:pt-32 pb-16 lg:pb-20">
           <div className="text-center">
-            <div className="mb-6">
-              <span className="inline-block bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-medium border border-white/20">
-                Complete System • $1,797 • Save $594
-              </span>
+            {/* Savings highlight */}
+            <div className="mb-8">
+              <div className="inline-flex items-center bg-gradient-to-r from-accent to-accent/80 text-white px-8 py-4 rounded-2xl shadow-2xl">
+                <span className="text-3xl font-bold">Save $594</span>
+                <span className="mx-3 text-white/60">|</span>
+                <span className="text-lg font-medium">All 3 Automations</span>
+              </div>
             </div>
-            <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-none">
+            
+            {/* Main message - powerful */}
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-4 leading-[0.9]">
               Your Business Runs
-              <span className="block bg-gradient-to-r from-white via-accent via-sage-light to-white bg-clip-text text-transparent pb-2" style={{ 
-                backgroundSize: '600% 600%',
+              <span className="block bg-gradient-to-r from-accent via-white to-sage-light bg-clip-text text-transparent mt-2" style={{ 
+                backgroundSize: '200% 200%',
                 animation: 'gradient 3s ease infinite'
               }}>
                 On Autopilot
               </span>
             </h1>
-            <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Every lead captured instantly. Every appointment confirmed automatically. Every happy customer leaving 5-star reviews. This is what happens when all your automation works together.
+            
+            {/* Supporting text - results focused */}
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-tight">
+              Leads captured instantly. Appointments never missed. 5-star reviews flowing in.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            
+            {/* What's included - visual */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-3xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
+                <div className="text-2xl mb-1">📧</div>
+                <div className="text-white font-bold">Lead Response</div>
+                <div className="text-white/70 text-sm">Instant follow-up</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
+                <div className="text-2xl mb-1">📅</div>
+                <div className="text-white font-bold">Appointments</div>
+                <div className="text-white/70 text-sm">Zero no-shows</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
+                <div className="text-2xl mb-1">⭐</div>
+                <div className="text-white font-bold">Reviews</div>
+                <div className="text-white/70 text-sm">5-star reputation</div>
+              </div>
+            </div>
+            
+            {/* Price and CTA */}
+            <div className="mb-8">
+              <div className="text-4xl font-bold text-white mb-2">$1,797</div>
+              <div className="text-white/70">Complete transformation (normally $2,391)</div>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact" 
-                className="group px-12 py-6 bg-white text-primary text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
+                className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
               >
-                <span className="flex items-center">
+                <span className="flex items-center justify-center">
                   Transform My Business
-                  <svg className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
               </Link>
               <Link 
                 href="#system-breakdown" 
-                className="group px-8 py-6 border-2 border-white/40 text-white text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
+                className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
               >
-                See What&apos;s Included
-                <svg className="w-5 h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
+                <span className="flex items-center justify-center">
+                  See Full Details
+                  <svg className="w-4 sm:w-5 h-4 sm:h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </span>
               </Link>
             </div>
           </div>
