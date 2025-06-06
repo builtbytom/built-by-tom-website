@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import BusinessGoalsSelector from '@/components/BusinessGoalsSelector';
 
 export const metadata: Metadata = {
   title: 'Website Services | Built By Tom',
@@ -101,6 +102,9 @@ export default function WebsiteServices() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Business Goals Selector */}
+      <BusinessGoalsSelector />
 
       {/* The Truth About Your Website */}
       <section className="py-24 bg-white relative">
