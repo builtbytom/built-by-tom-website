@@ -699,28 +699,47 @@ export default function Home() {
                 quote: "Tom was a game-changer for our e-commerce site. We had a site before, but it wasn&apos;t getting traffic, and we&apos;d only made two sales. Tom optimized everything—making the site look and function so much better. Sales have jumped since we made the switch.",
                 author: "Jack B.",
                 company: "Craft Supply Co.",
-                color: "primary"
+                rating: 5,
+                gradient: "from-indigo-600/20 to-blue-600/10",
+                border: "border-indigo-200",
+                shadow: "hover:shadow-indigo-300/50",
+                quoteColor: "text-indigo-400",
+                avatarBg: "bg-gradient-to-br from-indigo-600 to-blue-700"
               },
               {
                 quote: "My phone actually rings now. Tom rebuilt my site and suddenly customers can find me on Google. Should&apos;ve called him two years ago.",
                 author: "Carrie H.",
                 company: "Local Business Owner", 
-                color: "secondary"
+                rating: 5,
+                gradient: "from-purple-600/20 to-pink-600/10",
+                border: "border-purple-200",
+                shadow: "hover:shadow-purple-300/50",
+                quoteColor: "text-purple-400",
+                avatarBg: "bg-gradient-to-br from-purple-600 to-pink-700"
               }
             ].map((testimonial, index) => (
               <div key={index} className="group relative h-full">
-                <div className={`absolute inset-0 bg-gradient-to-br ${testimonial.color === 'primary' ? 'from-primary/10 to-secondary/5' : 'from-secondary/10 to-sage-light/5'} rounded-3xl transform group-hover:scale-105 transition-transform duration-300`}></div>
-                <div className="relative bg-white rounded-3xl p-10 shadow-2xl border border-gray-100 h-full flex flex-col">
-                  <div className="text-6xl text-gray-200 mb-6">&ldquo;</div>
-                  <p className="text-foreground text-lg mb-8 italic leading-relaxed flex-grow">
+                <div className={`absolute inset-0 bg-gradient-to-br ${testimonial.gradient} rounded-3xl transform group-hover:scale-105 transition-transform duration-300`}></div>
+                <div className={`relative bg-white rounded-3xl p-10 shadow-2xl ${testimonial.border} h-full flex flex-col ${testimonial.shadow} transition-all duration-300`}>
+                  <div className="flex justify-between items-start mb-6">
+                    <div className={`text-6xl ${testimonial.quoteColor} font-serif`}>&ldquo;</div>
+                    <div className="flex gap-1">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-foreground text-lg mb-8 leading-relaxed flex-grow">
                     {testimonial.quote}
                   </p>
                   <div className="flex items-center mt-auto">
-                    <div className={`w-12 h-12 ${testimonial.color === 'primary' ? 'bg-primary' : 'bg-secondary'} rounded-full flex items-center justify-center text-white font-bold text-lg mr-4`}>
+                    <div className={`w-14 h-14 ${testimonial.avatarBg} rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 shadow-lg`}>
                       {testimonial.author.split(' ').map(n => n[0]).join('')}
                     </div>
                     <div>
-                      <div className="font-bold text-foreground">{testimonial.author}</div>
+                      <div className="font-bold text-foreground text-lg">{testimonial.author}</div>
                       <div className="text-text-light">{testimonial.company}</div>
                     </div>
                   </div>

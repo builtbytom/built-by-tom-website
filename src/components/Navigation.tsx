@@ -20,7 +20,7 @@ const Navigation = () => {
               href="/" 
               className="group flex flex-col"
             >
-              <div className="font-display font-black text-2xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent group-hover:from-secondary group-hover:to-primary transition-all duration-300">
+              <div className="font-display font-black text-2xl text-white group-hover:text-white/90 transition-all duration-300">
                 BUILT BY TOM
               </div>
               <div className="text-xs text-white/80 font-medium tracking-wider">North Haven, CT</div>
