@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import ScorecardSection from '../components/ScorecardSection';
+import RevenueLeakCalculator from '../components/RevenueLeakCalculator';
 
 export default function Home() {
   return (
@@ -153,67 +154,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Problem Section - Green Theme */}
-      <section className="py-24 bg-white relative">
-        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8 leading-tight">
-              Enough is
-              <span className="block text-primary">Enough.</span>
-            </h2>
-            <p className="text-2xl text-foreground mb-6 font-semibold">
-              Fix What&apos;s Broken.
-            </p>
-            <p className="text-xl text-text-light max-w-4xl mx-auto leading-relaxed">
-              Most business owners aren&apos;t stuck because they&apos;re lazy - they&apos;re stuck because their tools don&apos;t work together.
-            </p>
-          </div>
-
-          {/* Problem Cards - Green Theme */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-20">
-            {[
-              {
-                icon: "📧",
-                title: "Missed leads and broken forms",
-                solution: "Forms that actually capture leads",
-                gradient: "from-red-500/10 to-orange-500/10"
-              },
-              {
-                icon: "📱", 
-                title: "Outdated, clunky websites",
-                solution: "Clean design that converts",
-                gradient: "from-secondary/10 to-sage-light/10"
-              },
-              {
-                icon: "⚙️",
-                title: "Hidden tech frustrations", 
-                solution: "Systems you can trust",
-                gradient: "from-primary/10 to-secondary/10"
-              }
-            ].map((item, index) => (
-              <div key={index} className="group relative">
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-3xl transform group-hover:scale-105 transition-transform duration-300`}></div>
-                <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 h-full">
-                  <div className="text-6xl mb-6">{item.icon}</div>
-                  <h3 className="font-bold text-xl text-foreground mb-4 leading-tight">{item.title}</h3>
-                  <div className="flex items-center text-secondary font-semibold">
-                    <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                    {item.solution}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <p className="text-xl text-foreground font-semibold">
-              I help you fix what&apos;s broken without the headaches or a six-month wait.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Revenue Leak Calculator */}
+      <RevenueLeakCalculator />
 
       {/* Services Section - Fixed Alignment + Green Theme */}
       <section id="services" className="py-24 bg-gradient-to-br from-background to-white">
