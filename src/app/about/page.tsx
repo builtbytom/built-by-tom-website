@@ -19,15 +19,16 @@ export default function About() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 sm:pt-28 lg:pt-32 pb-16 lg:pb-20">
-          <div className="text-center">
-            {/* Value badge - impactful */}
-            <div className="mb-8">
-              <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
-                <span className="text-3xl font-bold">Scaled to $17M</span>
-                <span className="mx-3 text-gray-300">|</span>
-                <span className="text-lg font-medium">Learned What Works</span>
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+            <div className="text-center lg:text-left">
+              {/* Value badge - impactful */}
+              <div className="mb-8">
+                <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
+                  <span className="text-3xl font-bold">Scaled to $17M</span>
+                  <span className="mx-3 text-gray-300">|</span>
+                  <span className="text-lg font-medium">Learned What Works</span>
+                </div>
               </div>
-            </div>
             
             {/* Small circular photo on mobile */}
             <div className="mb-6 lg:hidden">
@@ -57,13 +58,13 @@ export default function About() {
               </span>
             </h1>
             
-            {/* Supporting text - concise with credibility */}
-            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-tight">
-              Drowning in manual tasks. Losing customers to chaos. I fixed it for myself. Now I fix it for you.
-            </p>
+              {/* Supporting text - concise with credibility */}
+              <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto lg:mx-0 leading-tight">
+                Drowning in manual tasks. Losing customers to chaos. I fixed it for myself. Now I fix it for you.
+              </p>
             
-            {/* Credibility points */}
-            <div className="flex flex-wrap justify-center gap-6 mb-10">
+              {/* Credibility points */}
+              <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-10">
               <div className="flex items-center text-white/80">
                 <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -84,8 +85,8 @@ export default function About() {
               </div>
             </div>
             
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link 
                 href="/contact" 
                 className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
@@ -108,22 +109,23 @@ export default function About() {
                   </svg>
                 </span>
               </Link>
+              </div>
             </div>
-          </div>
-          
-          {/* Desktop photo - hidden on mobile */}
-          <div className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 w-96">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-3xl blur-xl transform scale-110"></div>
-              <div className="relative w-80 h-80 rounded-3xl overflow-hidden border-3 border-white/20 shadow-2xl">
-                <Image 
-                  src="/tom-headshot.png" 
-                  alt="Tom - Founder of Built By Tom"
-                  width={320}
-                  height={320}
-                  className="w-full h-full object-cover"
-                  priority
-                />
+            
+            {/* Desktop photo - hidden on mobile */}
+            <div className="hidden lg:flex lg:justify-center lg:items-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-3xl blur-xl transform scale-110"></div>
+                <div className="relative w-96 h-96 rounded-3xl overflow-hidden border-4 border-white/20 shadow-2xl">
+                  <Image 
+                    src="/tom-headshot.png" 
+                    alt="Tom - Founder of Built By Tom"
+                    width={384}
+                    height={384}
+                    className="w-full h-full object-cover"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
