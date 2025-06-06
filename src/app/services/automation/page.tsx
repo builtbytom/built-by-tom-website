@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import TimeSavedCalculator from '@/components/TimeSavedCalculator';
 
 export const metadata: Metadata = {
   title: 'Business Automation Services | Built By Tom',
@@ -284,6 +285,13 @@ export default function AutomationServices() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Interactive Time Calculator */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+          <TimeSavedCalculator />
         </div>
       </section>
 
