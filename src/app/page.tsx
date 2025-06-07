@@ -145,47 +145,86 @@ export default function Home() {
       </section>
 
       {/* What Calm Feels Like Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(27, 77, 62, 0.5) 1px, transparent 0)`,
-          backgroundSize: '50px 50px'
-        }}></div>
+      <section className="py-24 bg-gradient-to-br from-primary/5 via-white to-secondary/5 relative overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute top-20 left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }}></div>
         
-        <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
-            <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-8 text-center">
-              You know that feeling when everything just... works?
-            </h2>
+        <div className="relative max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="relative">
+            {/* Decorative elements */}
+            <div className="absolute -top-6 -left-6 text-8xl text-primary/10 font-serif">"</div>
+            <div className="absolute -bottom-6 -right-6 text-8xl text-primary/10 font-serif rotate-180">"</div>
             
-            <div className="space-y-4 max-w-3xl mx-auto">
-              <div className="flex items-center text-lg text-text-light">
-                <div className="w-2 h-2 bg-primary rounded-full mr-4 flex-shrink-0"></div>
-                <p>Website loads fast. Forms go where they're supposed to.</p>
+            {/* Main content */}
+            <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-xl border border-primary/10">
+              <h2 className="font-display font-bold text-3xl lg:text-5xl text-foreground mb-12 text-center leading-tight">
+                You know that feeling when
+                <span className="block text-primary mt-2">everything just... works?</span>
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
+                <div className="group bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10 hover:border-primary/30 transition-all duration-300">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-primary/30 transition-colors">
+                      <span className="text-2xl">⚡</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Lightning Fast</h3>
+                      <p className="text-text-light">Website loads instantly. Forms actually work.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="group bg-gradient-to-br from-secondary/5 to-transparent rounded-2xl p-6 border border-secondary/10 hover:border-secondary/30 transition-all duration-300">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-secondary/30 transition-colors">
+                      <span className="text-2xl">🔍</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Actually Findable</h3>
+                      <p className="text-text-light">Customers can find you on Google.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="group bg-gradient-to-br from-accent/5 to-transparent rounded-2xl p-6 border border-accent/10 hover:border-accent/30 transition-all duration-300">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-colors">
+                      <span className="text-2xl">🎯</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Automatic Magic</h3>
+                      <p className="text-text-light">Follow-ups happen without thinking.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="group bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10 hover:border-primary/30 transition-all duration-300">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-primary/30 transition-colors">
+                      <span className="text-2xl">🛡️</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Nothing Lost</h3>
+                      <p className="text-text-light">Every lead tracked, every detail saved.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               
-              <div className="flex items-center text-lg text-text-light">
-                <div className="w-2 h-2 bg-secondary rounded-full mr-4 flex-shrink-0"></div>
-                <p>Customers can actually find you online.</p>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl opacity-20"></div>
+                <div className="relative bg-white rounded-2xl p-8 text-center border border-gray-100">
+                  <p className="text-3xl lg:text-4xl font-display font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent mb-4">
+                    That's calm.
+                  </p>
+                  <p className="text-lg text-text-light max-w-2xl mx-auto">
+                    And it's not as complicated as everyone makes it sound. 
+                    <span className="block mt-2 text-foreground font-medium">Let me show you how simple it can be.</span>
+                  </p>
+                </div>
               </div>
-              
-              <div className="flex items-center text-lg text-text-light">
-                <div className="w-2 h-2 bg-accent rounded-full mr-4 flex-shrink-0"></div>
-                <p>Follow-ups happen automatically.</p>
-              </div>
-              
-              <div className="flex items-center text-lg text-text-light">
-                <div className="w-2 h-2 bg-primary rounded-full mr-4 flex-shrink-0"></div>
-                <p>Nothing falls through the cracks.</p>
-              </div>
-            </div>
-            
-            <div className="text-center mt-10">
-              <p className="text-2xl font-bold text-primary mb-3">
-                That's calm.
-              </p>
-              <p className="text-lg text-text-light">
-                And it's not as complicated as everyone makes it sound.
-              </p>
             </div>
           </div>
         </div>
