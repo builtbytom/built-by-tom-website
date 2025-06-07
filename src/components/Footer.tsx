@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-primary to-secondary text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="font-display font-bold text-xl mb-2 bg-gradient-to-r from-white to-sage-light bg-clip-text text-transparent">
@@ -17,31 +17,48 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-white/80">
               <li>
-                <Link href="/" className="hover:text-sage-light transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
                 <Link href="/services/website" className="hover:text-sage-light transition-colors">
-                  • Local Website Fix
+                  Website Development
                 </Link>
               </li>
               <li>
                 <Link href="/services/automation" className="hover:text-sage-light transition-colors">
-                  • Automation
+                  Business Automation
                 </Link>
               </li>
               <li>
                 <Link href="/services/complete-system" className="hover:text-sage-light transition-colors">
-                  • Complete Automation Systems
+                  Complete System
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="hover:text-sage-light transition-colors">
-                  Resources
+                <Link href="/services/website-audit" className="hover:text-sage-light transition-colors">
+                  Website & Systems Review
+                </Link>
+              </li>
+              <li className="pt-2">
+                <Link href="/industries" className="hover:text-sage-light transition-colors">
+                  Industries We Serve
+                </Link>
+              </li>
+              <li>
+                <Link href="/service-areas/new-haven-county" className="hover:text-sage-light transition-colors">
+                  Service Areas
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Company</h3>
+            <ul className="space-y-2 text-white/80">
+              <li>
+                <Link href="/" className="hover:text-sage-light transition-colors">
+                  Home
                 </Link>
               </li>
               <li>
@@ -50,8 +67,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/resources" className="hover:text-sage-light transition-colors">
+                  Resources
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-sage-light transition-colors">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/thank-you" className="hover:text-sage-light transition-colors">
+                  Thank You
                 </Link>
               </li>
             </ul>
