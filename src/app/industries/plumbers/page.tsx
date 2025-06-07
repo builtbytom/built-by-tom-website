@@ -123,7 +123,7 @@ export default function PlumbersPage() {
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-              Running a plumbing business isn't just about fixing leaks. It's crawling under sinks, driving from job to job, and juggling calls from people who needed you yesterday. Most days, you're booked solid—or staring at your phone, wondering why nobody's calling. I've worked with enough home service pros to know: the work is tough, but chasing customers is even tougher.
+              The work is tough, but chasing customers is even tougher.
             </p>
           </div>
         </div>

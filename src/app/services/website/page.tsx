@@ -123,12 +123,12 @@ export default function WebsiteServices() {
           <div className="grid lg:grid-cols-3 gap-8 mb-20">
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-red-600/10 rounded-3xl transform group-hover:scale-105 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
+              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full flex flex-col">
                 <div className="text-6xl mb-6">📱</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
                   Mobile Disaster Zone
                 </h3>
-                <p className="text-text-light mb-6 leading-relaxed">
+                <p className="text-text-light mb-6 leading-relaxed flex-grow">
                   They pinch. They zoom. They squint. Then they leave. 74% of people will never return to a site that doesn&apos;t work on mobile.
                 </p>
                 <div className="text-red-600 font-semibold">
@@ -139,12 +139,12 @@ export default function WebsiteServices() {
 
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-amber-500/10 rounded-3xl transform group-hover:scale-105 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
+              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full flex flex-col">
                 <div className="text-6xl mb-6">🔍</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
                   Missing From Search Results
                 </h3>
-                <p className="text-text-light mb-6 leading-relaxed">
+                <p className="text-text-light mb-6 leading-relaxed flex-grow">
                   When people search for your services online, they need to find you easily. If your site isn&apos;t optimized, you&apos;re missing those opportunities.
                 </p>
                 <div className="text-orange-600 font-semibold">
@@ -155,12 +155,12 @@ export default function WebsiteServices() {
 
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 to-gray-600/10 rounded-3xl transform group-hover:scale-105 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
+              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full flex flex-col">
                 <div className="text-6xl mb-6">⏰</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
                   Stuck in 2010
                 </h3>
-                <p className="text-text-light mb-6 leading-relaxed">
+                <p className="text-text-light mb-6 leading-relaxed flex-grow">
                   Flash animations. Tiny text. Broken forms. It screams &ldquo;we don&apos;t care about details&rdquo; so what else are you neglecting? First impressions matter more than ever.
                 </p>
                 <div className="text-gray-600 font-semibold">

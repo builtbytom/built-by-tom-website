@@ -96,6 +96,12 @@ const Navigation = () => {
                 About
               </Link>
               <Link 
+                href="/samples" 
+                className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg"
+              >
+                Demos
+              </Link>
+              <Link 
                 href="/resources" 
                 className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg"
               >
@@ -226,6 +232,13 @@ const Navigation = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               About
+            </Link>
+            <Link 
+              href="/samples" 
+              className="text-white hover:text-white/80 block px-3 py-2 text-sm font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Demos
             </Link>
             <Link 
               href="/resources" 

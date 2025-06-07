@@ -33,7 +33,7 @@ export default function TimeSavedCalculator() {
             Interactive Calculator
           </div>
           <h3 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-4">
-            Let&apos;s See How Much Time You&apos;re Burning
+            Where Does The Time Really Go?
           </h3>
           <p className="text-lg text-text-light">
             Move the sliders to match your business. Watch the hours add up.

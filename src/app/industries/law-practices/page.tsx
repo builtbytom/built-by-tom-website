@@ -118,7 +118,7 @@ export default function LawPracticesPage() {
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-              Being a lawyer is about solving clients' problems—but half your day is chasing people around like a kindergarten teacher. "Did you send the forms?" "Can you sign this?" "Where are those tax returns you promised three weeks ago?" You went to law school to practice law, not to spend your afternoon explaining how email attachments work to a 45-year-old who owns three businesses.
+              You went to law school to practice law, not to chase documents all day.
             </p>
           </div>
         </div>

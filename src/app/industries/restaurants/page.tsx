@@ -134,7 +134,7 @@ export default function RestaurantsPage() {
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-              Running a restaurant isn't just food and service—it's late nights, juggling a hundred tasks, and sometimes just hoping nothing breaks before you close. I ran a restaurant for a decade right here in New Haven County. I know what it's like to be short-staffed on a Friday, panic-ordering produce, and fixing the POS when you should be home with your family. If any of this sounds familiar, you're in good company.
+              I ran a restaurant for a decade. I know what it's like when everything hits at once.
             </p>
           </div>
         </div>

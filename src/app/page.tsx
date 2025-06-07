@@ -504,7 +504,7 @@ export default function Home() {
                       {/* Business Message */}
                       <div className="flex justify-end opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
                         <div className="bg-primary text-white px-2.5 py-1.5 rounded-xl rounded-tr-md max-w-[170px] shadow-lg">
-                          <div className="text-xs font-medium">Hi Sarah! 👋</div>
+                          <div className="text-xs font-medium">Hi Sarah,</div>
                           <div className="text-xs mt-0.5 leading-tight">Your appointment is confirmed for tomorrow at 2:00 PM at our North Haven location.</div>
                           <div className="text-xs mt-0.5 opacity-90">📍 123 Main St, North Haven, CT</div>
                         </div>
@@ -534,7 +534,7 @@ export default function Home() {
                       {/* Happy Customer */}
                       <div className="flex justify-start opacity-0 animate-fade-in" style={{ animationDelay: '4s', animationFillMode: 'forwards' }}>
                         <div className="bg-gray-100 text-foreground px-2.5 py-1.5 rounded-xl rounded-tl-md max-w-[170px] shadow-sm">
-                          <div className="text-xs">On my way! This reminder system is amazing 🙌</div>
+                          <div className="text-xs">Got it, thanks! See you in an hour.</div>
                         </div>
                       </div>
 
