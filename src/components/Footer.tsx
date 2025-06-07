@@ -21,12 +21,12 @@ const Footer = () => {
             <ul className="space-y-2 text-white/80">
               <li>
                 <Link href="/services/website" className="hover:text-sage-light transition-colors">
-                  Website Development
+                  Website Services
                 </Link>
               </li>
               <li>
                 <Link href="/services/automation" className="hover:text-sage-light transition-colors">
-                  Business Automation
+                  Automation
                 </Link>
               </li>
               <li>
@@ -74,11 +74,6 @@ const Footer = () => {
               <li>
                 <Link href="/contact" className="hover:text-sage-light transition-colors">
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/thank-you" className="hover:text-sage-light transition-colors">
-                  Thank You
                 </Link>
               </li>
             </ul>

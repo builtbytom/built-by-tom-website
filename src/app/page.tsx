@@ -35,10 +35,6 @@ export default function Home() {
                       priority
                     />
                   </div>
-                  {/* Quick credibility */}
-                  <div className="absolute -bottom-2 -right-2 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 text-xs font-bold text-foreground shadow-lg">
-                    20+ Years Experience
-                  </div>
                 </div>
               </div>
             </div>
@@ -88,7 +84,7 @@ export default function Home() {
                   <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>20+ Years Business Systems</span>
+                  <span>20+ Years Operations Experience</span>
                 </div>
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">

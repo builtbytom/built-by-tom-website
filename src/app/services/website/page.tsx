@@ -239,23 +239,6 @@ export default function WebsiteServices() {
               </div>
             </div>
 
-            {/* Stats */}
-            <div className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-white">
-              <div className="grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                  <div className="text-5xl font-bold mb-2">3x</div>
-                  <div className="text-white/80">More mobile traffic</div>
-                </div>
-                <div>
-                  <div className="text-5xl font-bold mb-2">45%</div>
-                  <div className="text-white/80">Increase in orders</div>
-                </div>
-                <div>
-                  <div className="text-5xl font-bold mb-2">#1</div>
-                  <div className="text-white/80">Google ranking locally</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -513,16 +496,6 @@ export default function WebsiteServices() {
             </div>
           </div>
 
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20">
-              <p className="text-2xl font-bold text-foreground mb-4">
-                Get ahead of the curve with AI-optimized content
-              </p>
-              <p className="text-xl text-accent font-semibold">
-                that helps customers find you through modern search.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

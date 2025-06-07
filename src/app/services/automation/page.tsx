@@ -309,183 +309,253 @@ export default function AutomationServices() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            {/* Lead Response Automation */}
-            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-10 border-2 border-indigo-200 relative shadow-2xl hover:shadow-indigo-300/50 transition-all duration-300">
-              <div className="absolute -top-4 left-6 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
-                Most Popular
-              </div>
-              
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                <span className="text-2xl text-white">📧</span>
-              </div>
-              
-              <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                Lead Response
-                <span className="block">Automation</span>
-              </h3>
-              
-              <p className="text-text-light mb-6 leading-relaxed">
-                Instant text messages to new leads, automatic CRM entry, and calendar reminders so you never miss a follow-up.
-              </p>
-              
-              <div className="space-y-3 mb-8">
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Instant lead notifications</span>
+            {/* Lead Response Automation - Purple Theme */}
+            <div className="group relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-indigo-600/10 rounded-3xl transform group-hover:scale-105 group-hover:-rotate-1 transition-all duration-500"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-purple-200 h-full flex flex-col group-hover:shadow-purple-300/50 transition-all duration-300">
+                <div className="absolute -top-4 left-6 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
+                  Most Popular
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Auto-add to CRM with tags</span>
+                
+                <div className="relative mb-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-700 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}>
+                    <span className="text-3xl">📧</span>
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-orange-500 rounded-full animate-spin flex items-center justify-center" style={{ animationDuration: '2s' }}>
+                    <span className="text-xs">⚡</span>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Custom response messages</span>
+                
+                <h3 className="font-display font-bold text-2xl text-foreground mb-6">
+                  Lead Response
+                  <span className="block">Automation</span>
+                </h3>
+                
+                <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
+                  Instant text messages to new leads, automatic CRM entry, and calendar reminders so you never miss a follow-up.
+                </p>
+                
+                <div className="bg-purple-50 rounded-xl p-4 mb-8 border border-purple-200">
+                  <div className="text-sm text-purple-800 font-semibold flex items-center">
+                    <span className="text-lg mr-2">⚡</span>
+                    Instant response • CRM integration • Never miss a lead
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Calendar reminders</span>
+                
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Instant lead notifications</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Auto-add to CRM with tags</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Custom response messages</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Calendar reminders</span>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="text-center mb-6">
-                <div className="text-4xl font-bold text-foreground mb-2">$797</div>
-                <div className="text-text-light">One-time setup</div>
-              </div>
-              
-              <div className="text-center">
-                <p className="text-sm text-text-light">Perfect for service businesses</p>
+                
+                <div className="mb-8">
+                  <div className="text-4xl font-bold text-purple-700 mb-2">$797</div>
+                  <div className="text-sm text-text-light">One-time setup</div>
+                </div>
+                
+                <div className="text-center">
+                  <p className="text-sm text-text-light">Perfect for service businesses</p>
+                </div>
               </div>
             </div>
 
-            {/* Appointment Automation */}
-            <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-10 shadow-2xl border-2 border-teal-200 relative hover:shadow-teal-300/50 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-sage-light rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                <span className="text-2xl text-white">📅</span>
-              </div>
-              
-              <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                Appointment
-                <span className="block">Automation</span>
-              </h3>
-              
-              <p className="text-text-light mb-6 leading-relaxed">
-                Automated reminders, confirmation requests, and rebooking sequences that eliminate no-shows and keep your calendar full.
-              </p>
-              
-              <div className="space-y-3 mb-8">
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">24-hour & 1-hour reminders</span>
+            {/* Appointment Automation - Teal Theme */}
+            <div className="group relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-blue-600/10 rounded-3xl transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-teal-200 h-full flex flex-col group-hover:shadow-teal-300/50 transition-all duration-300">
+                <div className="relative mb-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '3s' }}>
+                    <span className="text-3xl">📅</span>
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full animate-bounce flex items-center justify-center">
+                    <span className="text-xs">✓</span>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Confirmation & reschedule</span>
+                
+                <h3 className="font-display font-bold text-2xl text-foreground mb-6">
+                  Appointment
+                  <span className="block">Automation</span>
+                </h3>
+                
+                <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
+                  Automated reminders, confirmation requests, and rebooking sequences that eliminate no-shows and keep your calendar full.
+                </p>
+                
+                <div className="bg-teal-50 rounded-xl p-4 mb-8 border border-teal-200">
+                  <div className="text-sm text-teal-800 font-semibold flex items-center">
+                    <span className="text-lg mr-2">📅</span>
+                    No more no-shows • Auto-reminders • Full calendar
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Post-visit thank you messages</span>
+                
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-teal-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">24-hour & 1-hour reminders</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-teal-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Confirmation & reschedule</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-teal-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Post-visit thank you messages</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-teal-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Automatic rebooking requests</span>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Automatic rebooking requests</span>
+                
+                <div className="mb-8">
+                  <div className="text-4xl font-bold text-teal-700 mb-2">$797</div>
+                  <div className="text-sm text-text-light">One-time setup</div>
                 </div>
-              </div>
-              
-              <div className="text-center mb-6">
-                <div className="text-4xl font-bold text-foreground mb-2">$797</div>
-                <div className="text-text-light">One-time setup</div>
-              </div>
-              
-              <div className="text-center">
-                <p className="text-sm text-text-light">Ideal for appointment-based businesses</p>
+                
+                <div className="text-center">
+                  <p className="text-sm text-text-light">Ideal for appointment-based businesses</p>
+                </div>
               </div>
             </div>
 
-            {/* Review Automation */}
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-10 shadow-2xl border-2 border-amber-200 relative hover:shadow-amber-300/50 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                <span className="text-2xl text-white">⭐</span>
-              </div>
-              
-              <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                Review & Reputation
-                <span className="block">Automation</span>
-              </h3>
-              
-              <p className="text-text-light mb-6 leading-relaxed">
-                Automatic review requests sent at the perfect time, with smart routing to get 5-star reviews public and negative feedback private for damage control.
-              </p>
-              
-              <div className="space-y-3 mb-8">
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Timed review requests</span>
+            {/* Review Automation - Orange Theme */}
+            <div className="group relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-600/10 rounded-3xl transform group-hover:scale-105 group-hover:-rotate-1 transition-all duration-500"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-amber-200 h-full flex flex-col group-hover:shadow-amber-300/50 transition-all duration-300">
+                <div className="relative mb-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl flex items-center justify-center shadow-lg animate-pulse" style={{ animationDuration: '2s', animationDelay: '1s' }}>
+                    <span className="text-3xl">⭐</span>
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-500 rounded-full animate-ping flex items-center justify-center">
+                    <span className="text-xs">💫</span>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Smart routing to Google Reviews</span>
+                
+                <h3 className="font-display font-bold text-2xl text-foreground mb-6">
+                  Review & Reputation
+                  <span className="block">Automation</span>
+                </h3>
+                
+                <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
+                  Automatic review requests sent at the perfect time, with smart routing to get 5-star reviews public and negative feedback private for damage control.
+                </p>
+                
+                <div className="bg-amber-50 rounded-xl p-4 mb-8 border border-amber-200">
+                  <div className="text-sm text-amber-800 font-semibold flex items-center">
+                    <span className="text-lg mr-2">⭐</span>
+                    Build reputation • Smart routing • Damage control
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Private feedback capture</span>
+                
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-amber-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Timed review requests</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-amber-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Smart routing to Google Reviews</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-amber-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Private feedback capture</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 text-amber-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Multiple platform support</span>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Multiple platform support</span>
+                
+                <div className="mb-8">
+                  <div className="text-4xl font-bold text-amber-700 mb-2">$797</div>
+                  <div className="text-sm text-text-light">One-time setup</div>
                 </div>
-              </div>
-              
-              <div className="text-center mb-6">
-                <div className="text-4xl font-bold text-foreground mb-2">$797</div>
-                <div className="text-text-light">One-time setup</div>
-              </div>
-              
-              <div className="text-center">
-                <p className="text-sm text-text-light">Great for reputation management</p>
+                
+                <div className="text-center">
+                  <p className="text-sm text-text-light">Great for reputation management</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Bundle Offer */}
+          {/* Bundle Offer - Complete System Style */}
           <div className="text-center">
-            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20 max-w-2xl mx-auto">
-              <h3 className="font-bold text-2xl text-foreground mb-4">Get All Three & Save</h3>
-              <p className="text-text-light mb-6">
-                Most clients want the full automation suite. Bundle all three packages for just $1,797 and save $594.
-              </p>
-              <Link 
-                href="/contact" 
-                className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
-              >
-                Explore Automation Options
-                <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
+            <div className="group relative max-w-2xl mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-green-700/10 rounded-3xl transform group-hover:scale-105 transition-all duration-500"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-emerald-200 group-hover:shadow-emerald-300/50 transition-all duration-300">
+                <div className="relative mb-8 mx-auto w-20">
+                  <div className="w-20 h-20 bg-gradient-to-br from-emerald-700 to-green-800 rounded-2xl flex items-center justify-center shadow-lg animate-pulse mx-auto" style={{ animationDuration: '2s' }}>
+                    <span className="text-3xl">🚀</span>
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full animate-ping flex items-center justify-center">
+                    <span className="text-xs">🔥</span>
+                  </div>
+                </div>
+                
+                <h3 className="font-display font-bold text-3xl text-foreground mb-4">Get All Three & Save</h3>
+                <p className="text-text-light mb-8 text-lg max-w-lg mx-auto">
+                  Most clients want the full automation suite. Bundle all three packages for just $1,797 and save $594.
+                </p>
+                
+                <div className="bg-emerald-50 rounded-xl p-4 mb-8 border border-emerald-200">
+                  <div className="text-sm text-emerald-800 font-semibold flex items-center justify-center">
+                    <span className="text-lg mr-2">🏆</span>
+                    Save $594 vs separate • All automation packages • 60-day support
+                  </div>
+                </div>
+                
+                <div className="mb-8">
+                  <div className="text-4xl font-bold text-emerald-700 mb-2">$1,797</div>
+                  <div className="text-sm text-text-light">Complete automation transformation</div>
+                </div>
+                
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center justify-center w-full max-w-xs mx-auto bg-gradient-to-r from-emerald-700 to-green-800 text-white py-4 px-8 rounded-xl font-bold hover:from-emerald-800 hover:to-green-900 hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-300 transform hover:scale-105"
+                >
+                  Explore Automation Options
+                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
