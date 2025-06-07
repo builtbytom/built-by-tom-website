@@ -32,18 +32,18 @@ export default function WebsiteServices() {
             
             {/* Main message - tighter spacing */}
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-6 sm:mb-4 leading-[0.9]">
-              Your Website Is
-              <span className="block bg-gradient-to-r from-red-400 via-accent to-white bg-clip-text text-transparent mt-2" style={{ 
+              Let&apos;s Get Your Website
+              <span className="block bg-gradient-to-r from-sage-light via-accent to-white bg-clip-text text-transparent mt-2" style={{ 
                 backgroundSize: '200% 200%',
                 animation: 'gradient 3s ease infinite'
               }}>
-                Costing You Customers
+                Working For You
               </span>
             </h1>
             
             {/* Supporting text - more concise */}
             <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 sm:mb-10 max-w-2xl mx-auto leading-tight">
-              67% of people will leave if your site looks outdated or doesn&apos;t work on their phone.
+              A great website brings in business 24/7. I&apos;ll build you one that actually does that.
             </p>
             
             {/* Trust points - visual hierarchy */}
@@ -75,7 +75,7 @@ export default function WebsiteServices() {
                 className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500 mb-4"
               >
                 <span className="flex items-center justify-center">
-                  Fix My Website Now
+                  Start Your Website Project
                   <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -824,7 +824,7 @@ export default function WebsiteServices() {
                 Why $3,500? Seems high for a small business website.
               </h3>
               <p className="text-text-light">
-                Because it&apos;s not just a website. It&apos;s custom-coded (no monthly fees), optimized for local search, includes professional copywriting, and comes with a business audit. Most importantly, it actually brings in customers. The cheap option costs you more in lost business.
+                I understand - it&apos;s an investment. Here&apos;s what&apos;s included: custom-coded site you own forever, local SEO optimization, professional copywriting, and a complete business audit. Plus, unlike monthly platforms, you&apos;re not locked into ongoing fees. Most clients see ROI within 2-3 months from new customers.
               </p>
             </div>
 
@@ -833,7 +833,7 @@ export default function WebsiteServices() {
                 Can&apos;t I just use Squarespace or Wix?
               </h3>
               <p className="text-text-light mb-4">
-                Sure, if you want to pay $30-50/month forever, fight with templates that don&apos;t quite fit, and look exactly like every other business. My sites are faster, rank better on Google, and you own them outright.
+                Those are great for starting out! The main differences: With my custom sites, you own everything outright (no monthly fees), get better Google rankings, faster load times, and a design that&apos;s uniquely yours. It&apos;s really about what stage your business is at.
               </p>
               <div className="bg-white p-4 rounded-lg border-l-4 border-primary">
                 <p className="text-foreground font-semibold text-sm">

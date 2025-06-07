@@ -57,6 +57,30 @@ const Navigation = () => {
                   </div>
                 </div>
               </div>
+              <div className="relative group">
+                <button className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg flex items-center">
+                  Industries
+                  <svg className="ml-2 h-4 w-4 group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute left-0 mt-3 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-1">
+                  <div className="py-3">
+                    <Link href="/industries/restaurants" className="block px-6 py-3 text-sm text-foreground hover:bg-primary/10 hover:text-primary font-medium transition-all duration-200">
+                      Restaurants
+                    </Link>
+                    <Link href="/industries/landscapers" className="block px-6 py-3 text-sm text-foreground hover:bg-secondary/10 hover:text-secondary font-medium transition-all duration-200">
+                      Landscapers
+                    </Link>
+                    <Link href="/industries/coaches-therapists" className="block px-6 py-3 text-sm text-foreground hover:bg-accent/10 hover:text-accent font-medium transition-all duration-200">
+                      Coaches & Therapists
+                    </Link>
+                    <Link href="/industries" className="block px-6 py-3 text-sm text-text-light hover:text-primary font-medium transition-all duration-200 border-t border-gray-100">
+                      View All Industries →
+                    </Link>
+                  </div>
+                </div>
+              </div>
               <Link 
                 href="/about" 
                 className="text-white hover:text-white/80 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/10 rounded-lg"
@@ -136,6 +160,39 @@ const Navigation = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Complete System
+                </Link>
+              </div>
+            </div>
+            <div className="px-3 py-2">
+              <div className="text-white text-sm font-medium mb-2">Industries</div>
+              <div className="pl-4 space-y-1">
+                <Link 
+                  href="/industries/restaurants" 
+                  className="text-white/80 hover:text-white block py-1 text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Restaurants
+                </Link>
+                <Link 
+                  href="/industries/landscapers" 
+                  className="text-white/80 hover:text-white block py-1 text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Landscapers
+                </Link>
+                <Link 
+                  href="/industries/coaches-therapists" 
+                  className="text-white/80 hover:text-white block py-1 text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Coaches & Therapists
+                </Link>
+                <Link 
+                  href="/industries" 
+                  className="text-white/80 hover:text-white block py-1 text-sm border-t border-white/20 mt-2 pt-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  View All →
                 </Link>
               </div>
             </div>
