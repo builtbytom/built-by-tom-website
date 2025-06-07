@@ -144,33 +144,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Permission to Be Human Section */}
-      <section className="py-16 bg-white border-b">
-        <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-6">
-            It's OK. Really.
-          </h2>
-          <div className="text-base sm:text-lg text-text-light space-y-4 max-w-3xl mx-auto">
-            <p className="leading-relaxed">
-              <span className="font-semibold text-foreground block sm:inline">It's OK if your website is embarrassing.</span>
-              <span className="block sm:inline"> Most are. That's why I exist.</span>
-            </p>
-            <p className="leading-relaxed">
-              <span className="font-semibold text-foreground block sm:inline">It's OK if you don't have a website at all.</span>
-              <span className="block sm:inline"> Better to start fresh than live with something broken.</span>
-            </p>
-            <p className="leading-relaxed">
-              <span className="font-semibold text-foreground block sm:inline">It's OK if you don't understand tech.</span>
-              <span className="block sm:inline"> You're good at your business. Let me handle the digital stuff.</span>
-            </p>
-            <p className="leading-relaxed">
-              <span className="font-semibold text-foreground block sm:inline">It's OK if you're not sure what you need.</span>
-              <span className="block sm:inline"> We'll figure it out together. No pressure, no judgment.</span>
-            </p>
+      {/* Real Talk Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(27, 77, 62, 0.5) 1px, transparent 0)`,
+          backgroundSize: '50px 50px'
+        }}></div>
+        
+        <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
+            <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-8 text-center">
+              Look, most business websites suck.
+              <span className="block text-2xl lg:text-3xl text-primary mt-2">It's not your fault.</span>
+            </h2>
+            
+            <div className="prose prose-lg max-w-none text-text-light">
+              <p className="mb-6 text-lg leading-relaxed">
+                You're busy running your actual business while trying to figure out tech stuff that changes every five minutes. 
+                I get it - I've been there.
+              </p>
+              
+              <p className="mb-6 text-lg leading-relaxed">
+                I don't care if your current site is embarrassing, non-existent, or cobbled together from YouTube tutorials. 
+                What matters is getting you something that actually works.
+              </p>
+              
+              <p className="text-lg font-semibold text-foreground text-center mt-8 p-6 bg-primary/5 rounded-xl border-l-4 border-primary">
+                No judgment, no tech lectures, just real solutions for real problems.
+              </p>
+            </div>
           </div>
-          <p className="text-lg sm:text-xl text-primary font-semibold mt-8">
-            You're not behind. You're exactly where you need to be.
-          </p>
         </div>
       </section>
 

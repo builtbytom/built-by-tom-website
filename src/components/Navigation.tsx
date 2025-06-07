@@ -108,9 +108,9 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Link 
               href="/contact" 
-              className="group relative px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white text-sm font-bold rounded-xl shadow-lg shadow-primary/20 hover:shadow-primary/30 transform hover:scale-105 transition-all duration-300 overflow-hidden"
+              className="group relative px-6 py-3 bg-gradient-to-r from-accent to-accent/90 text-white text-sm font-bold rounded-xl shadow-lg shadow-accent/30 hover:shadow-accent/50 transform hover:scale-105 transition-all duration-300 overflow-hidden border border-accent/20"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary to-sage-light opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/90 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative">Book a Free Call</span>
             </Link>
           </div>
@@ -237,7 +237,7 @@ const Navigation = () => {
             <div className="px-3 pt-4">
               <Link 
                 href="/contact" 
-                className="bg-gradient-to-r from-primary to-secondary text-white block w-full text-center px-4 py-2 rounded-lg text-sm font-medium hover:bg-opacity-90 transition-all duration-200"
+                className="bg-gradient-to-r from-accent to-accent/90 text-white block w-full text-center px-4 py-3 rounded-lg text-sm font-bold shadow-lg shadow-accent/20 border border-accent/20 hover:bg-opacity-90 transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Book a Free Call
