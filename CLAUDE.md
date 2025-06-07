@@ -8,13 +8,15 @@
 - **Honest**: Direct without being harsh
 - **Approachable**: Professional but not formal
 - **Empowering**: Build confidence, don't create fear
+- **Trust-building**: Realistic numbers and claims
 
 ### NEVER USE:
 - Fear-mongering language ("Your competitors already won", "costing you customers")
 - Aggressive CTAs ("Fix My Mess", "Stop the bleeding")
 - Dismissive language about competitors or other solutions
-- Overly casual/cocky phrases ("No BS", "Nuclear Option")
+- Overly casual/cocky phrases ("No BS", "Nuclear Option", "hell")
 - Negative framing of client situations
+- Inflated statistics or unrealistic claims
 
 ### ALWAYS USE:
 - Solution-focused language ("Let's build something better")
@@ -22,6 +24,7 @@
 - Respectful mentions of alternatives (Wix, competitors)
 - Positive outcomes instead of negative consequences
 - "We/Let's" language for partnership feel
+- Realistic, believable numbers
 
 ## Copy Examples:
 
@@ -29,8 +32,9 @@
 - "Your website is costing you customers"
 - "Pick your poison"
 - "Stop doing robot work"
-- "The Nuclear Option"
+- "Soul-crushing tasks"
 - "Your competitors already won"
+- "240% increase" (too specific/unbelievable)
 
 ### GOOD:
 - "Let's get your website working for you"
@@ -38,25 +42,34 @@
 - "Automate repetitive tasks"
 - "Complete Business Package"
 - "Stand out in your market"
+- "2x more reviews" (believable)
 
-## Project Status (As of Last Update)
+## Project Status (January 7, 2025)
 
-### Completed:
-1. Homepage copy rewrite - humble, helpful tone
-2. Industries navigation added to main menu
-3. $297 Website Reality Check offer created
-4. Website service page copy softened
-5. Navigation updated with transparent background
+### Recently Completed:
+1. **Tone overhaul across all pages** - removed all fear-based messaging
+2. **Homepage fixes**: 20+ years clarified, service card language softened
+3. **Website services page**: Removed aggressive copy, fixed stats
+4. **Automation page**: Fixed calculator math (capped at 20hrs/month), friendlier CTAs
+5. **Complete system page**: Fixed mobile layout, removed hard sell
+6. **About page**: Toned down $17M mentions, explained technical terms better
+7. **Website audit**: Repositioned as 1-hour "Website & Systems Review" with live call
+8. **Footer**: Added all new pages with proper organization
 
-### In Progress:
-- Fixing aggressive copy on automation page
-- Fixing aggressive copy on complete system page
-- Updating remaining industry pages
+### Next Priority - User Journey & UX:
+- Review complete user flow from landing to conversion
+- Ensure logical page connections and natural progression
+- Optimize for Google SEO best practices
+- Check all CTAs lead to appropriate next steps
+- Verify mobile experience is smooth throughout
 
-### Pending:
+### Still Pending:
+- Industry pages text wall review (especially mobile heroes)
+- Add Google AI search mention to homepage (key differentiator)
+- Resource center mobile layout fixes
+- Additional industry pages (HVAC, dentists, real estate, fitness, etc.)
 - Services comparison page
-- Contact form simplification
-- "Not sure where to start?" path
+- "Not sure where to start?" guided path
 
 ## Technical Context
 
