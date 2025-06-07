@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Restaurant Website Demo | Built By Tom',
   description: 'See what your restaurant website could look like. Online ordering, reservations, and automation that fills seats.',
+  robots: 'noindex, follow',
 };
 
 export default function RestaurantSample() {
@@ -22,15 +23,15 @@ export default function RestaurantSample() {
       <section className="relative min-h-[70vh] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
         <div className="absolute inset-0 bg-black/40"></div>
         
-        {/* Placeholder for hero image */}
-        <div className="absolute inset-0 flex items-center justify-center bg-slate-800">
-          <p className="text-white/50 text-xl">[Hero Image: Restaurant Interior/Signature Dish]</p>
+        {/* Hero image background */}
+        <div className="absolute inset-0 bg-slate-800">
+          {/* Image placeholder - remove text to prevent overlap */}
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
             <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6">
-              Bella Vista
+              Demo: Bella Vista
               <span className="block text-3xl sm:text-4xl lg:text-5xl font-bold text-white/90 mt-2">
                 Kitchen & Bar
               </span>
@@ -45,7 +46,7 @@ export default function RestaurantSample() {
               <button className="px-8 py-4 bg-white text-slate-900 font-bold rounded-xl hover:bg-white/90 transition-all transform hover:scale-105">
                 Reserve Your Table
               </button>
-              <button className="px-8 py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition-all transform hover:scale-105">
+              <button className="px-8 py-4 bg-amber-600 text-white font-bold rounded-xl hover:bg-amber-700 transition-all transform hover:scale-105">
                 Order Online
               </button>
             </div>
@@ -106,11 +107,11 @@ export default function RestaurantSample() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Appetizer */}
             <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <p className="text-gray-500">[Appetizer Image]</p>
+              <div className="h-48 bg-gradient-to-br from-amber-100 to-amber-50">
+                {/* Appetizer image placeholder */}
               </div>
               <div className="p-6">
-                <div className="text-red-600 font-semibold text-sm mb-2">APPETIZER</div>
+                <div className="text-amber-600 font-semibold text-sm mb-2">APPETIZER</div>
                 <h3 className="font-bold text-xl text-foreground mb-2">Burrata Caprese</h3>
                 <p className="text-text-light text-sm mb-4">
                   Creamy burrata, heirloom tomatoes, basil oil, aged balsamic
@@ -121,11 +122,11 @@ export default function RestaurantSample() {
 
             {/* Entree */}
             <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <p className="text-gray-500">[Entree Image]</p>
+              <div className="h-48 bg-gradient-to-br from-amber-100 to-amber-50">
+                {/* Entree image placeholder */}
               </div>
               <div className="p-6">
-                <div className="text-red-600 font-semibold text-sm mb-2">ENTRÉE</div>
+                <div className="text-amber-600 font-semibold text-sm mb-2">ENTRÉE</div>
                 <h3 className="font-bold text-xl text-foreground mb-2">Osso Buco</h3>
                 <p className="text-text-light text-sm mb-4">
                   Braised veal shank, saffron risotto, gremolata
@@ -136,11 +137,11 @@ export default function RestaurantSample() {
 
             {/* Dessert */}
             <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <p className="text-gray-500">[Dessert Image]</p>
+              <div className="h-48 bg-gradient-to-br from-amber-100 to-amber-50">
+                {/* Dessert image placeholder */}
               </div>
               <div className="p-6">
-                <div className="text-red-600 font-semibold text-sm mb-2">DESSERT</div>
+                <div className="text-amber-600 font-semibold text-sm mb-2">DESSERT</div>
                 <h3 className="font-bold text-xl text-foreground mb-2">Tiramisu</h3>
                 <p className="text-text-light text-sm mb-4">
                   Classic preparation with espresso-soaked ladyfingers
@@ -153,7 +154,7 @@ export default function RestaurantSample() {
           <div className="text-center">
             <Link 
               href="#" 
-              className="inline-flex items-center px-8 py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition-all transform hover:scale-105"
+              className="inline-flex items-center px-8 py-4 bg-amber-600 text-white font-bold rounded-xl hover:bg-amber-700 transition-all transform hover:scale-105"
             >
               View Full Menu
               <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -175,7 +176,7 @@ export default function RestaurantSample() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-2xl">📅</span>
                   </div>
                   <div>
@@ -186,7 +187,7 @@ export default function RestaurantSample() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-2xl">🛍️</span>
                   </div>
                   <div>
@@ -197,7 +198,7 @@ export default function RestaurantSample() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-2xl">⭐</span>
                   </div>
                   <div>
@@ -214,7 +215,7 @@ export default function RestaurantSample() {
             <div className="relative">
               <div className="mx-auto w-64 bg-gray-900 rounded-[2.5rem] p-1 shadow-2xl">
                 <div className="bg-white rounded-[2.2rem] overflow-hidden h-[500px]">
-                  <div className="bg-red-600 text-white p-4">
+                  <div className="bg-amber-600 text-white p-4">
                     <h4 className="font-bold text-lg">Reservation Confirmed! 🎉</h4>
                   </div>
                   <div className="p-4 space-y-4">
@@ -224,13 +225,110 @@ export default function RestaurantSample() {
                     </div>
                     <div className="bg-gray-50 rounded-lg p-4">
                       <p className="text-sm text-gray-600 mb-2">We'll send you a reminder 2 hours before your reservation.</p>
-                      <button className="text-red-600 font-semibold text-sm">Add to Calendar</button>
+                      <button className="text-amber-600 font-semibold text-sm">Add to Calendar</button>
                     </div>
                     <div className="text-center pt-4">
                       <p className="text-xs text-gray-500">Powered by automation that actually works</p>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Restaurant Features - Value Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
+              What Makes Us Special
+            </h2>
+            <p className="text-xl text-text-light max-w-2xl mx-auto">
+              More than just great food – it's the complete experience
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Outdoor Dining */}
+            <div className="bg-gradient-to-br from-sage-light/10 to-sage-light/5 rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">🌳</div>
+              <h3 className="font-bold text-xl text-foreground mb-3">Outdoor Patio</h3>
+              <p className="text-text-light">
+                Beautiful garden seating for 40+ guests. Perfect for date nights under the stars.
+              </p>
+            </div>
+
+            {/* Happy Hour */}
+            <div className="bg-gradient-to-br from-amber-100 to-amber-50 rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">🎉</div>
+              <h3 className="font-bold text-xl text-foreground mb-3">Daily Happy Hour</h3>
+              <p className="text-text-light">
+                Half-price appetizers and $5 wines. Every weekday 4-6 PM.
+              </p>
+            </div>
+
+            {/* Private Events */}
+            <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">🎆</div>
+              <h3 className="font-bold text-xl text-foreground mb-3">Private Events</h3>
+              <p className="text-text-light">
+                Host your special occasions. Private dining room seats up to 50.
+              </p>
+            </div>
+
+            {/* Local Sourced */}
+            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">🌾</div>
+              <h3 className="font-bold text-xl text-foreground mb-3">Farm to Table</h3>
+              <p className="text-text-light">
+                Locally sourced from Connecticut farms. Menu changes with the seasons.
+              </p>
+            </div>
+          </div>
+
+          {/* Special Features Grid */}
+          <div className="mt-16 bg-gradient-to-br from-gray-50 to-white rounded-3xl p-12 border border-gray-100">
+            <h3 className="font-display font-bold text-3xl text-foreground mb-8 text-center">
+              Features That Fill Tables
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-center">
+                <svg className="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-foreground">Live music every Friday & Saturday</span>
+              </div>
+              <div className="flex items-center">
+                <svg className="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-foreground">Wine pairing dinners monthly</span>
+              </div>
+              <div className="flex items-center">
+                <svg className="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-foreground">Gluten-free & vegan options</span>
+              </div>
+              <div className="flex items-center">
+                <svg className="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-foreground">Kids eat free on Sundays</span>
+              </div>
+              <div className="flex items-center">
+                <svg className="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-foreground">Chef's tasting menu available</span>
+              </div>
+              <div className="flex items-center">
+                <svg className="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-foreground">Full bar with craft cocktails</span>
               </div>
             </div>
           </div>
@@ -291,7 +389,7 @@ export default function RestaurantSample() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-6">
             Ready for a Website That Works This Hard?
@@ -301,7 +399,7 @@ export default function RestaurantSample() {
           </p>
           <Link 
             href="/contact" 
-            className="inline-flex items-center px-8 py-4 bg-white text-red-600 font-bold rounded-xl hover:bg-white/90 transition-all transform hover:scale-105"
+            className="inline-flex items-center px-8 py-4 bg-white text-amber-700 font-bold rounded-xl hover:bg-white/90 transition-all transform hover:scale-105"
           >
             Get Your Restaurant Online
             <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
