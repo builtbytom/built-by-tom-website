@@ -53,8 +53,8 @@ export default function WebsiteAudit() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <span className="font-semibold text-foreground">30-minute live review call</span>
-                    <p className="text-sm text-text-light">We&apos;ll screen share and go through your site together - you can ask questions in real-time</p>
+                    <span className="font-semibold text-foreground">1-hour live review call</span>
+                    <p className="text-sm text-text-light">We&apos;ll screen share and go through your website AND discuss automation opportunities - with time for all your questions</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -246,8 +246,8 @@ export default function WebsiteAudit() {
                   We have our live review call
                 </h3>
                 <p className="text-text-light">
-                  We&apos;ll hop on a 30-minute screen share call where I walk through your site 
-                  and systems. You can ask questions and we can dig into what matters most to you.
+                  We&apos;ll hop on a 1-hour screen share call where I thoroughly review your website 
+                  AND identify automation opportunities. Plenty of time to dig into what matters most to you.
                 </p>
               </div>
             </div>

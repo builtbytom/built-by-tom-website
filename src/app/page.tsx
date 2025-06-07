@@ -36,7 +36,7 @@ export default function Home() {
                   </div>
                   {/* Quick credibility */}
                   <div className="absolute -bottom-2 -right-2 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 text-xs font-bold text-foreground shadow-lg">
-                    20+ Years
+                    20+ Years Experience
                   </div>
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default function Home() {
                 >
                   <span className="flex items-center justify-center">
                     <span className="text-xl mr-2">🔍</span>
-                    $297 Website Audit
+                    $297 Website & Systems Review
                   </span>
                 </Link>
               </div>
