@@ -24,7 +24,7 @@ export default function About() {
               {/* Value badge - impactful */}
               <div className="mb-8">
                 <div className="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl shadow-2xl">
-                  <span className="text-3xl font-bold">Scaled to $17M</span>
+                  <span className="text-2xl font-bold">Scaled a Real Business</span>
                   <span className="mx-3 text-gray-300">|</span>
                   <span className="text-lg font-medium">Learned What Works</span>
                 </div>
@@ -75,13 +75,13 @@ export default function About() {
                 <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="font-medium">Built Custom WMS</span>
+                <span className="font-medium">Built Custom Systems</span>
               </div>
               <div className="flex items-center text-white/80">
                 <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="font-medium">Real Solutions</span>
+                <span className="font-medium">Practical Results</span>
               </div>
             </div>
             
@@ -208,7 +208,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
-              How Scaling to $17M Taught Me
+              How Building a Business Taught Me
               <span className="block text-primary">About Chaos & Calm</span>
             </h2>
             <p className="text-xl text-text-light max-w-3xl mx-auto">
@@ -269,9 +269,9 @@ export default function About() {
                   </div>
                   <div className="ml-8 flex-1">
                     <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100">
-                      <h3 className="font-display font-bold text-2xl text-foreground mb-4">$17M Annual Peak = $17M Worth of Problems</h3>
+                      <h3 className="font-display font-bold text-2xl text-foreground mb-4">Success Created Its Own Problems</h3>
                       <p className="text-lg text-foreground leading-relaxed mb-4">
-                        We bootstrapped that FBA company from zero, and as we scaled past $100M in total sales ($17M annually), I hit a wall. Our biggest &apos;success&apos; was creating our biggest nightmare: inventory chaos. We were drowning in stock we couldn&apos;t track.
+                        We bootstrapped that FBA company from zero, and as we scaled to multi-million dollar sales, I hit a wall. Our biggest &apos;success&apos; was creating our biggest nightmare: inventory chaos. We were drowning in stock we couldn&apos;t track.
                       </p>
                       <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                         <p className="text-red-700 font-semibold text-sm">Reality Check: Off-the-shelf software was too expensive, too complex, or just plain wrong.</p>
@@ -292,7 +292,7 @@ export default function About() {
                     <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100">
                       <h3 className="font-display font-bold text-2xl text-foreground mb-4">So I Did What Small Business Owners Do: I Figured It Out</h3>
                       <p className="text-lg text-foreground leading-relaxed mb-4">
-                        Fueled by about 3,000 YouTube videos and sheer determination, I built a custom Warehouse Management System from scratch using Google Sheets and AppSheet. It wasn&apos;t fancy, but it worked. It tracked every single item, every order, every expiration date.
+                        Fueled by about 3,000 YouTube videos and sheer determination, I built a custom inventory tracking system from scratch using Google Sheets and AppSheet. Think of it like a super-powered spreadsheet that tracked every single item, order, and expiration date automatically. It wasn&apos;t fancy, but it worked.
                       </p>
                       <div className="bg-accent/5 rounded-lg p-4">
                         <p className="text-accent font-semibold text-sm">The Breakthrough: It was the &apos;calm&apos; I desperately needed in that specific storm.</p>

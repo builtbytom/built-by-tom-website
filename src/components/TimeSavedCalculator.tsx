@@ -7,14 +7,20 @@ export default function TimeSavedCalculator() {
   const [followUpTime, setFollowUpTime] = useState(3);
   const [missedAppointments, setMissedAppointments] = useState(5);
   
-  // Calculate time wasted
-  const weeklyTimeWasted = (leads * followUpTime * 0.15) + (missedAppointments * 0.5);
-  const monthlyTimeWasted = weeklyTimeWasted * 4.3;
+  // Calculate time wasted (all in hours per month)
+  // Lead follow-up: leads/week × minutes × 4.3 weeks × 60% actually followed up ÷ 60 minutes
+  const monthlyLeadTime = (leads * followUpTime * 4.3 * 0.6) / 60;
+  // Missed appointments: already monthly, each wastes 30 minutes
+  const monthlyMissedTime = missedAppointments * 0.5;
+  
+  // Total monthly time wasted (capped at realistic 20 hours/month max)
+  const monthlyTimeWasted = Math.min(monthlyLeadTime + monthlyMissedTime, 20);
   const yearlyTimeWasted = monthlyTimeWasted * 12;
   
   // Calculate money lost (assuming $75/hour for business owner time)
   const monthlyMoneyLost = monthlyTimeWasted * 75;
-  const paybackWeeks = 797 / (weeklyTimeWasted * 75);
+  const weeklyTimeWasted = monthlyTimeWasted / 4.3;
+  const paybackWeeks = weeklyTimeWasted > 0 ? 797 / (weeklyTimeWasted * 75) : 99;
 
   return (
     <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-gray-100">

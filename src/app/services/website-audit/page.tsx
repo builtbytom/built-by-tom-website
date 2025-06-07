@@ -2,8 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Website Reality Check - $297 | Built By Tom',
-  description: 'Get an honest assessment of your website with actionable recommendations. 30-minute video review + written report. 100% applicable to any project.',
+  title: 'Website & Systems Review - $297 | Built By Tom',
+  description: 'Get a complete review of your website AND business systems with actionable recommendations. Live 30-minute call + written report. 100% applicable to any project.',
 };
 
 export default function WebsiteAudit() {
@@ -26,12 +26,12 @@ export default function WebsiteAudit() {
             </div>
             
             <h1 className="font-display font-bold text-5xl lg:text-6xl text-white mb-6">
-              Website Reality Check
+              Website & Systems Review
             </h1>
             
             <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Not sure if your website needs a complete overhaul or just some tweaks? 
-              Let&apos;s find out together with an honest, no-BS assessment.
+              Get a complete review of your website AND discover automation opportunities 
+              that could save you 10+ hours per week. All in one comprehensive review.
             </p>
 
             {/* Clear Value Prop */}
@@ -53,8 +53,8 @@ export default function WebsiteAudit() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <span className="font-semibold text-foreground">30-minute personalized video review</span>
-                    <p className="text-sm text-text-light">I&apos;ll walk through your site and show you exactly what&apos;s working and what isn&apos;t</p>
+                    <span className="font-semibold text-foreground">30-minute live review call</span>
+                    <p className="text-sm text-text-light">We&apos;ll screen share and go through your site together - you can ask questions in real-time</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -62,8 +62,8 @@ export default function WebsiteAudit() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <span className="font-semibold text-foreground">Written report with your top 5 priorities</span>
-                    <p className="text-sm text-text-light">Clear, actionable steps you can take right away (or have me handle)</p>
+                    <span className="font-semibold text-foreground">Website + automation opportunities report</span>
+                    <p className="text-sm text-text-light">Your top 5 website fixes PLUS 3-5 automation ideas to save time</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -81,7 +81,7 @@ export default function WebsiteAudit() {
                 href="/contact?service=website-audit" 
                 className="block w-full text-center bg-primary text-white py-4 px-8 rounded-xl font-bold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
               >
-                Get My Website Reality Check
+                Get My Complete Review
               </Link>
             </div>
           </div>
@@ -243,11 +243,11 @@ export default function WebsiteAudit() {
               </div>
               <div>
                 <h3 className="font-bold text-xl text-foreground mb-2">
-                  You get your video review + report
+                  We have our live review call
                 </h3>
                 <p className="text-text-light">
-                  Within 3 business days, you&apos;ll receive a personalized video walking through your site 
-                  plus a written report with your top 5 action items.
+                  We&apos;ll hop on a 30-minute screen share call where I walk through your site 
+                  and systems. You can ask questions and we can dig into what matters most to you.
                 </p>
               </div>
             </div>
@@ -261,8 +261,8 @@ export default function WebsiteAudit() {
                   You decide what&apos;s next
                 </h3>
                 <p className="text-text-light">
-                  Take the recommendations and run with them yourself, or apply the full $297 toward 
-                  a website project with me. No pressure either way.
+                  You&apos;ll get a written report with all recommendations. Implement them yourself 
+                  or apply the full $297 toward any website or automation project. Your choice.
                 </p>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function WebsiteAudit() {
               href="/contact?service=website-audit" 
               className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
             >
-              Start My Website Reality Check
+              Book My Review Call
               <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

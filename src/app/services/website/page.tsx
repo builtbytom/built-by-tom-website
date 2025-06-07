@@ -33,7 +33,7 @@ export default function WebsiteServices() {
             {/* Main message - tighter spacing */}
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-6 sm:mb-4 leading-[0.9]">
               Let&apos;s Get Your Website
-              <span className="block bg-gradient-to-r from-sage-light via-accent to-white bg-clip-text text-transparent mt-2" style={{ 
+              <span className="block bg-gradient-to-r from-sage-light via-accent to-white bg-clip-text text-transparent mt-2 leading-[1.1]" style={{ 
                 backgroundSize: '200% 200%',
                 animation: 'gradient 3s ease infinite'
               }}>
@@ -115,7 +115,7 @@ export default function WebsiteServices() {
               <span className="block text-primary">Truth</span>
             </h2>
             <p className="text-xl text-text-light max-w-3xl mx-auto">
-              Your competitors&apos; sites look better. Load faster. Show up first on Google. And that&apos;s where your customers are going.
+              If your website isn&apos;t working properly, you&apos;re missing opportunities to grow your business.
             </p>
           </div>
 
@@ -132,7 +132,7 @@ export default function WebsiteServices() {
                   They pinch. They zoom. They squint. Then they leave. 74% of people will never return to a site that doesn&apos;t work on mobile.
                 </p>
                 <div className="text-red-600 font-semibold">
-                  You&apos;re literally pushing customers away
+                  Mobile-friendly sites get more business
                 </div>
               </div>
             </div>
@@ -142,13 +142,13 @@ export default function WebsiteServices() {
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
                 <div className="text-6xl mb-6">🔍</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                  Google Can&apos;t Find You
+                  Missing From Search Results
                 </h3>
                 <p className="text-text-light mb-6 leading-relaxed">
-                  Someone searches &ldquo;[your service] near me&rdquo; and your competition shows up instead. Every day. All day. Meanwhile, your phone stays silent.
+                  When people search for your services online, they need to find you easily. If your site isn&apos;t optimized, you&apos;re missing those opportunities.
                 </p>
                 <div className="text-orange-600 font-semibold">
-                  Invisible = Out of business
+                  Better search visibility = More customers
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function WebsiteServices() {
                   Flash animations. Tiny text. Broken forms. It screams &ldquo;we don&apos;t care about details&rdquo; so what else are you neglecting? First impressions matter more than ever.
                 </p>
                 <div className="text-gray-600 font-semibold">
-                  Old website = Dying business
+                  Modern websites build trust
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function WebsiteServices() {
 
           <div className="text-center">
             <p className="text-2xl text-foreground font-semibold">
-              Every day you wait is another day of lost customers.
+              Let&apos;s build something that works better for your business.
             </p>
           </div>
         </div>
@@ -197,7 +197,7 @@ export default function WebsiteServices() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="bg-white rounded-2xl shadow-2xl overflow-hidden h-96 relative">
-                  <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold z-10">BEFORE</div>
+                  <div className="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 rounded-bl-xl text-xs font-bold z-10">BEFORE</div>
                   {/* Fake Crappy Website */}
                   <div className="bg-gradient-to-b from-blue-600 to-blue-800 p-4 text-white text-center">
                     <h1 className="text-lg font-bold mb-2">WELCOME TO OUR WEBSITE!!!</h1>
@@ -227,7 +227,7 @@ export default function WebsiteServices() {
               
               <div>
                 <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                  <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold z-10">AFTER</div>
+                  <div className="absolute top-0 right-0 bg-green-500 text-white px-3 py-1 rounded-bl-xl text-xs font-bold z-10">AFTER</div>
                   <Image 
                     src="/bagel-bliss.png" 
                     alt="Bagel Shop Website Transformation"
@@ -243,7 +243,7 @@ export default function WebsiteServices() {
             <div className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-white">
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-5xl font-bold mb-2">312%</div>
+                  <div className="text-5xl font-bold mb-2">3x</div>
                   <div className="text-white/80">More mobile traffic</div>
                 </div>
                 <div>
@@ -406,10 +406,10 @@ export default function WebsiteServices() {
           <div className="text-center mt-16">
             <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100 max-w-3xl mx-auto">
               <p className="text-2xl font-bold text-foreground mb-4">
-                While your competitors design pretty desktop sites...
+                Smart businesses prioritize mobile design
               </p>
               <p className="text-xl text-primary font-semibold">
-                You'll dominate the mobile experience where customers actually are.
+                because that&apos;s where your customers are searching from.
               </p>
             </div>
           </div>
@@ -516,10 +516,10 @@ export default function WebsiteServices() {
           <div className="text-center mt-16">
             <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20">
               <p className="text-2xl font-bold text-foreground mb-4">
-                While your competitors figure this out in 2-3 years...
+                Get ahead of the curve with AI-optimized content
               </p>
               <p className="text-xl text-accent font-semibold">
-                You&apos;ll already be dominating AI search results.
+                that helps customers find you through modern search.
               </p>
             </div>
           </div>
@@ -548,7 +548,7 @@ export default function WebsiteServices() {
               
               <div className="text-center mb-12 lg:mt-8">
                 <div className="text-6xl lg:text-7xl font-bold text-foreground mb-4">$3,500</div>
-                <div className="text-lg lg:text-xl text-text-light">Custom-coded • 3-week delivery • Zero monthly fees</div>
+                <div className="text-lg lg:text-xl text-text-light">Mobile-first • Google-optimized • 3 weeks or less • Zero monthly fees</div>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-8 mb-12">
@@ -650,7 +650,7 @@ export default function WebsiteServices() {
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
-              3 Weeks to
+              3 Weeks or Less to
               <span className="block text-primary">Launch</span>
             </h2>
             <p className="text-xl text-text-light max-w-2xl mx-auto">
@@ -837,7 +837,7 @@ export default function WebsiteServices() {
               </p>
               <div className="bg-white p-4 rounded-lg border-l-4 border-primary">
                 <p className="text-foreground font-semibold text-sm">
-                  💡 Do the math: $30/month = $1,080 in 3 years. My $3,500 site pays for itself and you only pay $12/year for your domain.
+                  💡 Consider this: Many platforms charge $30+/month forever. That's over $1,000 in 3 years, and you still don't own your site.
                 </p>
               </div>
             </div>
@@ -856,7 +856,7 @@ export default function WebsiteServices() {
                 How is this different from other web designers?
               </h3>
               <p className="text-text-light">
-                I&apos;ve scaled a business to $17M. I know what actually drives sales. This isn&apos;t about making pretty pictures. It&apos;s about psychology-first design that turns visitors into customers. Plus, you get a free business audit to find other ways to save time and make money.
+                I bring 20+ years of business systems experience. I focus on what actually drives results: mobile-first design, proper Google optimization, and psychology that turns visitors into customers. Plus, every project includes a business audit to identify quick wins.
               </p>
             </div>
           </div>
@@ -872,10 +872,10 @@ export default function WebsiteServices() {
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Your Competition Already Has a Better Website
+            Ready to Get Your Website Working?
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Every day you wait is another day they&apos;re stealing your customers. Let&apos;s fix that.
+            Let&apos;s build something that actually brings in business. Mobile-first, Google-ready, and designed to convert.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -883,19 +883,9 @@ export default function WebsiteServices() {
               href="/contact" 
               className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              Fix My Website Now
+              Start My Website Project
               <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-            
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center px-8 py-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-2xl hover:bg-white/20 transition-all duration-300"
-            >
-              Book a Free 15-Min Call
-              <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </Link>
           </div>

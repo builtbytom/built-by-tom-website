@@ -96,7 +96,7 @@ export default function Home() {
                   <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>20+ Years Experience</span>
+                  <span>20+ Years Business Systems</span>
                 </div>
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
@@ -195,7 +195,7 @@ export default function Home() {
                   Websites That Actually Work
                 </h3>
                 <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
-                  Clean, fast sites that turn “browsers” into buyers. Built in 3 weeks, not 3 months of back-and-forth hell.
+                  Custom-built sites that turn “browsers” into buyers. Built in 3 weeks or less, not months of endless revisions.
                 </p>
                 <div className="bg-teal-50 rounded-xl p-4 mb-8 border border-teal-200">
                   <div className="text-sm text-teal-800 font-semibold flex items-center">
@@ -234,7 +234,7 @@ export default function Home() {
                   Automate Repetitive Tasks
                 </h3>
                 <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
-                  Automate the soul-crushing stuff. Appointment reminders, follow-ups, all that “I should really do this” work.
+                  Automate the repetitive stuff. Appointment reminders, follow-ups, all that “I should really do this” work.
                 </p>
                 <div className="bg-purple-50 rounded-xl p-4 mb-8 border border-purple-200">
                   <div className="text-sm text-purple-800 font-semibold flex items-center">
@@ -251,7 +251,7 @@ export default function Home() {
                     href="/services/automation" 
                     className="block w-full text-center bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-4 px-8 rounded-xl font-bold hover:from-purple-800 hover:to-indigo-800 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-105"
                   >
-                    Automate My Chaos →
+                    Start Automating →
                   </Link>
                 </div>
               </div>
@@ -278,7 +278,7 @@ export default function Home() {
                 <div className="bg-emerald-50 rounded-xl p-4 mb-8 border border-emerald-200">
                   <div className="text-sm text-emerald-800 font-semibold flex items-center">
                     <span className="text-lg mr-2">🏆</span>
-                    Save $594 vs separate • All automation packages • 60-day hand-holding
+                    Save $594 vs separate • All automation packages • 60-day support
                   </div>
                 </div>
                 <div className="mb-8">
@@ -687,7 +687,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-display font-bold text-5xl lg:text-6xl text-foreground mb-8">
-              Ready to stop wrestling with tech?
+              Real Results From Real Business Owners
             </h2>
           </div>
           

@@ -266,7 +266,7 @@ export default function AutomationServices() {
             <div className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-white">
               <div className="text-center mb-8">
                 <h3 className="font-display font-bold text-3xl mb-4">Why Automation Wins</h3>
-                <p className="text-white/90 text-lg">Numbers don&apos;t lie. Faster response = more customers.</p>
+                <p className="text-white/90 text-lg">Industry research shows faster response leads to more customers.</p>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -310,7 +310,7 @@ export default function AutomationServices() {
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
             {/* Lead Response Automation */}
-            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-10 border-2 border-primary/20 relative shadow-2xl">
+            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-10 border-2 border-indigo-200 relative shadow-2xl hover:shadow-indigo-300/50 transition-all duration-300">
               <div className="absolute -top-4 left-6 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
                 Most Popular
               </div>
@@ -369,7 +369,7 @@ export default function AutomationServices() {
             </div>
 
             {/* Appointment Automation */}
-            <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100 relative">
+            <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-10 shadow-2xl border-2 border-teal-200 relative hover:shadow-teal-300/50 transition-all duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-secondary to-sage-light rounded-2xl flex items-center justify-center mb-8 shadow-lg">
                 <span className="text-2xl text-white">📅</span>
               </div>
@@ -424,7 +424,7 @@ export default function AutomationServices() {
             </div>
 
             {/* Review Automation */}
-            <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100 relative">
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-10 shadow-2xl border-2 border-amber-200 relative hover:shadow-amber-300/50 transition-all duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
                 <span className="text-2xl text-white">⭐</span>
               </div>
@@ -642,10 +642,10 @@ export default function AutomationServices() {
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Stop Doing What Robots Should Do
+            Ready to Automate Your Business?
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Every day you wait is another day of manual work that could be automated. Let&apos;s fix that.
+            Let&apos;s free up your time to focus on what really matters: growing your business and serving customers.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

@@ -47,11 +47,8 @@ export default function WhatTomFixesPreview() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-lg text-foreground font-semibold mb-4">
-            Not sure which one is your biggest headache?
-          </p>
-          <p className="text-text-light">
-            Take the quick assessment below ↓
+          <p className="text-lg text-foreground font-semibold">
+            Not sure which one is your biggest headache? Let's talk about it.
           </p>
         </div>
       </div>

@@ -45,21 +45,21 @@ export default function CompleteSystemServices() {
             </p>
             
             {/* What's included - visual */}
-            <div className="sm:grid sm:grid-cols-3 flex gap-4 mb-12 sm:mb-10 max-w-3xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                <div className="text-2xl mb-1">📧</div>
-                <div className="text-white font-bold">Lead Response</div>
-                <div className="text-white/70 text-sm hidden sm:block">Instant follow-up</div>
+            <div className="grid grid-cols-3 gap-4 mb-12 sm:mb-10 max-w-3xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm px-2 sm:px-4 py-3 rounded-xl border border-white/20">
+                <div className="text-2xl mb-1 text-center">📧</div>
+                <div className="text-white font-bold text-sm sm:text-base text-center">Lead Response</div>
+                <div className="text-white/70 text-xs hidden sm:block text-center">Instant follow-up</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20 hidden sm:block">
-                <div className="text-2xl mb-1">📅</div>
-                <div className="text-white font-bold">Appointments</div>
-                <div className="text-white/70 text-sm">Zero no-shows</div>
+              <div className="bg-white/10 backdrop-blur-sm px-2 sm:px-4 py-3 rounded-xl border border-white/20">
+                <div className="text-2xl mb-1 text-center">📅</div>
+                <div className="text-white font-bold text-sm sm:text-base text-center">Appointments</div>
+                <div className="text-white/70 text-xs hidden sm:block text-center">Zero no-shows</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20 hidden sm:block">
-                <div className="text-2xl mb-1">⭐</div>
-                <div className="text-white font-bold">Reviews</div>
-                <div className="text-white/70 text-sm">5-star reputation</div>
+              <div className="bg-white/10 backdrop-blur-sm px-2 sm:px-4 py-3 rounded-xl border border-white/20">
+                <div className="text-2xl mb-1 text-center">⭐</div>
+                <div className="text-white font-bold text-sm sm:text-base text-center">Reviews</div>
+                <div className="text-white/70 text-xs hidden sm:block text-center">5-star reputation</div>
               </div>
             </div>
             
@@ -230,7 +230,7 @@ export default function CompleteSystemServices() {
             
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-5xl font-bold mb-2">85%</div>
+                <div className="text-5xl font-bold mb-2">75%</div>
                 <div className="text-white/80">Fewer missed opportunities</div>
               </div>
               <div>
@@ -238,8 +238,8 @@ export default function CompleteSystemServices() {
                 <div className="text-white/80">Average time saved per week</div>
               </div>
               <div>
-                <div className="text-5xl font-bold mb-2">240%</div>
-                <div className="text-white/80">Increase in 5-star reviews</div>
+                <div className="text-5xl font-bold mb-2">2x</div>
+                <div className="text-white/80">More 5-star reviews</div>
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@ export default function CompleteSystemServices() {
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
             {/* Lead Response Automation */}
-            <div className="bg-white rounded-3xl p-8 shadow-2xl border border-primary/20 relative">
+            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-8 shadow-2xl border-2 border-indigo-200 relative hover:shadow-indigo-300/50 transition-all duration-300">
               <div className="absolute -top-4 left-6 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
                 Included
               </div>
@@ -307,7 +307,7 @@ export default function CompleteSystemServices() {
             </div>
 
             {/* Appointment Automation */}
-            <div className="bg-white rounded-3xl p-8 shadow-2xl border border-secondary/20 relative">
+            <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-8 shadow-2xl border-2 border-teal-200 relative hover:shadow-teal-300/50 transition-all duration-300">
               <div className="absolute -top-4 left-6 bg-secondary text-white px-4 py-2 rounded-full text-sm font-bold">
                 Included
               </div>
@@ -353,7 +353,7 @@ export default function CompleteSystemServices() {
             </div>
 
             {/* Review Automation */}
-            <div className="bg-white rounded-3xl p-8 shadow-2xl border border-accent/20 relative">
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 shadow-2xl border-2 border-amber-200 relative hover:shadow-amber-300/50 transition-all duration-300">
               <div className="absolute -top-4 left-6 bg-accent text-white px-4 py-2 rounded-full text-sm font-bold">
                 Included
               </div>
@@ -402,7 +402,7 @@ export default function CompleteSystemServices() {
           {/* Pricing Card */}
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-12 border-2 border-primary/20 relative shadow-2xl">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg">
+              <div className="lg:absolute lg:-top-6 lg:left-1/2 lg:transform lg:-translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-bold shadow-lg mb-6 lg:mb-0 inline-block">
                 Complete Business Transformation
               </div>
               
@@ -487,7 +487,7 @@ export default function CompleteSystemServices() {
                 href="/contact" 
                 className="block w-full text-center bg-primary text-white py-6 px-8 rounded-xl text-xl font-bold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
               >
-                Transform My Business →
+                Start My Complete System →
               </Link>
 
               <p className="text-center text-sm text-text-light mt-6">
@@ -694,19 +694,9 @@ export default function CompleteSystemServices() {
               href="/contact" 
               className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              Transform My Business Now
+              Start My Complete System
               <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-            
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center px-8 py-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-2xl hover:bg-white/20 transition-all duration-300"
-            >
-              Schedule Discovery Call
-              <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </Link>
           </div>
