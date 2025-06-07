@@ -60,7 +60,7 @@ export default function About() {
             
               {/* Supporting text - concise with credibility */}
               <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto lg:mx-0 leading-tight">
-                Drowning in manual tasks. Losing customers to chaos. I fixed it for myself. Now I fix it for you.
+                I&apos;ve built the systems, made the mistakes, and learned what works. Now I help you skip the painful parts.
               </p>
             
               {/* Credibility points */}

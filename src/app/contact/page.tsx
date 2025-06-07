@@ -52,12 +52,12 @@ export default function Contact() {
             
             {/* Main Heading with Better Mobile Sizing */}
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-6 leading-[0.9]">
-              <span className="block mb-2">Let's Skip the</span>
+              <span className="block mb-2">Let's Have an</span>
               <span className="block bg-gradient-to-r from-accent via-white to-sage-light bg-clip-text text-transparent pb-2" style={{ 
                 backgroundSize: '200% 200%',
                 animation: 'gradient 4s ease infinite'
               }}>
-                Song & Dance
+                Honest Conversation
               </span>
             </h1>
             
@@ -65,7 +65,7 @@ export default function Contact() {
             <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-tight">
               You tell me what's broken. I'll tell you how to fix it.
               <span className="block mt-2 text-base sm:text-lg lg:text-xl text-white/70">
-                No discovery calls, no upsells, no "let me check with my team."
+                Direct communication, transparent pricing, immediate answers.
               </span>
             </p>
             

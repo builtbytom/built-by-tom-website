@@ -231,7 +231,7 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-6">
-                  Stop Doing Robot Work
+                  Automate Repetitive Tasks
                 </h3>
                 <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
                   Automate the soul-crushing stuff. Appointment reminders, follow-ups, all that “I should really do this” work.

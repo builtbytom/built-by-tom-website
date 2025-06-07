@@ -26,7 +26,7 @@ export default function LandscapersPage() {
     },
     {
       icon: '🚛',
-      title: 'Competing with "Guy with a Truck"',
+      title: 'Standing Out in a Competitive Market',
       problem: 'You\'re licensed, insured, and professional. But customers keep choosing whoever\'s cheapest. You bid $150 for a job that takes skill and the right equipment. "Guy with a truck" says he\'ll do it for $50. Customer goes with him, then calls you three weeks later asking if you can "fix what he messed up."'
     }
   ];
@@ -227,7 +227,7 @@ export default function LandscapersPage() {
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <div className="text-6xl mb-8">🎯</div>
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Stop Losing Good Jobs to Bad Systems
+            Win More Jobs with Better Systems
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
             If you're tired of chasing clients while you're on a mower, losing jobs during phone tag, and explaining why you're not the cheapest—let's fix it.

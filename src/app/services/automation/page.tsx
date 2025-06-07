@@ -126,7 +126,7 @@ export default function AutomationServices() {
                   Someone fills out your form at 11 PM. You see it Tuesday. They&apos;ve already hired your competitor who responded in 5 minutes.
                 </p>
                 <div className="text-red-600 font-semibold">
-                  Speed kills - slow kills you
+                  Fast response times win more business
                 </div>
               </div>
             </div>
@@ -136,14 +136,14 @@ export default function AutomationServices() {
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
                 <div className="text-6xl mb-6">📅</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                  No-Shows Kill Your
-                  <span className="block">Schedule</span>
+                  Keep Your Calendar
+                  <span className="block">Full & Profitable</span>
                 </h3>
                 <p className="text-text-light mb-6 leading-relaxed">
                   You block off time. They don&apos;t show. No reminder, no heads up, just an empty calendar slot and lost revenue.
                 </p>
                 <div className="text-orange-600 font-semibold">
-                  Empty calendars = empty wallets
+                  Consistent appointments mean steady revenue
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function AutomationServices() {
               <span className="block text-primary">Works</span>
             </h2>
             <p className="text-xl text-text-light max-w-3xl mx-auto">
-              Real systems for real businesses. No robots, no AI nonsense - just reliable automation that saves you hours every day.
+              Real systems for real businesses. Practical automation that fits your workflow and saves you hours every day.
             </p>
           </div>
 
