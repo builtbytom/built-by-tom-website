@@ -36,7 +36,7 @@ export default function Home() {
                   </div>
                   {/* Quick credibility */}
                   <div className="absolute -bottom-2 -right-2 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 text-xs font-bold text-foreground shadow-lg">
-                    $17M Built
+                    20+ Years
                   </div>
                 </div>
               </div>
@@ -57,12 +57,12 @@ export default function Home() {
 
               {/* Subheadline - Punchier on mobile */}
               <p className="text-xl sm:text-2xl lg:text-3xl text-white font-bold mb-3 sm:mb-4 tracking-wide">
-                Fix the mess. Build what&apos;s missing.
+                For business owners who need tech that just works.
               </p>
 
               {/* Supporting Text - Shorter on mobile */}
               <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 sm:mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                Websites and systems that just work. Built in days, not months.
+                I help small businesses escape tech chaos with websites and systems that actually work. No jargon, no overwhelm.
               </p>
 
               {/* Clean CTA Buttons - Stack on mobile */}
@@ -110,7 +110,7 @@ export default function Home() {
                   <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>No BS</span>
+                  <span>Honest Pricing</span>
                 </div>
               </div>
             </div>
@@ -137,8 +137,8 @@ export default function Home() {
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
                       <div className="text-xs">
-                        <div className="font-bold text-foreground">Scaled $17M Business</div>
-                        <div className="text-text-light">Real-world experience</div>
+                        <div className="font-bold text-foreground">Built & Scaled Businesses</div>
+                        <div className="text-text-light">Learned what actually works</div>
                       </div>
                     </div>
                   </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 
                 {/* Tagline under photo */}
                 <div className="text-center mt-6">
-                  <div className="text-white font-semibold text-lg">No BS, just results</div>
+                  <div className="text-white font-semibold text-lg">Here to help, not impress</div>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function Home() {
               How I Help
             </h2>
             <p className="text-xl text-text-light max-w-3xl mx-auto">
-              Pick your poison: slow death by a thousand manual tasks, or let me build you a way out.
+              Whether it&apos;s a broken website, endless manual tasks, or disconnected tools - I&apos;ve got a solution that fits.
             </p>
           </div>
 
@@ -207,7 +207,7 @@ export default function Home() {
                 </div>
                 <div className="mb-8">
                   <div className="text-4xl font-bold text-teal-700 mb-2">$3,500</div>
-                  <div className="text-sm text-text-light">One-time fee, no monthly hostage situation</div>
+                  <div className="text-sm text-text-light">One-time investment, no monthly fees</div>
                 </div>
                 <div className="mt-auto">
                   <Link 
@@ -272,7 +272,7 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-6">
-                  The Nuclear Option
+                  Complete Business Package
                 </h3>
                 <p className="text-text-light mb-8 text-lg leading-relaxed flex-grow">
                   All three automation packages working together. Your entire business runs itself while you do the work you actually love.
@@ -656,17 +656,17 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full mb-12 border border-white/20">
-            <span className="text-6xl font-bold text-sage-light">$17M</span>
+            <span className="text-5xl font-bold text-sage-light">20+</span>
           </div>
           
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Systems That Scale With You
+            Hard-Won Experience You Can Trust
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Scaled my first company to $17M, then lost it when our tools failed.
+            I&apos;ve built businesses from scratch, scaled them to millions, and yes - I&apos;ve watched them fail too. Those failures taught me what actually matters.
           </p>
           <p className="text-2xl font-semibold mb-8">
-            Now I build bulletproof systems so your growth never outpaces operations.
+            Now I help you avoid my expensive mistakes with systems that actually work.
           </p>
           <p className="text-lg text-white/80 mb-12">
             No jargon, no overwhelm. Just results.
