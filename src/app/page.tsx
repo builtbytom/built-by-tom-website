@@ -102,7 +102,7 @@ export default function Home() {
                   <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>Built in Days</span>
+                  <span>Built for Google AI</span>
                 </div>
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
@@ -154,6 +154,75 @@ export default function Home() {
 
       {/* Quick Problem Preview */}
       <WhatTomFixesPreview />
+
+      {/* Google AI Ready Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(66, 133, 244, 0.3) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+        
+        <div className="relative max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <div className="flex-1">
+                <div className="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  Future-Proof Your Business
+                </div>
+                <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-4">
+                  Built for How People Actually Search in 2025
+                </h2>
+                <p className="text-lg text-text-light mb-6">
+                  Google's AI now answers questions directly. If your website isn't built to feed it the right information, 
+                  you're invisible. I build sites that AI understands and recommends.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-foreground">
+                      <span className="font-semibold">Structured data</span> that tells AI exactly what you do
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-foreground">
+                      <span className="font-semibold">Clear answers</span> to questions your customers ask
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-foreground">
+                      <span className="font-semibold">Local signals</span> so AI knows you're the nearby expert
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-1/3 text-center">
+                <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+                  <div className="text-6xl mb-4">🤖</div>
+                  <p className="text-xl font-bold mb-2">Your Competition Isn't Ready</p>
+                  <p className="text-white/90">Most websites still build for 2015. Get ahead while they catch up.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Section - Colorful & Engaging */}
       <section id="services" className="py-24 bg-white relative overflow-hidden">
