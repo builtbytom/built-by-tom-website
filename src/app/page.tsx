@@ -80,14 +80,12 @@ export default function Home() {
                 </Link>
                 
                 <Link 
-                  href="#services" 
+                  href="/services/website-audit" 
                   className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
                 >
                   <span className="flex items-center justify-center">
-                    See How I Help
-                    <svg className="w-4 sm:w-5 h-4 sm:h-5 ml-2 inline-block group-hover:translate-y-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                    </svg>
+                    <span className="text-xl mr-2">🔍</span>
+                    $297 Website Audit
                   </span>
                 </Link>
               </div>

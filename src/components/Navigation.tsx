@@ -45,6 +45,11 @@ const Navigation = () => {
                 </button>
                 <div className="absolute left-0 mt-3 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-1">
                   <div className="py-3">
+                    <Link href="/services/website-audit" className="block px-6 py-3 text-sm text-foreground hover:bg-teal-50 hover:text-teal-700 font-medium transition-all duration-200">
+                      <span className="text-base mr-2">🔍</span>
+                      Website Audit - $297
+                    </Link>
+                    <div className="border-t border-gray-100 my-2"></div>
                     <Link href="/services/website" className="block px-6 py-3 text-sm text-foreground hover:bg-primary/10 hover:text-primary font-medium transition-all duration-200">
                       Website Fix
                     </Link>
@@ -140,6 +145,15 @@ const Navigation = () => {
             <div className="px-3 py-2">
               <div className="text-white text-sm font-medium mb-2">Services</div>
               <div className="pl-4 space-y-1">
+                <Link 
+                  href="/services/website-audit" 
+                  className="text-white/80 hover:text-white block py-1 text-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="mr-1">🔍</span>
+                  Website Audit - $297
+                </Link>
+                <div className="border-t border-white/20 my-2"></div>
                 <Link 
                   href="/services/website" 
                   className="text-white/80 hover:text-white block py-1 text-sm"
