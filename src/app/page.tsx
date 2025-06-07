@@ -150,25 +150,25 @@ export default function Home() {
           <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-6">
             It's OK. Really.
           </h2>
-          <div className="text-lg text-text-light space-y-4 max-w-3xl mx-auto">
-            <p>
-              <span className="font-semibold text-foreground">It's OK if your website is embarrassing.</span> Most are. 
-              That's why I exist.
+          <div className="text-base sm:text-lg text-text-light space-y-4 max-w-3xl mx-auto">
+            <p className="leading-relaxed">
+              <span className="font-semibold text-foreground block sm:inline">It's OK if your website is embarrassing.</span>
+              <span className="block sm:inline"> Most are. That's why I exist.</span>
             </p>
-            <p>
-              <span className="font-semibold text-foreground">It's OK if you don't have a website at all.</span> Better 
-              to start fresh than live with something broken.
+            <p className="leading-relaxed">
+              <span className="font-semibold text-foreground block sm:inline">It's OK if you don't have a website at all.</span>
+              <span className="block sm:inline"> Better to start fresh than live with something broken.</span>
             </p>
-            <p>
-              <span className="font-semibold text-foreground">It's OK if you don't understand tech.</span> You're 
-              good at your business. Let me handle the digital stuff.
+            <p className="leading-relaxed">
+              <span className="font-semibold text-foreground block sm:inline">It's OK if you don't understand tech.</span>
+              <span className="block sm:inline"> You're good at your business. Let me handle the digital stuff.</span>
             </p>
-            <p>
-              <span className="font-semibold text-foreground">It's OK if you're not sure what you need.</span> We'll 
-              figure it out together. No pressure, no judgment.
+            <p className="leading-relaxed">
+              <span className="font-semibold text-foreground block sm:inline">It's OK if you're not sure what you need.</span>
+              <span className="block sm:inline"> We'll figure it out together. No pressure, no judgment.</span>
             </p>
           </div>
-          <p className="text-xl text-primary font-semibold mt-8">
+          <p className="text-lg sm:text-xl text-primary font-semibold mt-8">
             You're not behind. You're exactly where you need to be.
           </p>
         </div>
