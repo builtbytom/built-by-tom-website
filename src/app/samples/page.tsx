@@ -14,8 +14,17 @@ export default function SamplesPage() {
       description: 'Modern Italian restaurant with online reservations, direct ordering, and automated review management.',
       features: ['Online Reservations', 'Direct Ordering', 'Review Automation', 'Mobile-First Design'],
       link: '/samples/restaurant',
-      color: 'from-red-600 to-red-700',
+      color: 'from-[#A86754] to-[#3B4A3F]',
       icon: '🍽️'
+    },
+    {
+      title: 'Landscaping Website',
+      subtitle: 'Sterling Scapes of CT',
+      description: 'Professional landscaping company with automated estimates, SMS scheduling, and project galleries.',
+      features: ['Instant Quote Requests', 'SMS Reminders', 'Before/After Gallery', 'Review Collection'],
+      link: '/samples/landscaper',
+      color: 'from-[#2C3E33] to-[#6A7A89]',
+      icon: '🌿'
     },
     // Future samples can be added here
   ];
