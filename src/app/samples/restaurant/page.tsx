@@ -360,42 +360,54 @@ export default function RestaurantSample() {
             <h3 className={`${playfair.className} font-bold text-3xl text-[#2D2A26] mb-8 text-center`}>
               Features That Fill Tables
             </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-center">
-                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-6 max-w-4xl mx-auto">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#2D2A26]">Live music every Friday & Saturday</span>
+                <span className="text-[#2D2A26]">Live jazz music every Friday & Saturday night from 7-10pm</span>
               </div>
-              <div className="flex items-center">
-                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#2D2A26]">Wine pairing dinners monthly</span>
+                <span className="text-[#2D2A26]">Monthly wine pairing dinners with guest sommeliers</span>
               </div>
-              <div className="flex items-center">
-                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#2D2A26]">Gluten-free & vegan options</span>
+                <span className="text-[#2D2A26]">Extensive gluten-free & vegan menu options available</span>
               </div>
-              <div className="flex items-center">
-                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#2D2A26]">Kids eat free on Sundays</span>
+                <span className="text-[#2D2A26]">Kids eat free every Sunday with adult entrée purchase</span>
               </div>
-              <div className="flex items-center">
-                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#2D2A26]">Chef's tasting menu available</span>
+                <span className="text-[#2D2A26]">Chef's seven-course tasting menu with wine pairings</span>
               </div>
-              <div className="flex items-center">
-                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#2D2A26]">Full bar with craft cocktails</span>
+                <span className="text-[#2D2A26]">Full bar featuring craft cocktails & 200+ wine selections</span>
+              </div>
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-[#2D2A26]">Complimentary anniversary dessert for special occasions</span>
+              </div>
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-[#3B4A3F] mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-[#2D2A26]">Award-winning Sunday brunch with bottomless mimosas</span>
               </div>
             </div>
           </div>
