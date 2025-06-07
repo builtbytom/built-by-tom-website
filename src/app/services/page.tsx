@@ -48,7 +48,7 @@ export default function Services() {
                 <div className="text-4xl mb-3">🌐</div>
                 <h3 className="font-bold text-foreground mb-2">Website Issues?</h3>
                 <p className="text-sm text-text-light">
-                  Looks bad on phones, can't be found on Google, or just embarrassing
+                  No website yet, looks outdated, or can't be found on Google
                 </p>
               </div>
               <div className="text-center">
@@ -316,7 +316,7 @@ export default function Services() {
                 href="/services/website" 
                 className="block w-full text-center bg-gradient-to-r from-teal-600 to-blue-700 text-white py-4 px-8 rounded-xl font-bold hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300"
               >
-                Fix My Website →
+                Explore Website Options →
               </Link>
             </div>
 
@@ -355,7 +355,7 @@ export default function Services() {
                 href="/services/automation" 
                 className="block w-full text-center bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-4 px-8 rounded-xl font-bold hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300"
               >
-                Start Automating →
+                Learn About Automation →
               </Link>
             </div>
 
@@ -397,7 +397,7 @@ export default function Services() {
                 href="/services/complete-system" 
                 className="block w-full text-center bg-gradient-to-r from-emerald-700 to-green-800 text-white py-4 px-8 rounded-xl font-bold hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-300"
               >
-                Transform Everything →
+                View Complete Package →
               </Link>
             </div>
           </div>

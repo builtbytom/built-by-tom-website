@@ -71,7 +71,7 @@ export default function AutomationServices() {
                 className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500 mb-4"
               >
                 <span className="flex items-center justify-center">
-                  Start Automating Now
+                  Learn How Automation Helps
                   <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -360,12 +360,9 @@ export default function AutomationServices() {
                 <div className="text-text-light">One-time setup</div>
               </div>
               
-              <Link 
-                href="/contact" 
-                className="block w-full text-center bg-primary text-white py-4 px-8 rounded-xl font-semibold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
-              >
-                Start Responding Instantly →
-              </Link>
+              <div className="text-center">
+                <p className="text-sm text-text-light">Perfect for service businesses</p>
+              </div>
             </div>
 
             {/* Appointment Automation */}
@@ -415,12 +412,9 @@ export default function AutomationServices() {
                 <div className="text-text-light">One-time setup</div>
               </div>
               
-              <Link 
-                href="/contact" 
-                className="block w-full text-center bg-primary text-white py-4 px-8 rounded-xl font-semibold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
-              >
-                Stop No-Shows Forever →
-              </Link>
+              <div className="text-center">
+                <p className="text-sm text-text-light">Ideal for appointment-based businesses</p>
+              </div>
             </div>
 
             {/* Review Automation */}
@@ -470,12 +464,9 @@ export default function AutomationServices() {
                 <div className="text-text-light">One-time setup</div>
               </div>
               
-              <Link 
-                href="/contact" 
-                className="block w-full text-center bg-primary text-white py-4 px-8 rounded-xl font-semibold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
-              >
-                Get More 5-Star Reviews →
-              </Link>
+              <div className="text-center">
+                <p className="text-sm text-text-light">Great for reputation management</p>
+              </div>
             </div>
           </div>
 
@@ -487,10 +478,10 @@ export default function AutomationServices() {
                 Most clients want the full automation suite. Bundle all three packages for just $1,797 and save $594.
               </p>
               <Link 
-                href="/services/complete-system" 
+                href="/contact" 
                 className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
               >
-                See Complete System Package
+                Explore Automation Options
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -642,7 +633,7 @@ export default function AutomationServices() {
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Ready to Automate Your Business?
+            See How Automation Can Help Your Business
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
             Let&apos;s free up your time to focus on what really matters: growing your business and serving customers.
@@ -653,19 +644,9 @@ export default function AutomationServices() {
               href="/contact" 
               className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              Automate My Business Now
+              Schedule a Consultation
               <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-            
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center px-8 py-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-2xl hover:bg-white/20 transition-all duration-300"
-            >
-              Book a Free Strategy Call
-              <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </Link>
           </div>

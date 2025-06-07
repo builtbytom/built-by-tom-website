@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ScorecardSection from '../components/ScorecardSection';
 import WhatTomFixesPreview from '../components/WhatTomFixesPreview';
+import TomsPromise from '../components/TomsPromise';
 
 export default function Home() {
   return (
@@ -62,30 +63,21 @@ export default function Home() {
 
               {/* Supporting Text - Shorter on mobile */}
               <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 sm:mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                I help small businesses escape tech chaos with websites and systems that actually work. No jargon, no overwhelm.
+                Whether you're starting fresh or fixing what's broken, I'll help you build systems that actually work. 
+                No judgment, no jargon, just solutions.
               </p>
 
-              {/* Clean CTA Buttons - Stack on mobile */}
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
+              {/* Clean CTA Button - Single, focused */}
+              <div className="flex justify-center lg:justify-start">
                 <Link 
                   href="/contact" 
                   className="group px-8 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500"
                 >
                   <span className="flex items-center justify-center">
-                    Start Here
+                    Let's Talk
                     <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                  </span>
-                </Link>
-                
-                <Link 
-                  href="/services/website-audit" 
-                  className="group px-6 sm:px-8 py-5 sm:py-6 border-2 border-white/40 text-white text-base sm:text-lg font-semibold rounded-2xl backdrop-blur-sm hover:bg-white/10 hover:border-white/60 transition-all duration-500"
-                >
-                  <span className="flex items-center justify-center">
-                    <span className="text-xl mr-2">🔍</span>
-                    $297 Website & Systems Review
                   </span>
                 </Link>
               </div>
@@ -149,6 +141,36 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Permission to Be Human Section */}
+      <section className="py-16 bg-white border-b">
+        <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-6">
+            It's OK. Really.
+          </h2>
+          <div className="text-lg text-text-light space-y-4 max-w-3xl mx-auto">
+            <p>
+              <span className="font-semibold text-foreground">It's OK if your website is embarrassing.</span> Most are. 
+              That's why I exist.
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">It's OK if you don't have a website at all.</span> Better 
+              to start fresh than live with something broken.
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">It's OK if you don't understand tech.</span> You're 
+              good at your business. Let me handle the digital stuff.
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">It's OK if you're not sure what you need.</span> We'll 
+              figure it out together. No pressure, no judgment.
+            </p>
+          </div>
+          <p className="text-xl text-primary font-semibold mt-8">
+            You're not behind. You're exactly where you need to be.
+          </p>
         </div>
       </section>
 
@@ -281,7 +303,7 @@ export default function Home() {
                     href="/services/website" 
                     className="block w-full text-center bg-gradient-to-r from-teal-600 to-blue-700 text-white py-4 px-8 rounded-xl font-bold hover:from-teal-700 hover:to-blue-800 hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300 transform hover:scale-105"
                   >
-                    Fix My Website →
+                    Learn More →
                   </Link>
                 </div>
               </div>
@@ -320,7 +342,7 @@ export default function Home() {
                     href="/services/automation" 
                     className="block w-full text-center bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-4 px-8 rounded-xl font-bold hover:from-purple-800 hover:to-indigo-800 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-105"
                   >
-                    Start Automating →
+                    See How It Works →
                   </Link>
                 </div>
               </div>
@@ -359,7 +381,7 @@ export default function Home() {
                     href="/services/complete-system" 
                     className="block w-full text-center bg-gradient-to-r from-emerald-700 to-green-800 text-white py-4 px-8 rounded-xl font-bold hover:from-emerald-800 hover:to-green-900 hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-300 transform hover:scale-105"
                   >
-                    Transform Everything →
+                    See Complete Package →
                   </Link>
                 </div>
               </div>
@@ -367,6 +389,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Tom's Promise */}
+      <TomsPromise />
 
       {/* Interactive Phone Demo - Automation in Action */}
       <section className="py-24 bg-white relative overflow-hidden">
@@ -554,18 +579,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* CTA */}
-                <div className="pt-4">
-                  <Link 
-                    href="/services/automation" 
-                    className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
-                  >
-                    Build My Booking System
-                    <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
@@ -698,18 +711,9 @@ export default function Home() {
 
           {/* Bottom Message */}
           <div className="text-center">
-            <p className="text-xl text-foreground font-semibold mb-8">
+            <p className="text-xl text-foreground font-semibold">
               This is the kind of layout that doesn&apos;t distract—it converts.
             </p>
-            <Link 
-              href="/services/website" 
-              className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
-            >
-              See How I&apos;ll Design Yours
-              <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
           </div>
         </div>
       </section>

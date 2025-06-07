@@ -75,7 +75,7 @@ export default function WebsiteServices() {
                 className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500 mb-4"
               >
                 <span className="flex items-center justify-center">
-                  Start Your Website Project
+                  Get Started
                   <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -634,7 +634,7 @@ export default function WebsiteServices() {
                 href="/contact" 
                 className="block w-full text-center bg-primary text-white py-6 px-8 rounded-xl text-xl font-bold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
               >
-                Start My Website Project →
+                Learn More About Pricing →
               </Link>
 
               <p className="text-center text-sm text-text-light mt-6">
@@ -726,85 +726,6 @@ export default function WebsiteServices() {
         </div>
       </section>
 
-      {/* Bridge to Automation Services */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-white relative">
-        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-3xl p-12 shadow-2xl border border-gray-100 relative overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-10 left-10 w-32 h-32 bg-primary rounded-full"></div>
-                <div className="absolute bottom-10 right-10 w-24 h-24 bg-secondary rounded-full"></div>
-              </div>
-              
-              <div className="relative">
-                <div className="inline-flex items-center bg-accent/10 text-accent px-6 py-2 rounded-full text-sm font-medium mb-6">
-                  <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  Level Up Your Business
-                </div>
-                
-                <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
-                  Great Website. Now What?
-                </h2>
-                
-                <p className="text-xl text-text-light mb-8 leading-relaxed">
-                  Your new website will bring in more customers. But what happens when you start getting overwhelmed with bookings, emails, and manual tasks?
-                </p>
-                
-                <div className="grid md:grid-cols-3 gap-6 mb-10">
-                  <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-6 border border-primary/20">
-                    <div className="text-3xl mb-3">📅</div>
-                    <p className="font-semibold text-foreground mb-2">Appointment Reminders</p>
-                    <p className="text-sm text-text-light">Automatic texts so customers show up</p>
-                  </div>
-                  
-                  <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-6 border border-secondary/20">
-                    <div className="text-3xl mb-3">📧</div>
-                    <p className="font-semibold text-foreground mb-2">Lead Follow-up</p>
-                    <p className="text-sm text-text-light">Never let another prospect slip away</p>
-                  </div>
-                  
-                  <div className="bg-gradient-to-br from-accent/5 to-accent/10 rounded-2xl p-6 border border-accent/20">
-                    <div className="text-3xl mb-3">⭐</div>
-                    <p className="font-semibold text-foreground mb-2">Review Requests</p>
-                    <p className="text-sm text-text-light">Get more 5-star reviews automatically</p>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8 border border-primary/20">
-                  <p className="text-lg font-semibold text-foreground mb-3">
-                    Most clients add automation within 3 months of launching their website
-                  </p>
-                  <p className="text-text-light">
-                    Why wait? Bundle them together and save time and money from day one.
-                  </p>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link 
-                    href="/services/automation" 
-                    className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
-                  >
-                    See Automation Services
-                    <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
-                  
-                  <Link 
-                    href="/contact" 
-                    className="inline-flex items-center px-8 py-4 border-2 border-primary text-primary font-semibold rounded-xl hover:bg-primary hover:text-white transition-all duration-300"
-                  >
-                    Talk About Both Services
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-24 bg-white">
@@ -872,10 +793,10 @@ export default function WebsiteServices() {
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Ready to Get Your Website Working?
+            Let's Build Something That Works
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Let&apos;s build something that actually brings in business. Mobile-first, Google-ready, and designed to convert.
+            Have questions? Let's talk about how a professional website can help grow your business.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -883,9 +804,9 @@ export default function WebsiteServices() {
               href="/contact" 
               className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              Start My Website Project
+              Schedule a Free Consultation
               <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </Link>
           </div>

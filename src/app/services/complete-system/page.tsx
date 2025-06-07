@@ -75,7 +75,7 @@ export default function CompleteSystemServices() {
                 className="group px-10 sm:px-12 py-5 sm:py-6 bg-white text-primary text-base sm:text-lg font-bold rounded-2xl shadow-2xl shadow-black/10 hover:shadow-black/20 transform hover:scale-105 transition-all duration-500 mb-4"
               >
                 <span className="flex items-center justify-center">
-                  Transform My Business
+                  Let's Discuss Your System
                   <svg className="w-5 sm:w-6 h-5 sm:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -487,7 +487,7 @@ export default function CompleteSystemServices() {
                 href="/contact" 
                 className="block w-full text-center bg-primary text-white py-6 px-8 rounded-xl text-xl font-bold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
               >
-                Start My Complete System →
+                Schedule a Consultation →
               </Link>
 
               <p className="text-center text-sm text-text-light mt-6">
@@ -683,10 +683,10 @@ export default function CompleteSystemServices() {
         
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-4xl lg:text-5xl mb-8">
-            Ready for Your Business to Run Itself?
+            Let's Talk About Your Business
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Stop managing. Start leading. Let automation handle the details while you focus on growth.
+            Every business is different. Let's discuss what automation could mean for yours.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -694,7 +694,7 @@ export default function CompleteSystemServices() {
               href="/contact" 
               className="inline-flex items-center px-12 py-6 bg-white text-primary text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              Start My Complete System
+              Schedule Your Call
               <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
