@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Real Talk Section */}
+      {/* What Calm Feels Like Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, rgba(27, 77, 62, 0.5) 1px, transparent 0)`,
@@ -154,23 +154,37 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
             <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-8 text-center">
-              Look, most business websites suck.
-              <span className="block text-2xl lg:text-3xl text-primary mt-2">It's not your fault.</span>
+              You know that feeling when everything just... works?
             </h2>
             
-            <div className="prose prose-lg max-w-none text-text-light">
-              <p className="mb-6 text-lg leading-relaxed">
-                You're busy running your actual business while trying to figure out tech stuff that changes every five minutes. 
-                I get it - I've been there.
-              </p>
+            <div className="space-y-4 max-w-3xl mx-auto">
+              <div className="flex items-center text-lg text-text-light">
+                <div className="w-2 h-2 bg-primary rounded-full mr-4 flex-shrink-0"></div>
+                <p>Website loads fast. Forms go where they're supposed to.</p>
+              </div>
               
-              <p className="mb-6 text-lg leading-relaxed">
-                I don't care if your current site is embarrassing, non-existent, or cobbled together from YouTube tutorials. 
-                What matters is getting you something that actually works.
-              </p>
+              <div className="flex items-center text-lg text-text-light">
+                <div className="w-2 h-2 bg-secondary rounded-full mr-4 flex-shrink-0"></div>
+                <p>Customers can actually find you online.</p>
+              </div>
               
-              <p className="text-lg font-semibold text-foreground text-center mt-8 p-6 bg-primary/5 rounded-xl border-l-4 border-primary">
-                No judgment, no tech lectures, just real solutions for real problems.
+              <div className="flex items-center text-lg text-text-light">
+                <div className="w-2 h-2 bg-accent rounded-full mr-4 flex-shrink-0"></div>
+                <p>Follow-ups happen automatically.</p>
+              </div>
+              
+              <div className="flex items-center text-lg text-text-light">
+                <div className="w-2 h-2 bg-primary rounded-full mr-4 flex-shrink-0"></div>
+                <p>Nothing falls through the cracks.</p>
+              </div>
+            </div>
+            
+            <div className="text-center mt-10">
+              <p className="text-2xl font-bold text-primary mb-3">
+                That's calm.
+              </p>
+              <p className="text-lg text-text-light">
+                And it's not as complicated as everyone makes it sound.
               </p>
             </div>
           </div>
