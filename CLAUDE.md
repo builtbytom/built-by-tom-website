@@ -117,3 +117,17 @@
 
 ## Remember
 Tom is here to help small business owners succeed, not scare them into buying. Every piece of copy should feel like helpful advice from a friend who's been there, not a salesperson trying to close a deal.
+
+## Sample/Demo Pages Philosophy
+
+### Purpose:
+- Show what's possible, not generic templates
+- Each demo must feel PREMIUM - make business owners say "wow, I need this"
+- Demonstrate both design excellence AND business-building features
+- Use noindex tags to prevent SEO confusion
+
+### Restaurant Demo Design:
+- **Color Palette**: Deep Olive Green (#3B4A3F), Aged Terracotta (#A86754), Creamy Mascarpone (#F4F2ED), Espresso (#2D2A26), Saffron Gold (#DCA953)
+- **Key Elements**: Chef story/heritage, visual gallery with filters, email club signup with incentive
+- **Philosophy**: Emotional storytelling + visual sophistication + automation features = premium feel
+- **Goal**: Not just a website demo, but a restaurant marketing consultation in visual form
