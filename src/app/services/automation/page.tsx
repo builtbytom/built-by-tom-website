@@ -31,12 +31,12 @@ export default function AutomationServices() {
             
             {/* Main message - tighter, punchier */}
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-6 sm:mb-4 leading-[0.9]">
-              Stop Doing Tasks
+              Focus on What
               <span className="block bg-gradient-to-r from-accent via-white to-sage-light bg-clip-text text-transparent mt-2" style={{ 
                 backgroundSize: '200% 200%',
                 animation: 'gradient 3s ease infinite'
               }}>
-                Robots Can Do
+                Matters Most
               </span>
             </h1>
             
