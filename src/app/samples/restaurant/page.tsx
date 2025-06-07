@@ -1,5 +1,23 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Playfair_Display, Cormorant_Garamond, Lato } from 'next/font/google';
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  weight: ['400', '700', '900'],
+  style: ['normal', 'italic']
+});
+
+const cormorant = Cormorant_Garamond({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '600'],
+  style: ['normal', 'italic']
+});
+
+const lato = Lato({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '700']
+});
 
 export const metadata: Metadata = {
   title: 'Restaurant Website Demo | Built By Tom',
@@ -8,21 +26,13 @@ export const metadata: Metadata = {
 };
 
 export default function RestaurantSample() {
-  // Premium color scheme
-  const colors = {
-    olive: '#3B4A3F',
-    terracotta: '#A86754',
-    mascarpone: '#F4F2ED',
-    espresso: '#2D2A26',
-    saffron: '#DCA953',
-  };
-
   return (
     <>
+      <div className={`restaurant-demo ${lato.className}`}>
       {/* Demo Banner */}
       <div className="bg-[#3B4A3F] text-white py-3 text-center relative">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="text-sm font-medium">
+          <p className="text-sm font-medium font-sans">
             🎨 This is a sample restaurant website showing what I could build for your business
           </p>
         </div>
@@ -39,16 +49,16 @@ export default function RestaurantSample() {
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
-            <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6">
+            <h1 className={`${playfair.className} font-black text-5xl sm:text-6xl lg:text-7xl text-white mb-6 tracking-tight`}>
               Demo: Bella Vista
-              <span className="block text-3xl sm:text-4xl lg:text-5xl font-bold text-[#DCA953] mt-2">
+              <span className="block text-3xl sm:text-4xl lg:text-5xl font-normal text-[#DCA953] mt-2 tracking-widest uppercase">
                 Kitchen & Bar
               </span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl lg:text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
               Modern Italian dining in the heart of New Haven. 
-              Fresh ingredients, timeless recipes, unforgettable moments.
+              <span className={`${cormorant.className} italic`}>Fresh ingredients, timeless recipes, unforgettable moments.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -105,10 +115,10 @@ export default function RestaurantSample() {
       <section className="py-20 bg-[#F4F2ED]">
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-4">
+            <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-4 tracking-tight`}>
               Tonight's Features
             </h2>
-            <p className="text-xl text-[#2D2A26]/70">
+            <p className={`text-xl text-[#2D2A26]/70 ${cormorant.className} italic`}>
               Chef Marco's seasonal selections
             </p>
           </div>
@@ -179,9 +189,9 @@ export default function RestaurantSample() {
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6">
+              <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6 tracking-tight`}>
                 From Our Family
-                <span className="block text-[#3B4A3F]">to Yours</span>
+                <span className={`block text-[#3B4A3F] ${cormorant.className} italic font-normal`}>to Yours</span>
               </h2>
               <p className="text-[#2D2A26]/80 mb-6 leading-relaxed">
                 Bella Vista isn't just a restaurant; it's the culmination of a lifelong dream. 
@@ -202,7 +212,7 @@ export default function RestaurantSample() {
                   After earning his acclaim in Boston, he returned to his Connecticut roots 
                   to open Bella Vista.
                 </p>
-                <blockquote className="text-[#A86754] font-semibold italic">
+                <blockquote className={`text-[#A86754] ${cormorant.className} text-lg italic leading-relaxed`}>
                   "Food is memory. I want every plate that leaves my kitchen to be a moment you won't forget."
                 </blockquote>
               </div>
@@ -227,7 +237,7 @@ export default function RestaurantSample() {
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6">
+              <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6 tracking-tight`}>
                 Everything Runs
                 <span className="block text-[#3B4A3F]">Automatically</span>
               </h2>
@@ -299,7 +309,7 @@ export default function RestaurantSample() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6">
+            <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6 tracking-tight`}>
               What Makes Us Special
             </h2>
             <p className="text-xl text-[#2D2A26]/70 max-w-2xl mx-auto">
@@ -347,7 +357,7 @@ export default function RestaurantSample() {
 
           {/* Special Features Grid */}
           <div className="mt-16 bg-gradient-to-br from-[#F4F2ED] to-white rounded-3xl p-12 border border-[#DCA953]/20">
-            <h3 className="font-display font-bold text-3xl text-[#2D2A26] mb-8 text-center">
+            <h3 className={`${playfair.className} font-bold text-3xl text-[#2D2A26] mb-8 text-center`}>
               Features That Fill Tables
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -396,7 +406,7 @@ export default function RestaurantSample() {
       <section className="py-20 bg-[#F4F2ED]">
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6">
+            <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-6`}>
               A Glimpse of the Bella Vista Experience
             </h2>
             <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -427,7 +437,7 @@ export default function RestaurantSample() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-4">
+            <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl text-[#2D2A26] mb-4`}>
               What Our Guests Say
             </h2>
             <div className="flex items-center justify-center gap-2 text-xl">
@@ -480,7 +490,7 @@ export default function RestaurantSample() {
       <section className="py-20 bg-gradient-to-br from-[#3B4A3F] to-[#2D2A26] text-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-4xl lg:text-5xl mb-6">
+            <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl mb-6`}>
               Become a Bella Vista Insider
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
@@ -519,7 +529,7 @@ export default function RestaurantSample() {
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-[#A86754] to-[#A86754]/90 text-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display font-bold text-4xl lg:text-5xl mb-6">
+          <h2 className={`${playfair.className} font-bold text-4xl lg:text-5xl mb-6`}>
             Ready for a Website That Works This Hard?
           </h2>
           <p className="text-xl mb-8 text-white/90">
@@ -539,6 +549,7 @@ export default function RestaurantSample() {
           </p>
         </div>
       </section>
+      </div>
     </>
   );
 }
