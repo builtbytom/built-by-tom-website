@@ -35,6 +35,15 @@ export default function SamplesPage() {
       color: 'from-[#FFD93D] to-[#87CEEB]',
       icon: '🐕'
     },
+    {
+      title: 'Therapy Practice Website',
+      subtitle: 'The Haven Practice',
+      description: 'Modern, immersive design for mental health professionals. Calming aesthetics with seamless booking and intake automation.',
+      features: ['Confidential Booking', 'Encrypted Intake Forms', 'SMS Reminders', 'Immersive Design'],
+      link: '/samples/therapy',
+      color: 'from-[#A09CB0] to-[#B2C9C2]',
+      icon: '🌿'
+    },
     // Future samples can be added here
   ];
 
