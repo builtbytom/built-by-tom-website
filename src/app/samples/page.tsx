@@ -26,6 +26,15 @@ export default function SamplesPage() {
       color: 'from-[#2C3E33] to-[#6A7A89]',
       icon: '🌿'
     },
+    {
+      title: 'Pet Services Website',
+      subtitle: 'The Wagging Tail Lodge',
+      description: 'Cheerful pet daycare and grooming spa with online booking, digital forms, and live puppy cams.',
+      features: ['Online Booking 24/7', 'Digital Forms', 'Live Puppy Cams', 'Auto Reminders'],
+      link: '/samples/pet-services',
+      color: 'from-[#FFD93D] to-[#87CEEB]',
+      icon: '🐕'
+    },
     // Future samples can be added here
   ];
 
