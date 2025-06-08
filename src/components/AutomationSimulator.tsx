@@ -61,11 +61,11 @@ export default function AutomationSimulator() {
 
   const steps = [
     { id: 'start', title: 'New Booking Received', icon: '📥', duration: 1500, manualTime: 0 },
-    { id: 'crm', title: 'Added to CRM', icon: '💾', duration: 2000, manualTime: 3 },
-    { id: 'email', title: 'Confirmation Email Sent', icon: '📧', duration: 3000, manualTime: 2 },
-    { id: 'calendar', title: 'Calendar Blocked', icon: '📅', duration: 2000, manualTime: 1 },
-    { id: 'sms', title: 'SMS Reminder Scheduled', icon: '📱', duration: 3000, manualTime: 2 },
-    { id: 'review', title: 'Review Request Queued', icon: '⭐', duration: 3000, manualTime: 2 },
+    { id: 'crm', title: 'Added to CRM', icon: '💾', duration: 2000, manualTime: 4 },
+    { id: 'email', title: 'Confirmation Email Sent', icon: '📧', duration: 3000, manualTime: 3 },
+    { id: 'calendar', title: 'Calendar Blocked', icon: '📅', duration: 2000, manualTime: 2 },
+    { id: 'sms', title: 'SMS Reminder Scheduled', icon: '📱', duration: 3000, manualTime: 3 },
+    { id: 'review', title: 'Review Request Queued', icon: '⭐', duration: 3000, manualTime: 3 },
     { id: 'complete', title: 'Automation Complete!', icon: '🎉', duration: 2000, manualTime: 0 }
   ];
 
@@ -337,6 +337,7 @@ export default function AutomationSimulator() {
                       
                       <div className="text-lg text-gray-700">
                         <p className="font-semibold">That's enough time to:</p>
+                        <p className="text-base text-primary mt-1 mb-3 italic">This is the calm we build for businesses like yours.</p>
                         <ul className="mt-2 space-y-1">
                           <li>• Handle 3x more bookings without hiring staff</li>
                           <li>• Focus on growing your business instead of admin work</li>
@@ -348,7 +349,7 @@ export default function AutomationSimulator() {
                       <div className="pt-6">
                         <button
                           onClick={resetSimulation}
-                          className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all"
+                          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-xl hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                         >
                           <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
