@@ -251,62 +251,73 @@ export default function WebsiteHealthQuiz() {
 
   if (showResults) {
     return (
-      <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 lg:p-12 border border-primary/20">
-        <div className="max-w-3xl mx-auto">
+      <div className="relative bg-gradient-to-br from-white via-primary/5 to-secondary/10 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border border-primary/10 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-accent/20 to-primary/20 rounded-full blur-2xl -ml-16 -mb-16"></div>
+        
+        <div className="relative max-w-3xl mx-auto">
           {/* Score Display */}
-          <div className="text-center mb-8">
-            <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-4">
+          <div className="text-center mb-10">
+            <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-8">
               Your Website Health Score
             </h2>
-            <div className="relative w-32 h-32 mx-auto mb-6">
-              <svg className="w-32 h-32 transform -rotate-90">
+            <div className="relative w-48 h-48 mx-auto mb-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-xl animate-pulse"></div>
+              <svg className="relative w-48 h-48 transform -rotate-90">
                 <circle
-                  cx="64"
-                  cy="64"
-                  r="56"
+                  cx="96"
+                  cy="96"
+                  r="84"
                   stroke="currentColor"
-                  strokeWidth="12"
+                  strokeWidth="16"
                   fill="none"
                   className="text-gray-200"
                 />
                 <circle
-                  cx="64"
-                  cy="64"
-                  r="56"
+                  cx="96"
+                  cy="96"
+                  r="84"
                   stroke="currentColor"
-                  strokeWidth="12"
+                  strokeWidth="16"
                   fill="none"
-                  strokeDasharray={`${score * 3.51} 351.86`}
+                  strokeDasharray={`${score * 5.28} 528`}
                   className={
                     score >= 80 ? 'text-green-500' :
                     score >= 60 ? 'text-yellow-500' :
                     'text-red-500'
                   }
+                  strokeLinecap="round"
                 />
               </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-4xl font-bold text-foreground">{score}</span>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="text-6xl font-bold text-foreground">{score}</span>
+                <span className="text-sm font-medium text-text-light">out of 100</span>
               </div>
             </div>
-            <p className="text-lg text-text-light">
-              {score >= 80 ? 'Great job! Your website is in good shape.' :
-               score >= 60 ? 'Not bad, but there\'s room for improvement.' :
-               'Your website needs attention to perform better.'}
-            </p>
+            <div className={`inline-flex items-center px-6 py-3 rounded-full font-semibold text-white shadow-lg ${
+              score >= 80 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+              score >= 60 ? 'bg-gradient-to-r from-yellow-500 to-orange-500' :
+              'bg-gradient-to-r from-red-500 to-red-600'
+            }`}>
+              {score >= 80 ? '🎆 Great job! Your website is in good shape.' :
+               score >= 60 ? '🔧 Not bad, but there\'s room for improvement.' :
+               '⚠️ Your website needs attention to perform better.'}
+            </div>
           </div>
 
           {/* Action Items */}
           <div className="mb-10">
-            <h3 className="font-display font-bold text-2xl text-foreground mb-6">
+            <h3 className="font-display font-bold text-2xl text-foreground mb-6 text-center">
               Here's What You Can Do Today:
             </h3>
             <div className="space-y-4">
               {actionItems.map((action, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-0.5">
-                    <span className="text-accent font-bold">{index + 1}</span>
+                <div key={index} className="flex items-start bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mr-4 flex-shrink-0 text-white font-bold shadow-sm">
+                    {index + 1}
                   </div>
-                  <p className="text-text-light leading-relaxed">{action}</p>
+                  <p className="text-foreground leading-relaxed flex-grow">{action}</p>
                 </div>
               ))}
             </div>
@@ -368,56 +379,67 @@ export default function WebsiteHealthQuiz() {
   }
 
   const question = questions[currentQuestion];
-  const progress = ((currentQuestion + 1) / questions.length) * 100;
+  const progress = Math.round(((currentQuestion + 1) / questions.length) * 100);
 
   return (
-    <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 lg:p-12 border border-primary/20">
-      <div className="max-w-2xl mx-auto">
+    <div className="relative bg-gradient-to-br from-white via-primary/5 to-secondary/10 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border border-primary/10 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+      <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-accent/20 to-primary/20 rounded-full blur-2xl -ml-16 -mb-16"></div>
+      
+      <div className="relative max-w-2xl mx-auto">
         {/* Progress Bar */}
-        <div className="mb-8">
-          <div className="flex justify-between items-center mb-2">
-            <span className="text-sm font-medium text-text-light">
+        <div className="mb-10">
+          <div className="flex justify-between items-center mb-3">
+            <span className="text-sm font-bold text-foreground bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
               Question {currentQuestion + 1} of {questions.length}
             </span>
-            <span className="text-sm font-medium text-text-light">
+            <span className="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
               {progress}% complete
             </span>
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-2">
+          <div className="w-full bg-gray-100 rounded-full h-3 shadow-inner">
             <div 
-              className="bg-gradient-to-r from-primary to-secondary h-2 rounded-full transition-all duration-500"
+              className="bg-gradient-to-r from-primary via-secondary to-accent h-3 rounded-full transition-all duration-700 shadow-sm"
               style={{ width: `${progress}%` }}
             />
           </div>
         </div>
 
         {/* Question */}
-        <div className="mb-8">
-          <h2 className="font-display font-bold text-2xl lg:text-3xl text-foreground mb-4">
+        <div className="mb-10">
+          <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-6 text-center">
             {question.question}
           </h2>
-          <div className="bg-sage-light/20 rounded-xl p-4 mb-6">
-            <p className="text-sm text-text-light">
-              <span className="font-semibold">💡 Did you know?</span> {question.educationalTip}
+          <div className="bg-gradient-to-r from-sage-light/30 to-primary/10 rounded-2xl p-5 mb-8 border border-sage-light/30 shadow-sm">
+            <p className="text-sm lg:text-base text-foreground flex items-start">
+              <span className="text-2xl mr-3 flex-shrink-0">💡</span>
+              <span><span className="font-bold">Did you know?</span> {question.educationalTip}</span>
             </p>
           </div>
         </div>
 
         {/* Options */}
-        <div className="grid gap-3">
-          {question.options.map((option) => (
+        <div className="grid gap-4">
+          {question.options.map((option, index) => (
             <button
               key={option.value}
               onClick={() => handleAnswer(option.value)}
-              className="group bg-white rounded-xl p-4 text-left hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-primary/20 transform hover:scale-[1.02]"
+              className="group relative bg-white hover:bg-gradient-to-r hover:from-primary/5 hover:to-secondary/5 rounded-2xl p-5 text-left shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary/30 transform hover:scale-[1.02] hover:-translate-y-0.5"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center">
                 {option.icon && (
-                  <span className="text-2xl mr-4">{option.icon}</span>
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl flex items-center justify-center mr-4 group-hover:from-primary/20 group-hover:to-secondary/20 transition-all duration-300">
+                    <span className="text-2xl">{option.icon}</span>
+                  </div>
                 )}
-                <span className="font-medium text-foreground group-hover:text-primary transition-colors">
+                <span className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
                   {option.label}
                 </span>
+                <svg className="w-5 h-5 ml-auto text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </button>
           ))}
