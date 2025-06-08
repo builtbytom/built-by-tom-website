@@ -258,30 +258,30 @@ export default function WebsiteHealthQuiz() {
         
         <div className="relative max-w-3xl mx-auto">
           {/* Score Display */}
-          <div className="text-center mb-10">
-            <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-8">
+          <div className="text-center mb-8 sm:mb-10">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-foreground mb-6 sm:mb-8">
               Your Website Health Score
             </h2>
-            <div className="relative w-48 h-48 mx-auto mb-8">
+            <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6 sm:mb-8">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-xl animate-pulse"></div>
-              <svg className="relative w-48 h-48 transform -rotate-90">
+              <svg className="relative w-full h-full transform -rotate-90">
                 <circle
-                  cx="96"
-                  cy="96"
-                  r="84"
+                  cx="50%"
+                  cy="50%"
+                  r="44%"
                   stroke="currentColor"
                   strokeWidth="16"
                   fill="none"
                   className="text-gray-200"
                 />
                 <circle
-                  cx="96"
-                  cy="96"
-                  r="84"
+                  cx="50%"
+                  cy="50%"
+                  r="44%"
                   stroke="currentColor"
                   strokeWidth="16"
                   fill="none"
-                  strokeDasharray={`${score * 5.28} 528`}
+                  strokeDasharray={`${score * 2.76} 276`}
                   className={
                     score >= 80 ? 'text-green-500' :
                     score >= 60 ? 'text-yellow-500' :
@@ -291,11 +291,11 @@ export default function WebsiteHealthQuiz() {
                 />
               </svg>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <span className="text-6xl font-bold text-foreground">{score}</span>
-                <span className="text-sm font-medium text-text-light">out of 100</span>
+                <span className="text-4xl sm:text-6xl font-bold text-foreground">{score}</span>
+                <span className="text-xs sm:text-sm font-medium text-text-light">out of 100</span>
               </div>
             </div>
-            <div className={`inline-flex items-center px-6 py-3 rounded-full font-semibold text-white shadow-lg ${
+            <div className={`inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold text-sm sm:text-base text-white shadow-lg ${
               score >= 80 ? 'bg-gradient-to-r from-green-500 to-green-600' :
               score >= 60 ? 'bg-gradient-to-r from-yellow-500 to-orange-500' :
               'bg-gradient-to-r from-red-500 to-red-600'
@@ -307,17 +307,17 @@ export default function WebsiteHealthQuiz() {
           </div>
 
           {/* Action Items */}
-          <div className="mb-10">
-            <h3 className="font-display font-bold text-2xl text-foreground mb-6 text-center">
+          <div className="mb-8 sm:mb-10">
+            <h3 className="font-display font-bold text-xl sm:text-2xl text-foreground mb-4 sm:mb-6 text-center">
               Here's What You Can Do Today:
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {actionItems.map((action, index) => (
-                <div key={index} className="flex items-start bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
-                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mr-4 flex-shrink-0 text-white font-bold shadow-sm">
+                <div key={index} className="flex items-start bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary to-secondary rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0 text-white font-bold text-sm sm:text-base shadow-sm">
                     {index + 1}
                   </div>
-                  <p className="text-foreground leading-relaxed flex-grow">{action}</p>
+                  <p className="text-sm sm:text-base text-foreground leading-relaxed flex-grow">{action}</p>
                 </div>
               ))}
             </div>
@@ -325,30 +325,31 @@ export default function WebsiteHealthQuiz() {
 
           {/* Report Request */}
           {!reportRequested ? (
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl border-2 border-purple-200 overflow-hidden">
-              {/* Automation Badge */}
-              <div className="absolute -top-2 -right-2">
-                <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center animate-pulse" style={{ animationDuration: '2s' }}>
+            <div className="relative bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl border-2 border-purple-200">
+              {/* Automation Badge - Fixed positioning */}
+              <div className="absolute -top-5 -right-5 sm:-top-3 sm:-right-3">
+                <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center animate-pulse" style={{ animationDuration: '2s' }}>
                   <span className="mr-2">🤖</span>
-                  Powered by Custom Automation
+                  <span className="hidden sm:inline">Powered by Custom Automation</span>
+                  <span className="sm:hidden">Automated!</span>
                 </div>
               </div>
               
-              <h3 className="font-display font-bold text-2xl text-foreground mb-4 mt-4">
+              <h3 className="font-display font-bold text-xl sm:text-2xl text-foreground mb-4 mt-8 sm:mt-4">
                 Want the Full Technical Analysis?
               </h3>
               
               <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-4 mb-6 border border-purple-200">
                 <p className="text-sm font-semibold text-purple-800 flex items-center">
                   <span className="text-2xl mr-3">⚡</span>
-                  This isn't just a form - it's a live demonstration of my automation skills!
+                  This whole quiz you just took? It's powered by custom automation I built!
                 </p>
               </div>
               
               <p className="text-text-light mb-6">
-                I built a custom automation system that scans your website and checks 25+ different factors. 
-                When you submit your email, my automation instantly fires up, analyzes your site, and 
-                delivers a detailed report in 2 minutes.
+                Just like the quiz instantly analyzed your answers, I built a system that scans your actual website 
+                and checks 25+ different factors. Enter your email below, and my automation will analyze your site 
+                and deliver a detailed report in 2 minutes.
               </p>
               
               <p className="text-sm font-semibold text-foreground mb-6">
@@ -427,37 +428,37 @@ export default function WebsiteHealthQuiz() {
         </div>
 
         {/* Question */}
-        <div className="mb-10">
-          <h2 className="font-display font-bold text-3xl lg:text-4xl text-foreground mb-6 text-center">
+        <div className="mb-8 sm:mb-10">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-foreground mb-4 sm:mb-6 text-center leading-tight">
             {question.question}
           </h2>
-          <div className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-2xl p-5 mb-8 border-2 border-yellow-300 shadow-md">
+          <div className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-2xl p-4 sm:p-5 mb-6 sm:mb-8 border-2 border-yellow-300 shadow-md">
             <p className="text-sm lg:text-base text-foreground flex items-start">
-              <span className="text-2xl mr-3 flex-shrink-0">💡</span>
+              <span className="text-xl sm:text-2xl mr-2 sm:mr-3 flex-shrink-0">💡</span>
               <span><span className="font-bold">Did you know?</span> {question.educationalTip}</span>
             </p>
           </div>
         </div>
 
         {/* Options */}
-        <div className="grid gap-4">
+        <div className="grid gap-3 sm:gap-4">
           {question.options.map((option, index) => (
             <button
               key={option.value}
               onClick={() => handleAnswer(option.value)}
-              className="group relative bg-white hover:bg-gradient-to-r hover:from-teal-50 hover:to-purple-50 rounded-2xl p-5 text-left shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-200 hover:border-purple-300 transform hover:scale-[1.02] hover:-translate-y-0.5"
+              className="group relative bg-white hover:bg-gradient-to-r hover:from-teal-50 hover:to-purple-50 rounded-xl sm:rounded-2xl p-4 sm:p-5 text-left shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-200 hover:border-purple-300 transform hover:scale-[1.02] hover:-translate-y-0.5"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center">
                 {option.icon && (
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-100 to-blue-100 rounded-xl flex items-center justify-center mr-4 group-hover:from-teal-200 group-hover:to-purple-200 transition-all duration-300 border border-teal-200 group-hover:border-purple-300">
-                    <span className="text-2xl">{option.icon}</span>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-100 to-blue-100 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 group-hover:from-teal-200 group-hover:to-purple-200 transition-all duration-300 border border-teal-200 group-hover:border-purple-300 flex-shrink-0">
+                    <span className="text-xl sm:text-2xl">{option.icon}</span>
                   </div>
                 )}
-                <span className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                <span className="font-semibold text-base sm:text-lg text-foreground group-hover:text-primary transition-colors flex-grow">
                   {option.label}
                 </span>
-                <svg className="w-5 h-5 ml-auto text-gray-400 group-hover:text-purple-600 group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 ml-2 sm:ml-auto text-gray-400 group-hover:text-purple-600 group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
