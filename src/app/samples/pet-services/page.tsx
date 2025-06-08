@@ -23,7 +23,7 @@ export default function PetServicesSample() {
     <>
       <div className={`pet-services-demo ${nunito.className}`}>
       {/* Demo Banner */}
-      <div className="bg-[#7CB342] text-white py-3 text-center relative">
+      <div className="bg-[#558B2F] text-white py-3 text-center relative">
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-sm font-medium">
             🎨 This is a sample website showing what a modern, professional web presence could look like for your pet services business.
@@ -32,8 +32,8 @@ export default function PetServicesSample() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] bg-gradient-to-br from-[#87CEEB] to-[#FFD93D] overflow-hidden">
-        <div className="absolute inset-0 bg-white/20"></div>
+      <section className="relative min-h-[70vh] bg-gradient-to-br from-[#4A90E2] to-[#87CEEB] overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
         
         {/* Animated background elements */}
         <div className="absolute inset-0">
@@ -46,7 +46,7 @@ export default function PetServicesSample() {
           <div className="text-center">
             <h1 className={`${quicksand.className} font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight drop-shadow-lg`}>
               Where Every Day is the
-              <span className="block text-[#FF6B6B]">Best Day Ever.</span>
+              <span className="block text-[#FFD93D] drop-shadow-lg">Best Day Ever.</span>
             </h1>
             
             <p className="text-xl lg:text-2xl text-white mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow">
@@ -57,7 +57,7 @@ export default function PetServicesSample() {
             
             <Link 
               href="#book" 
-              className="inline-flex items-center px-10 py-5 bg-[#FFD93D] text-gray-800 font-bold rounded-full hover:bg-[#FFD93D]/90 transition-all transform hover:scale-105 text-lg shadow-lg"
+              className="inline-flex items-center px-10 py-5 bg-[#FFD93D] text-gray-900 font-bold rounded-full hover:bg-[#FFC107] transition-all transform hover:scale-105 text-lg shadow-lg"
             >
               Book a Service Now
               <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -106,7 +106,7 @@ export default function PetServicesSample() {
           <div className="text-center mb-16">
             <h2 className={`${quicksand.className} font-bold text-4xl lg:text-5xl text-gray-800 mb-6`}>
               More Than Just a Daycare.
-              <span className="block text-[#FF6B6B]">It's an Enrichment Lodge.</span>
+              <span className="block text-[#D32F2F]">It's an Enrichment Lodge.</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We believe a tired dog is a happy dog, but a fulfilled dog is even happier. Our 
@@ -187,7 +187,7 @@ export default function PetServicesSample() {
               </p>
               <Link 
                 href="#book" 
-                className="inline-flex items-center text-[#87CEEB] font-bold hover:text-[#87CEEB]/80 transition-colors"
+                className="inline-flex items-center text-[#2E7CD6] font-bold hover:text-[#1976D2] transition-colors"
               >
                 View Daycare Rates & Book
                 <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -208,7 +208,7 @@ export default function PetServicesSample() {
               </p>
               <Link 
                 href="#book" 
-                className="inline-flex items-center text-[#FF6B6B] font-bold hover:text-[#FF6B6B]/80 transition-colors"
+                className="inline-flex items-center text-[#D32F2F] font-bold hover:text-[#C62828] transition-colors"
               >
                 View Grooming Services & Book
                 <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -229,7 +229,7 @@ export default function PetServicesSample() {
               </p>
               <Link 
                 href="#book" 
-                className="inline-flex items-center text-[#7CB342] font-bold hover:text-[#7CB342]/80 transition-colors"
+                className="inline-flex items-center text-[#558B2F] font-bold hover:text-[#33691E] transition-colors"
               >
                 Learn More & Reserve a Suite
                 <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -257,7 +257,7 @@ export default function PetServicesSample() {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Step 1 */}
             <div className="bg-white rounded-3xl p-8 shadow-lg relative">
-              <div className="w-16 h-16 bg-[#FFD93D] rounded-full flex items-center justify-center text-2xl font-bold text-gray-800 mb-6">
+              <div className="w-16 h-16 bg-[#FFD93D] rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 mb-6">
                 1
               </div>
               <h3 className={`${quicksand.className} font-bold text-2xl text-gray-800 mb-4`}>
@@ -335,7 +335,7 @@ export default function PetServicesSample() {
               </p>
               <Link 
                 href="#" 
-                className="inline-flex items-center px-8 py-4 bg-white text-[#87CEEB] font-bold rounded-full hover:bg-white/90 transition-all transform hover:scale-105"
+                className="inline-flex items-center px-8 py-4 bg-white text-[#2E7CD6] font-bold rounded-full hover:bg-gray-50 transition-all transform hover:scale-105"
               >
                 Client Login to Puppy Cams
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -418,17 +418,17 @@ export default function PetServicesSample() {
       </section>
 
       {/* Final CTA */}
-      <section id="book" className="py-20 bg-gradient-to-br from-[#FFD93D] to-[#FF6B6B] text-white">
+      <section id="book" className="py-20 bg-gradient-to-br from-[#FF6B6B] to-[#D32F2F]">
         <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
-          <h2 className={`${quicksand.className} font-bold text-4xl lg:text-5xl mb-6`}>
+          <h2 className={`${quicksand.className} font-bold text-4xl lg:text-5xl mb-6 text-white`}>
             Ready For Your Pup's Best Day Ever?
           </h2>
-          <p className="text-xl mb-8 text-white/90">
+          <p className="text-xl mb-8 text-white">
             Spots fill up fast! Check our availability and book your dog's next visit online today.
           </p>
           <Link 
             href="/contact" 
-            className="inline-flex items-center px-10 py-5 bg-white text-gray-800 font-bold rounded-full hover:bg-white/90 transition-all transform hover:scale-105 text-lg shadow-lg"
+            className="inline-flex items-center px-10 py-5 bg-white text-[#D32F2F] font-bold rounded-full hover:bg-gray-50 transition-all transform hover:scale-105 text-lg shadow-lg"
           >
             Book a Service Now
             <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -449,7 +449,7 @@ export default function PetServicesSample() {
           </p>
           <Link 
             href="/contact" 
-            className="inline-flex items-center px-8 py-4 bg-[#FFD93D] text-gray-800 font-bold rounded-full hover:bg-[#FFD93D]/90 transition-all transform hover:scale-105"
+            className="inline-flex items-center px-8 py-4 bg-[#FFD93D] text-gray-900 font-bold rounded-full hover:bg-[#FFC107] transition-all transform hover:scale-105"
           >
             Get Your Pet Services Website
             <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
