@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import TimeSavedCalculator from '@/components/TimeSavedCalculator';
+import AutomationSimulator from '@/components/AutomationSimulator';
 
 export const metadata: Metadata = {
   title: 'Business Automation Services | Built By Tom',
@@ -98,6 +99,9 @@ export default function AutomationServices() {
           </div>
         </div>
       </section>
+
+      {/* Automation Simulator */}
+      <AutomationSimulator />
 
       {/* The Problem With Manual Work */}
       <section className="py-24 bg-white relative">
