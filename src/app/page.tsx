@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ScorecardSection from '../components/ScorecardSection';
+import WebsiteHealthQuiz from '../components/WebsiteHealthQuiz';
 import WhatTomFixesPreview from '../components/WhatTomFixesPreview';
 import TomsPromise from '../components/TomsPromise';
 
@@ -885,10 +885,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lead Magnet - Website Scorecard */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-white relative">
-        <div className="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
-          <ScorecardSection />
+      {/* Interactive Website Health Check */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="relative max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full font-bold text-sm mb-6">
+              <span className="text-2xl mr-2">🔍</span>
+              Free Interactive Assessment
+            </div>
+            <h2 className="font-display font-bold text-4xl lg:text-5xl text-foreground mb-6">
+              How Healthy Is Your Website?
+            </h2>
+            <p className="text-xl text-text-light max-w-3xl mx-auto">
+              Take 2 minutes to find out what's working, what's not, and what to fix first. 
+              No email required for instant results.
+            </p>
+          </div>
+          
+          <WebsiteHealthQuiz />
         </div>
       </section>
     </>
