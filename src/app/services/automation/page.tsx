@@ -129,7 +129,7 @@ export default function AutomationServices() {
                   Someone fills out your form at 11 PM. You see it Tuesday. They&apos;ve already hired your competitor who responded in 5 minutes.
                 </p>
                 <div className="text-red-600 font-semibold">
-                  Fast response times win more business
+                  Fast response = more business
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function AutomationServices() {
                   You block off time. They don&apos;t show. No reminder, no heads up, just an empty calendar slot and lost revenue.
                 </p>
                 <div className="text-orange-600 font-semibold">
-                  Consistent appointments mean steady revenue
+                  Full calendar = steady revenue
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function AutomationServices() {
                   Copy from email to CRM. Export from scheduling app to accounting. Hours of mindless clicking that a computer should handle.
                 </p>
                 <div className="text-gray-600 font-semibold">
-                  Manual work doesn&apos;t scale
+                  Automation = scale
                 </div>
               </div>
             </div>
