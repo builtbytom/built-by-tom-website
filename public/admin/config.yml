@@ -151,7 +151,7 @@ collections:
               
       # Services Overview Page
       - name: "services-overview"
-        label: "Services Overview Page"
+        label: "Services Page"
         file: "content/pages/services-overview.json"
         fields:
           - {label: "Page Title", name: "title", widget: "string"}
