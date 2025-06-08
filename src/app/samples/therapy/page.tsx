@@ -1,6 +1,8 @@
+'use client';
+
 import Link from 'next/link';
-import type { Metadata } from 'next';
 import { Crimson_Text, Inter } from 'next/font/google';
+import { useEffect } from 'react';
 
 const crimson = Crimson_Text({ 
   subsets: ['latin'],
@@ -13,13 +15,26 @@ const inter = Inter({
   weight: ['300', '400', '500']
 });
 
-export const metadata: Metadata = {
-  title: 'Therapy Practice Website Demo | Built By Tom',
-  description: 'A serene, modern therapy practice website showcasing immersive design and thoughtful automation.',
-  robots: 'noindex, follow',
-};
-
 export default function TherapySample() {
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
       <div className={`therapy-demo ${inter.className}`}>
