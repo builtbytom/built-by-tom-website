@@ -120,13 +120,13 @@ export default function AutomationServices() {
           <div className="grid lg:grid-cols-3 gap-8 mb-20">
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-red-600/10 rounded-3xl transform group-hover:scale-105 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
+              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full flex flex-col">
                 <div className="text-6xl mb-6">📧</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
                   Leads Slip Through
                   <span className="block">the Cracks</span>
                 </h3>
-                <p className="text-text-light mb-6 leading-relaxed">
+                <p className="text-text-light mb-6 leading-relaxed flex-grow">
                   Someone fills out your form at 11 PM. You see it Tuesday. They&apos;ve already hired your competitor who responded in 5 minutes.
                 </p>
                 <div className="text-red-600 font-semibold">
@@ -137,13 +137,13 @@ export default function AutomationServices() {
 
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-amber-500/10 rounded-3xl transform group-hover:scale-105 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
+              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full flex flex-col">
                 <div className="text-6xl mb-6">📅</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
                   Keep Your Calendar
                   <span className="block">Full & Profitable</span>
                 </h3>
-                <p className="text-text-light mb-6 leading-relaxed">
+                <p className="text-text-light mb-6 leading-relaxed flex-grow">
                   You block off time. They don&apos;t show. No reminder, no heads up, just an empty calendar slot and lost revenue.
                 </p>
                 <div className="text-orange-600 font-semibold">
@@ -154,13 +154,13 @@ export default function AutomationServices() {
 
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 to-gray-600/10 rounded-3xl transform group-hover:scale-105 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
+              <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full flex flex-col">
                 <div className="text-6xl mb-6">📊</div>
                 <h3 className="font-display font-bold text-2xl text-foreground mb-4">
                   Manual Data Entry
                   <span className="block">Nightmare</span>
                 </h3>
-                <p className="text-text-light mb-6 leading-relaxed">
+                <p className="text-text-light mb-6 leading-relaxed flex-grow">
                   Copy from email to CRM. Export from scheduling app to accounting. Hours of mindless clicking that a computer should handle.
                 </p>
                 <div className="text-gray-600 font-semibold">
