@@ -64,7 +64,6 @@ export default function ServiceQuiz() {
     const hasHighTimeWaste = answers.includes('high') || answers.includes('medium');
     const needsAudit = answers.includes('audit');
     const wantsComplete = answers.includes('complete');
-    const isUrgent = answers.includes('urgent');
 
     if (needsAudit || answers.includes('exploring')) {
       return {

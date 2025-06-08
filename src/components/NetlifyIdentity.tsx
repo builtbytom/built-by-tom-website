@@ -3,13 +3,21 @@
 import { useEffect } from 'react';
 import Script from 'next/script';
 
+declare global {
+  interface Window {
+    netlifyIdentity: {
+      on: (event: string, callback: (user?: unknown) => void) => void;
+    };
+  }
+}
+
 export default function NetlifyIdentity() {
   useEffect(() => {
     // Initialize Netlify Identity widget when it's loaded
-    if (typeof window !== 'undefined' && (window as any).netlifyIdentity) {
-      (window as any).netlifyIdentity.on('init', (user: any) => {
+    if (typeof window !== 'undefined' && window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', (user) => {
         if (!user) {
-          (window as any).netlifyIdentity.on('login', () => {
+          window.netlifyIdentity.on('login', () => {
             document.location.href = '/admin/';
           });
         }
