@@ -1,0 +1,79 @@
+{
+  "title": "Complete Business System",
+  "description": "Everything you need to compete online. New website plus all automation systems working together seamlessly.",
+  "price": "$4,997",
+  "timeline": "4 weeks",
+  "hero": {
+    "headline": "Everything Working Together",
+    "subheadline": "Get a complete online presence with all systems connected and automated. The smart way to transform your business.",
+    "backgroundColor": "#1e293b"
+  },
+  "features": [
+    {
+      "title": "Professional Website",
+      "description": "A complete 5-7 page website that showcases your business and generates leads.",
+      "icon": "🌐"
+    },
+    {
+      "title": "Lead Automation",
+      "description": "Every inquiry gets instant response. Never miss another opportunity.",
+      "icon": "📧"
+    },
+    {
+      "title": "Appointment System",
+      "description": "Online booking with automatic reminders and follow-ups.",
+      "icon": "📅"
+    },
+    {
+      "title": "Review Management",
+      "description": "Build your reputation on autopilot with smart review requests.",
+      "icon": "⭐"
+    },
+    {
+      "title": "Integrated Systems",
+      "description": "Everything works together seamlessly. One system, no headaches.",
+      "icon": "🔗"
+    },
+    {
+      "title": "Complete Training",
+      "description": "I'll show you how to use everything. Most clients are experts in 2 hours.",
+      "icon": "🎓"
+    }
+  ],
+  "process": [
+    {
+      "title": "Strategic Planning",
+      "description": "We map out your entire customer journey and identify automation opportunities.",
+      "timeline": "Week 1"
+    },
+    {
+      "title": "Website Development",
+      "description": "Build your custom website with all automation hooks in place.",
+      "timeline": "Weeks 2-3"
+    },
+    {
+      "title": "Automation Setup",
+      "description": "Connect all systems and test every automation pathway.",
+      "timeline": "Week 3-4"
+    },
+    {
+      "title": "Launch & Training",
+      "description": "Everything goes live and you get comprehensive training on your new system.",
+      "timeline": "Week 4"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Why is this better than doing them separately?",
+      "answer": "When built together, everything integrates perfectly from day one. Plus, you save $594 versus buying separately."
+    },
+    {
+      "question": "Is this overwhelming to manage?",
+      "answer": "Actually, it's simpler! One dashboard, one system, everything in one place. I'll train you on everything."
+    },
+    {
+      "question": "What kind of results can I expect?",
+      "answer": "Most clients see 2-3x more leads within 60 days, plus save 10+ hours per week on manual tasks."
+    }
+  ]
+}

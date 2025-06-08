@@ -1,0 +1,44 @@
+{
+  "title": "Restaurant Websites & Systems",
+  "description": "Get more diners with a website that takes orders, handles reservations, and builds your reputation automatically.",
+  "heroHeadline": "Fill More Tables, Waste Less Time",
+  "heroSubheadline": "Restaurant websites and automation that handle the business side so you can focus on great food and service.",
+  "problems": [
+    {
+      "problem": "Losing money to delivery apps",
+      "description": "Third-party apps taking 30% of every order"
+    },
+    {
+      "problem": "Empty tables from no-shows",
+      "description": "Reservations made but customers don't show up"
+    },
+    {
+      "problem": "Reviews going to competitors",
+      "description": "Happy customers leave but never write reviews"
+    }
+  ],
+  "solutions": [
+    {
+      "solution": "Direct Online Ordering",
+      "description": "Your own ordering system with zero commission fees",
+      "icon": "🛍️"
+    },
+    {
+      "solution": "Smart Reservation System",
+      "description": "Automatic confirmations and reminders reduce no-shows by 70%",
+      "icon": "📅"
+    },
+    {
+      "solution": "Reputation Building",
+      "description": "Happy diners get review requests while the experience is fresh",
+      "icon": "⭐"
+    }
+  ],
+  "caseStudies": [
+    {
+      "name": "Bella Vista Kitchen",
+      "result": "40% increase in direct orders",
+      "quote": "We saved $3,000/month by taking orders directly instead of through apps."
+    }
+  ]
+}

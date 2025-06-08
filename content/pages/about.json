@@ -1,0 +1,30 @@
+{
+  "title": "About Tom",
+  "description": "Learn about Tom and why he's passionate about helping Connecticut small businesses succeed online.",
+  "hero": {
+    "headline": "Hey, I'm Tom",
+    "subheadline": "I help Connecticut small businesses get online and grow. No tech jargon, just real solutions that work."
+  },
+  "story": {
+    "title": "Why I Do This",
+    "content": "For 20+ years, I've been building businesses and helping others do the same. I've experienced the highs of growing a multi-million dollar company and the lows of losing it all when systems failed.\n\nThat failure taught me what really matters: **simple, reliable tools that just work**.\n\nNow I help Connecticut small business owners avoid my mistakes. I build websites that bring in customers and automation that gives you your time back.\n\nNo fancy jargon. No bloated features. Just practical solutions that help you serve customers better and grow steadily.\n\nI believe every business owner deserves tools that work as hard as they do. Let's build something that helps your business thrive.",
+    "image": null
+  },
+  "values": [
+    {
+      "title": "Honest & Direct",
+      "description": "I'll tell you exactly what you need (and what you don't). No upselling, no BS.",
+      "icon": "🤝"
+    },
+    {
+      "title": "Built to Last",
+      "description": "Everything I build is reliable, maintainable, and designed to grow with your business.",
+      "icon": "🏗️"
+    },
+    {
+      "title": "Real Support",
+      "description": "When you need help, you get me - not a call center. I'm here for the long haul.",
+      "icon": "💪"
+    }
+  ]
+}

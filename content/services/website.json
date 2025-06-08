@@ -1,0 +1,64 @@
+{
+  "title": "Professional Website Development",
+  "description": "Get a website that actually works for your business. Fast, mobile-friendly, and built to bring in customers.",
+  "price": "$3,500",
+  "timeline": "3 weeks",
+  "hero": {
+    "headline": "A Website That Actually Works",
+    "subheadline": "Stop losing customers to competitors with better websites. Get a professional site that showcases your business and brings in leads 24/7.",
+    "backgroundColor": "#1e293b"
+  },
+  "features": [
+    {
+      "title": "Mobile-First Design",
+      "description": "Looks perfect on phones, tablets, and desktops. Your customers can find you anywhere.",
+      "icon": "📱"
+    },
+    {
+      "title": "Lightning Fast",
+      "description": "No more slow loading times. Your site loads in under 2 seconds, keeping visitors engaged.",
+      "icon": "⚡"
+    },
+    {
+      "title": "Built for Google",
+      "description": "SEO-optimized from day one. Get found when locals search for your services.",
+      "icon": "🔍"
+    },
+    {
+      "title": "Easy to Update",
+      "description": "Simple content management system. Update text and images without calling a developer.",
+      "icon": "✏️"
+    }
+  ],
+  "process": [
+    {
+      "title": "Discovery & Planning",
+      "description": "We discuss your business goals, target customers, and what you need your website to do.",
+      "timeline": "Week 1"
+    },
+    {
+      "title": "Design & Development",
+      "description": "I create your custom website, incorporating your feedback along the way.",
+      "timeline": "Week 2"
+    },
+    {
+      "title": "Launch & Training",
+      "description": "Your site goes live and I show you how to make updates yourself.",
+      "timeline": "Week 3"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do I need to provide content?",
+      "answer": "I'll help you with everything. If you have existing content, great! If not, I'll write compelling copy based on our discussions about your business."
+    },
+    {
+      "question": "Can I update it myself?",
+      "answer": "Absolutely! I'll set up an easy content management system and show you how to use it. Most clients master it in 30 minutes."
+    },
+    {
+      "question": "What about hosting?",
+      "answer": "Your site will be hosted on enterprise-grade servers with 99.9% uptime. Hosting is free - you just pay for your domain name (about $15/year)."
+    }
+  ]
+}

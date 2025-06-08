@@ -1,0 +1,66 @@
+{
+  "businessName": "Bella Vista Kitchen & Bar",
+  "industry": "Restaurant",
+  "tagline": "Modern Italian dining in the heart of New Haven",
+  "description": "A premium restaurant website showcasing online ordering, reservations, and automated review management.",
+  "contact": {
+    "phone": "(203) 555-0123",
+    "email": "info@bellavista.com",
+    "address": "123 Chapel St, New Haven, CT",
+    "hours": "Open Daily 5pm-11pm"
+  },
+  "colors": {
+    "primary": "#3B4A3F",
+    "secondary": "#A86754",
+    "accent": "#DCA953",
+    "background": "#F4F2ED",
+    "text": "#2D2A26"
+  },
+  "hero": {
+    "headline": "Demo: Bella Vista Kitchen & Bar",
+    "subheadline": "Fresh ingredients, timeless recipes, unforgettable moments.",
+    "ctaText": "Reserve Your Table",
+    "secondaryCta": "Order Online",
+    "backgroundImage": null
+  },
+  "features": [
+    {
+      "title": "Smart Reservations",
+      "description": "Book online 24/7. Automatic confirmations. SMS reminders. No more double-bookings.",
+      "icon": "📅"
+    },
+    {
+      "title": "Online Ordering",
+      "description": "Skip the commission fees. Direct orders, your prices, instant kitchen notifications.",
+      "icon": "🛍️"
+    },
+    {
+      "title": "Review Management",
+      "description": "Happy diners get gentle review requests. Build your reputation on autopilot.",
+      "icon": "⭐"
+    }
+  ],
+  "gallery": [],
+  "menuItems": [
+    {
+      "category": "Appetizers",
+      "items": [
+        {
+          "name": "Burrata Caprese",
+          "description": "Creamy burrata, heirloom tomatoes, basil oil, aged balsamic",
+          "price": "$18"
+        }
+      ]
+    },
+    {
+      "category": "Entrées",
+      "items": [
+        {
+          "name": "Osso Buco",
+          "description": "Braised veal shank, saffron risotto, gremolata",
+          "price": "$42"
+        }
+      ]
+    }
+  ]
+}

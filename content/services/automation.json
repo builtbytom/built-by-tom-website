@@ -1,0 +1,59 @@
+{
+  "title": "Business Automation",
+  "description": "Stop wasting time on repetitive tasks. Custom automation that connects your tools and runs your business on autopilot.",
+  "price": "$797 per package",
+  "timeline": "2-3 weeks",
+  "hero": {
+    "headline": "Focus on What Matters Most",
+    "subheadline": "Stop copying data between spreadsheets. Let automation handle the boring stuff while you grow your business.",
+    "backgroundColor": "#334155"
+  },
+  "features": [
+    {
+      "title": "Lead Response Automation",
+      "description": "Instant text messages to new leads, automatic CRM entry, and calendar reminders.",
+      "icon": "📧"
+    },
+    {
+      "title": "Appointment Automation",
+      "description": "Automated reminders, confirmation requests, and rebooking sequences.",
+      "icon": "📅"
+    },
+    {
+      "title": "Review & Reputation",
+      "description": "Automatic review requests with smart routing to build your online reputation.",
+      "icon": "⭐"
+    }
+  ],
+  "process": [
+    {
+      "title": "Map Your Workflow",
+      "description": "We talk through your current process and identify the biggest time-wasters.",
+      "timeline": "Week 1"
+    },
+    {
+      "title": "Build & Test",
+      "description": "Your automation gets built and tested with real scenarios.",
+      "timeline": "Week 2"
+    },
+    {
+      "title": "Go Live & Monitor",
+      "description": "Your automation goes live and we monitor to ensure everything runs smoothly.",
+      "timeline": "Week 3"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What if my tools don't integrate?",
+      "answer": "Most modern tools have APIs or zapier integrations. If yours don't, I'll find a workaround or recommend better tools that do the same job."
+    },
+    {
+      "question": "Will this replace my staff?",
+      "answer": "No. Automation handles the boring, repetitive stuff so your people can focus on actually helping customers."
+    },
+    {
+      "question": "What if something breaks?",
+      "answer": "All automations include monitoring alerts. If something stops working, you'll know immediately. Plus, you get 30 days of support."
+    }
+  ]
+}

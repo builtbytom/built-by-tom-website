@@ -1,0 +1,28 @@
+{
+  "title": "Contact Tom",
+  "description": "Get in touch to discuss your website, automation needs, or just to say hello.",
+  "heroHeadline": "Let's Build Something Great Together",
+  "heroSubheadline": "Ready to get your business the website and systems it deserves? Let's talk.",
+  "formHeadline": "Start the Conversation",
+  "formDescription": "Tell me about your business and what you're looking to achieve. I'll get back to you within 24 hours.",
+  "contactMethods": [
+    {
+      "method": "Email",
+      "value": "tom@builtbytom.com",
+      "description": "Best for project inquiries",
+      "icon": "✉️"
+    },
+    {
+      "method": "Phone",
+      "value": "(203) 555-0123",
+      "description": "Call or text anytime",
+      "icon": "📱"
+    },
+    {
+      "method": "Location",
+      "value": "North Haven, CT",
+      "description": "Serving all of Connecticut",
+      "icon": "📍"
+    }
+  ]
+}
