@@ -52,34 +52,48 @@ export default function AutomationSimulator() {
   const [selectedBusiness, setSelectedBusiness] = useState<BusinessType>(businessTypes[0]);
   const [currentStep, setCurrentStep] = useState(0);
   const [showEditableData, setShowEditableData] = useState(false);
+  const [totalTimeSaved, setTotalTimeSaved] = useState(0);
+  const [showFinalStats, setShowFinalStats] = useState(false);
   const [customData, setCustomData] = useState({
     customer: selectedBusiness.customer,
     service: selectedBusiness.service
   });
 
   const steps = [
-    { id: 'start', title: 'New Booking Received', icon: '📥', duration: 1000 },
-    { id: 'crm', title: 'Added to CRM', icon: '💾', duration: 1500 },
-    { id: 'email', title: 'Confirmation Email Sent', icon: '📧', duration: 2000 },
-    { id: 'calendar', title: 'Calendar Blocked', icon: '📅', duration: 1500 },
-    { id: 'sms', title: 'SMS Reminder Scheduled', icon: '📱', duration: 1500 },
-    { id: 'review', title: 'Review Request Queued', icon: '⭐', duration: 1500 },
-    { id: 'complete', title: 'Automation Complete!', icon: '🎉', duration: 2000 }
+    { id: 'start', title: 'New Booking Received', icon: '📥', duration: 1500, manualTime: 0 },
+    { id: 'crm', title: 'Added to CRM', icon: '💾', duration: 2000, manualTime: 3 },
+    { id: 'email', title: 'Confirmation Email Sent', icon: '📧', duration: 3000, manualTime: 2 },
+    { id: 'calendar', title: 'Calendar Blocked', icon: '📅', duration: 2000, manualTime: 1 },
+    { id: 'sms', title: 'SMS Reminder Scheduled', icon: '📱', duration: 3000, manualTime: 2 },
+    { id: 'review', title: 'Review Request Queued', icon: '⭐', duration: 3000, manualTime: 2 },
+    { id: 'complete', title: 'Automation Complete!', icon: '🎉', duration: 2000, manualTime: 0 }
   ];
 
   const runSimulation = async () => {
     setIsRunning(true);
     setCurrentStep(0);
+    setTotalTimeSaved(0);
+    setShowFinalStats(false);
 
+    let timeSaved = 0;
     for (let i = 0; i < steps.length; i++) {
       setCurrentStep(i);
+      timeSaved += steps[i].manualTime;
+      setTotalTimeSaved(timeSaved);
       await new Promise(resolve => setTimeout(resolve, steps[i].duration));
     }
 
+    // Show final stats after completion
     setTimeout(() => {
-      setIsRunning(false);
-      setCurrentStep(0);
-    }, 2000);
+      setShowFinalStats(true);
+    }, 1500);
+  };
+
+  const resetSimulation = () => {
+    setIsRunning(false);
+    setCurrentStep(0);
+    setTotalTimeSaved(0);
+    setShowFinalStats(false);
   };
 
   const handleBusinessChange = (business: BusinessType) => {
@@ -88,6 +102,7 @@ export default function AutomationSimulator() {
       customer: business.customer,
       service: business.service
     });
+    resetSimulation();
   };
 
   const getStepContent = () => {
@@ -202,6 +217,15 @@ export default function AutomationSimulator() {
 
         {/* Simulation Container */}
         <div className="relative bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
+          {/* Time Saved Counter */}
+          {isRunning && (
+            <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
+              <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-3 rounded-2xl shadow-lg">
+                <div className="text-sm font-medium mb-1">Time Saved</div>
+                <div className="text-2xl font-bold">{totalTimeSaved} min</div>
+              </div>
+            </div>
+          )}
           {/* Progress Steps */}
           <div className="flex justify-between items-center mb-12 max-w-4xl mx-auto">
             {steps.map((step, index) => (
@@ -255,10 +279,86 @@ export default function AutomationSimulator() {
               </button>
             ) : (
               <div className="text-center">
-                <h3 className="font-bold text-2xl text-foreground mb-4">
-                  {steps[currentStep].title}
-                </h3>
-                {getStepContent()}
+                {!showFinalStats ? (
+                  <>
+                    <h3 className="font-bold text-2xl text-foreground mb-4">
+                      {steps[currentStep].title}
+                    </h3>
+                    
+                    {/* Time Savings for Current Step */}
+                    {steps[currentStep].manualTime > 0 && (
+                      <div className="bg-green-50 rounded-xl p-4 mb-6 max-w-md mx-auto">
+                        <div className="flex items-center justify-center text-green-700">
+                          <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="font-semibold">
+                            Manual time: {steps[currentStep].manualTime} min → Automated: 0 min
+                          </span>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {getStepContent()}
+                  </>
+                ) : (
+                  /* Final Stats Display */
+                  <div className="animate-fade-in">
+                    <div className="text-5xl mb-6">🎉</div>
+                    <h3 className="font-bold text-3xl text-foreground mb-8">
+                      Total Time Saved Per Booking
+                    </h3>
+                    
+                    <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-2xl p-8 mb-8 max-w-2xl mx-auto shadow-xl">
+                      <div className="text-6xl font-bold mb-2">{totalTimeSaved} Minutes</div>
+                      <div className="text-xl">Per Booking</div>
+                    </div>
+                    
+                    <div className="space-y-6 max-w-3xl mx-auto">
+                      <div className="bg-gray-50 rounded-xl p-6 transform transition-all duration-500 hover:scale-105">
+                        <h4 className="font-semibold text-xl text-foreground mb-2">
+                          With 20 bookings per week:
+                        </h4>
+                        <div className="grid md:grid-cols-3 gap-4 text-center">
+                          <div>
+                            <div className="text-3xl font-bold text-primary">{Math.round(totalTimeSaved * 20 / 60)} Hours</div>
+                            <div className="text-sm text-gray-600">Saved Weekly</div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-green-600">${Math.round(totalTimeSaved * 20 / 60 * 50)}</div>
+                            <div className="text-sm text-gray-600">Value at $50/hr</div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-secondary">{Math.round(totalTimeSaved * 20 * 52 / 60)}</div>
+                            <div className="text-sm text-gray-600">Hours Per Year</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="text-lg text-gray-700">
+                        <p className="font-semibold">That's enough time to:</p>
+                        <ul className="mt-2 space-y-1">
+                          <li>• Handle 3x more bookings without hiring staff</li>
+                          <li>• Focus on growing your business instead of admin work</li>
+                          <li>• Actually take a lunch break (remember those?)</li>
+                        </ul>
+                      </div>
+                      
+                      {/* Try Another Business Button */}
+                      <div className="pt-6">
+                        <button
+                          onClick={resetSimulation}
+                          className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all"
+                        >
+                          <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                          </svg>
+                          Try Another Business Type
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -302,8 +402,21 @@ export default function AutomationSimulator() {
           }
         }
         
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        
         .animate-slide-up {
           animation: slide-up 0.5s ease-out forwards;
+        }
+        
+        .animate-fade-in {
+          animation: fade-in 0.8s ease-out forwards;
         }
       `}</style>
     </section>
