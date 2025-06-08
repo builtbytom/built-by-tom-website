@@ -217,15 +217,6 @@ export default function AutomationSimulator() {
 
         {/* Simulation Container */}
         <div className="relative bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
-          {/* Time Saved Counter */}
-          {isRunning && !showFinalStats && (
-            <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-10">
-              <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-2xl shadow-lg">
-                <div className="text-xs sm:text-sm font-medium mb-0.5 sm:mb-1">Time Saved</div>
-                <div className="text-xl sm:text-2xl font-bold">{totalTimeSaved} min</div>
-              </div>
-            </div>
-          )}
           {/* Progress Steps */}
           <div className="flex justify-between items-center mb-12 max-w-4xl mx-auto relative">
             {steps.map((step, index) => (
