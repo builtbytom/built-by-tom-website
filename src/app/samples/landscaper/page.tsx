@@ -114,16 +114,16 @@ export default function LandscaperSample() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Landscape Design */}
-            <div className="group">
-              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+            <div className="group flex">
+              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex flex-col w-full">
                 <div className="h-48 bg-gradient-to-br from-[#2C3E33]/20 to-[#2C3E33]/10 flex items-center justify-center">
                   <div className="text-6xl">🌿</div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow flex flex-col">
                   <h3 className={`${merriweather.className} font-bold text-xl text-[#212121] mb-3`}>
                     Landscape Design & Installation
                   </h3>
-                  <p className="text-[#212121]/70">
+                  <p className="text-[#212121]/70 flex-grow">
                     A complete vision for your property, from plant selection to final installation, 
                     designed to thrive in the Connecticut climate.
                   </p>
@@ -132,16 +132,16 @@ export default function LandscaperSample() {
             </div>
 
             {/* Hardscaping */}
-            <div className="group">
-              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+            <div className="group flex">
+              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex flex-col w-full">
                 <div className="h-48 bg-gradient-to-br from-[#6A7A89]/20 to-[#6A7A89]/10 flex items-center justify-center">
                   <div className="text-6xl">🪨</div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow flex flex-col">
                   <h3 className={`${merriweather.className} font-bold text-xl text-[#212121] mb-3`}>
                     Hardscaping & Patios
                   </h3>
-                  <p className="text-[#212121]/70">
+                  <p className="text-[#212121]/70 flex-grow">
                     Extend your living space with custom-built bluestone patios, walkways, and 
                     retaining walls that blend beauty with function.
                   </p>
@@ -150,16 +150,16 @@ export default function LandscaperSample() {
             </div>
 
             {/* Lawn Care */}
-            <div className="group">
-              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+            <div className="group flex">
+              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex flex-col w-full">
                 <div className="h-48 bg-gradient-to-br from-[#2C3E33]/20 to-[#2C3E33]/10 flex items-center justify-center">
                   <div className="text-6xl">🌱</div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow flex flex-col">
                   <h3 className={`${merriweather.className} font-bold text-xl text-[#212121] mb-3`}>
                     Lawn & Garden Care
                   </h3>
-                  <p className="text-[#212121]/70">
+                  <p className="text-[#212121]/70 flex-grow">
                     Meticulous lawn maintenance, garden bed creation, and seasonal planting to 
                     keep your property looking its best year-round.
                   </p>
@@ -168,16 +168,16 @@ export default function LandscaperSample() {
             </div>
 
             {/* Property Maintenance */}
-            <div className="group">
-              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+            <div className="group flex">
+              <div className="bg-[#F1F0EB] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex flex-col w-full">
                 <div className="h-48 bg-gradient-to-br from-[#B87333]/20 to-[#B87333]/10 flex items-center justify-center">
                   <div className="text-6xl">🍂</div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow flex flex-col">
                   <h3 className={`${merriweather.className} font-bold text-xl text-[#212121] mb-3`}>
                     Property Maintenance
                   </h3>
-                  <p className="text-[#212121]/70">
+                  <p className="text-[#212121]/70 flex-grow">
                     Comprehensive spring & fall cleanups, mulching, pruning, and storm damage 
                     removal to protect your investment.
                   </p>
@@ -204,72 +204,78 @@ export default function LandscaperSample() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Step 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg relative">
-              <div className="absolute -top-4 left-8 w-12 h-12 bg-[#B87333] text-white rounded-full flex items-center justify-center font-bold text-lg">
-                1
-              </div>
-              <h3 className={`${merriweather.className} font-bold text-2xl text-[#212121] mb-4 mt-4`}>
-                Get a Clear, Timely Estimate
-              </h3>
-              <p className="text-[#212121]/70">
-                Fill out our online form and you'll receive an instant confirmation text so you 
-                know we got it. We'll call you within one business day to schedule a free, 
-                no-pressure consultation.
-              </p>
-              <div className="mt-6 p-4 bg-[#F1F0EB] rounded-lg">
-                <p className="text-sm text-[#212121]/60 italic">
-                  "I submitted my request at 8pm and got a text right away confirming they 
-                  received it. So professional!" - Recent Client
+            <div className="flex">
+              <div className="bg-white rounded-2xl p-8 shadow-lg relative flex flex-col w-full">
+                <div className="absolute -top-4 left-8 w-12 h-12 bg-[#B87333] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  1
+                </div>
+                <h3 className={`${merriweather.className} font-bold text-2xl text-[#212121] mb-4 mt-4`}>
+                  Get a Clear, Timely Estimate
+                </h3>
+                <p className="text-[#212121]/70 mb-6 flex-grow">
+                  Fill out our online form and you'll receive an instant confirmation text so you 
+                  know we got it. We'll call you within one business day to schedule a free, 
+                  no-pressure consultation.
                 </p>
+                <div className="mt-auto p-4 bg-[#F1F0EB] rounded-lg">
+                  <p className="text-sm text-[#212121]/60 italic">
+                    "I submitted my request at 8pm and got a text right away confirming they 
+                    received it. So professional!" - Recent Client
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg relative">
-              <div className="absolute -top-4 left-8 w-12 h-12 bg-[#B87333] text-white rounded-full flex items-center justify-center font-bold text-lg">
-                2
-              </div>
-              <h3 className={`${merriweather.className} font-bold text-2xl text-[#212121] mb-4 mt-4`}>
-                Schedule With Confidence
-              </h3>
-              <p className="text-[#212121]/70">
-                Once you approve your detailed quote, we'll schedule the work. You'll receive 
-                automatic appointment reminders via SMS the day before our team is set to arrive. 
-                No more guessing games.
-              </p>
-              <div className="mt-6 p-4 bg-[#F1F0EB] rounded-lg">
-                <div className="flex items-start">
-                  <div className="mr-3 text-2xl">📱</div>
-                  <div className="text-sm">
-                    <p className="font-semibold text-[#212121]">SMS Reminder</p>
-                    <p className="text-[#212121]/60">Tomorrow 8am - Sterling Scapes crew arriving</p>
+            <div className="flex">
+              <div className="bg-white rounded-2xl p-8 shadow-lg relative flex flex-col w-full">
+                <div className="absolute -top-4 left-8 w-12 h-12 bg-[#B87333] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  2
+                </div>
+                <h3 className={`${merriweather.className} font-bold text-2xl text-[#212121] mb-4 mt-4`}>
+                  Schedule With Confidence
+                </h3>
+                <p className="text-[#212121]/70 mb-6 flex-grow">
+                  Once you approve your detailed quote, we'll schedule the work. You'll receive 
+                  automatic appointment reminders via SMS the day before our team is set to arrive. 
+                  No more guessing games.
+                </p>
+                <div className="mt-auto p-4 bg-[#F1F0EB] rounded-lg">
+                  <div className="flex items-start">
+                    <div className="mr-3 text-2xl">📱</div>
+                    <div className="text-sm">
+                      <p className="font-semibold text-[#212121]">SMS Reminder</p>
+                      <p className="text-[#212121]/60">Tomorrow 8am - Sterling Scapes crew arriving</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg relative">
-              <div className="absolute -top-4 left-8 w-12 h-12 bg-[#B87333] text-white rounded-full flex items-center justify-center font-bold text-lg">
-                3
-              </div>
-              <h3 className={`${merriweather.className} font-bold text-2xl text-[#212121] mb-4 mt-4`}>
-                Enjoy The Results
-              </h3>
-              <p className="text-[#212121]/70">
-                We complete the work to the highest standard. When the job is done, our system 
-                will send a request for your feedback to ensure you're 100% thrilled with your 
-                new landscape.
-              </p>
-              <div className="mt-6 p-4 bg-[#F1F0EB] rounded-lg">
-                <div className="flex text-yellow-500 mb-2">
-                  {'★★★★★'.split('').map((star, i) => (
-                    <span key={i} className="text-lg">{star}</span>
-                  ))}
+            <div className="flex">
+              <div className="bg-white rounded-2xl p-8 shadow-lg relative flex flex-col w-full">
+                <div className="absolute -top-4 left-8 w-12 h-12 bg-[#B87333] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  3
                 </div>
-                <p className="text-sm text-[#212121]/60">
-                  "The automated follow-up made it easy to leave a review!"
+                <h3 className={`${merriweather.className} font-bold text-2xl text-[#212121] mb-4 mt-4`}>
+                  Enjoy The Results
+                </h3>
+                <p className="text-[#212121]/70 mb-6 flex-grow">
+                  We complete the work to the highest standard. When the job is done, our system 
+                  will send a request for your feedback to ensure you're 100% thrilled with your 
+                  new landscape.
                 </p>
+                <div className="mt-auto p-4 bg-[#F1F0EB] rounded-lg">
+                  <div className="flex text-yellow-500 mb-2">
+                    {'★★★★★'.split('').map((star, i) => (
+                      <span key={i} className="text-lg">{star}</span>
+                    ))}
+                  </div>
+                  <p className="text-sm text-[#212121]/60">
+                    "The automated follow-up made it easy to leave a review!"
+                  </p>
+                </div>
               </div>
             </div>
           </div>
