@@ -155,6 +155,8 @@ collections:
     folder: "content/services"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - {label: "Service Name", name: "title", widget: "string"}
       - {label: "SEO Description", name: "description", widget: "text"}
@@ -194,6 +196,8 @@ collections:
     folder: "content/industries"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - {label: "Industry Name", name: "title", widget: "string"}
       - {label: "SEO Description", name: "description", widget: "text"}
@@ -226,6 +230,8 @@ collections:
     folder: "content/demos"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - {label: "Business Name", name: "businessName", widget: "string"}
       - {label: "Industry", name: "industry", widget: "string"}
