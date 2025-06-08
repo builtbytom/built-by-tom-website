@@ -1,0 +1,64 @@
+{
+  "mainMenu": [
+    {
+      "label": "Services",
+      "link": "/services",
+      "submenu": [
+        {"label": "Website Development", "link": "/services/website"},
+        {"label": "Business Automation", "link": "/services/automation"},
+        {"label": "Complete System", "link": "/services/complete-system"}
+      ]
+    },
+    {
+      "label": "Industries",
+      "link": "/industries",
+      "submenu": [
+        {"label": "Home Services", "link": "/industries/home-services"},
+        {"label": "Professional Services", "link": "/industries/professional-services"},
+        {"label": "Restaurants", "link": "/industries/restaurants"},
+        {"label": "Healthcare", "link": "/industries/healthcare"},
+        {"label": "Retail", "link": "/industries/retail"}
+      ]
+    },
+    {
+      "label": "Samples",
+      "link": "/samples"
+    },
+    {
+      "label": "About",
+      "link": "/about"
+    },
+    {
+      "label": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "footerSections": [
+    {
+      "title": "Services",
+      "links": [
+        {"label": "Website Development", "link": "/services/website"},
+        {"label": "Business Automation", "link": "/services/automation"},
+        {"label": "Complete System", "link": "/services/complete-system"},
+        {"label": "Website Audit", "link": "/services/website-audit"}
+      ]
+    },
+    {
+      "title": "Industries",
+      "links": [
+        {"label": "Home Services", "link": "/industries/home-services"},
+        {"label": "Professional Services", "link": "/industries/professional-services"},
+        {"label": "Restaurants", "link": "/industries/restaurants"},
+        {"label": "Healthcare", "link": "/industries/healthcare"}
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {"label": "Sample Websites", "link": "/samples"},
+        {"label": "About Tom", "link": "/about"},
+        {"label": "Contact", "link": "/contact"}
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import NetlifyIdentity from "@/components/NetlifyIdentity";
 
 export const metadata: Metadata = {
   title: {
@@ -48,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <NetlifyIdentity />
         <Navigation />
         <main>
           {children}

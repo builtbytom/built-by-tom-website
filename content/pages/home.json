@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "headline": "Connecticut Small Business Websites & Automation",
+    "subheadline": "Get A Website That Actually Works For Your Business",
+    "description": "Whether it's a broken website, endless tasks, or disconnected tools - I'll build what you need to grow. Real solutions from someone who's been there.",
+    "primaryButtonText": "Learn About Services",
+    "primaryButtonLink": "/services",
+    "secondaryButtonText": "See Pricing",
+    "secondaryButtonLink": "#pricing"
+  },
+  "itsOkSection": {
+    "title": "It's OK If You...",
+    "subtitle": "I work with businesses at every stage",
+    "items": [
+      {"text": "Don't have a website yet"},
+      {"text": "Have a site that's not working"},
+      {"text": "Feel overwhelmed by tech"},
+      {"text": "Just need someone to handle it"}
+    ]
+  },
+  "servicesOverview": {
+    "title": "Pick What You Need",
+    "subtitle": "Real solutions that fit your business and budget. No complicated packages or hidden fees.",
+    "cards": [
+      {
+        "title": "Professional Website",
+        "description": "A complete website that showcases your business and brings in customers. Mobile-friendly, fast, and built to grow with you.",
+        "price": "$3,500",
+        "features": ["Complete 5-7 page website", "Mobile responsive design", "3-week delivery", "No monthly fees"],
+        "link": "/services/website",
+        "icon": "🌐"
+      },
+      {
+        "title": "Business Automation",
+        "description": "Stop wasting time on repetitive tasks. Automate your follow-ups, scheduling, and customer communication.",
+        "price": "$797",
+        "features": ["Lead response automation", "Appointment reminders", "Review collection", "Save 10+ hours/week"],
+        "link": "/services/automation",
+        "icon": "⚡"
+      },
+      {
+        "title": "Complete Business Package",
+        "description": "Everything you need to compete online. New website plus all automation systems working together seamlessly.",
+        "price": "$4,997",
+        "features": ["Everything in Website", "All automation packages", "Integrated systems", "Best value - save $1,000"],
+        "link": "/services/complete-system",
+        "icon": "🚀"
+      }
+    ]
+  },
+  "about": {
+    "title": "Hey, I'm Tom",
+    "subtitle": "I Build What Works",
+    "content": "For 20+ years, I've helped Connecticut businesses grow online. After building (and losing) my own multi-million dollar business when systems failed, I learned what really matters: **simple tools that work**.\n\nNo fancy jargon. No bloated features. Just practical websites and automation that help you serve customers better and grow steadily.",
+    "yearsExperience": "20+",
+    "profileImage": null
+  },
+  "testimonials": {
+    "title": "Real Results From Local Businesses",
+    "items": [
+      {
+        "name": "Mike R.",
+        "business": "Sterling Property Maintenance",
+        "quote": "Tom built us a website that actually brings in leads. Our phone rings more in a week than it used to in a month. Best investment we've made.",
+        "avatar": null
+      },
+      {
+        "name": "Sarah L.",
+        "business": "Coastal Counseling LLC",
+        "quote": "I was terrified of tech stuff. Tom made everything so simple. Now clients can book online 24/7 and I get automatic reminders. It just works.",
+        "avatar": null
+      },
+      {
+        "name": "David K.",
+        "business": "New Haven Home Inspections",
+        "quote": "Finally, someone who speaks normal English! Tom set up our whole system - website, scheduling, follow-ups. Everything runs itself now.",
+        "avatar": null
+      }
+    ]
+  },
+  "quiz": {
+    "enabled": true,
+    "title": "Website Health Check",
+    "questions": []
+  }
+}

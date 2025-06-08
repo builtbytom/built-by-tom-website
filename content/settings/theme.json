@@ -1,0 +1,11 @@
+{
+  "primaryColor": "#1e293b",
+  "secondaryColor": "#334155",
+  "accentColor": "#3B82F6",
+  "successColor": "#10b981",
+  "warningColor": "#f59e0b",
+  "errorColor": "#ef4444",
+  "textColor": "#64748b",
+  "backgroundColor": "#f8fafc",
+  "fontFamily": "Figtree"
+}
