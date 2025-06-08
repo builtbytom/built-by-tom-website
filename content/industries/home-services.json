@@ -1,0 +1,44 @@
+{
+  "title": "Home Service Business Websites",
+  "description": "Websites and automation for plumbers, electricians, HVAC, landscapers, and other home service professionals.",
+  "heroHeadline": "Book More Jobs, Handle Less Hassle",
+  "heroSubheadline": "Get found online, book jobs 24/7, and automate the busy work so you can focus on the actual work.",
+  "problems": [
+    {
+      "problem": "Missing calls while on jobs",
+      "description": "Potential customers calling competitors when you can't answer"
+    },
+    {
+      "problem": "No-shows eating up time",
+      "description": "Drive across town for nothing when customers forget"
+    },
+    {
+      "problem": "Chasing down payments",
+      "description": "Spending evenings sending invoices and payment reminders"
+    }
+  ],
+  "solutions": [
+    {
+      "solution": "24/7 Online Booking",
+      "description": "Let customers book service calls anytime, even while you're on a job",
+      "icon": "📅"
+    },
+    {
+      "solution": "Automatic Reminders",
+      "description": "Text reminders reduce no-shows by 75% or more",
+      "icon": "📱"
+    },
+    {
+      "solution": "Payment Automation",
+      "description": "Send invoices and collect payments automatically",
+      "icon": "💳"
+    }
+  ],
+  "caseStudies": [
+    {
+      "name": "Hartford Plumbing Co",
+      "result": "30% more service calls booked",
+      "quote": "Online booking changed everything. Now customers can book at 10 PM and I wake up to a full schedule."
+    }
+  ]
+}

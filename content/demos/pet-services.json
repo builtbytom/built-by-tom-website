@@ -1,0 +1,76 @@
+{
+  "businessName": "The Wagging Tail Lodge",
+  "industry": "Pet Services",
+  "tagline": "Where Your Pet's Happiness Comes First",
+  "description": "Cheerful pet daycare and grooming website with online booking and live puppy cams.",
+  "contact": {
+    "phone": "(203) 555-PETS",
+    "email": "hello@waggingtail.com",
+    "address": "123 Pet Lane, Hamden, CT",
+    "hours": "Mon-Fri 7AM-7PM, Sat 8AM-5PM"
+  },
+  "colors": {
+    "primary": "#FF8C00",
+    "secondary": "#0066CC",
+    "accent": "#FFD700",
+    "background": "#FFF5E6",
+    "text": "#4B3832"
+  },
+  "hero": {
+    "headline": "Happy Pets, Happy Life!",
+    "subheadline": "Premier pet daycare, grooming, and boarding in the heart of Connecticut",
+    "ctaText": "Book Now",
+    "secondaryCta": "Take Virtual Tour",
+    "backgroundImage": null
+  },
+  "features": [
+    {
+      "title": "Online Booking 24/7",
+      "description": "Book daycare, grooming, or boarding anytime",
+      "icon": "📱"
+    },
+    {
+      "title": "Live Puppy Cams",
+      "description": "Check on your furry friend throughout the day",
+      "icon": "📹"
+    },
+    {
+      "title": "Digital Report Cards",
+      "description": "Daily updates on your pet's activities and mood",
+      "icon": "📊"
+    }
+  ],
+  "gallery": [],
+  "menuItems": [
+    {
+      "category": "Daycare",
+      "items": [
+        {
+          "name": "Full Day Daycare",
+          "description": "8 hours of supervised play and socialization",
+          "price": "$45/day"
+        },
+        {
+          "name": "Half Day Daycare",
+          "description": "4 hours of fun and exercise",
+          "price": "$28/day"
+        }
+      ]
+    },
+    {
+      "category": "Grooming",
+      "items": [
+        {
+          "name": "Full Groom Package",
+          "description": "Bath, cut, nails, and more",
+          "price": "$65-120"
+        },
+        {
+          "name": "Bath & Brush",
+          "description": "Refresh and detangle",
+          "price": "$35-65"
+        }
+      ]
+    }
+  ]
+}

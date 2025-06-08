@@ -1,0 +1,44 @@
+{
+  "title": "Professional Service Websites",
+  "description": "Websites and systems for consultants, accountants, lawyers, therapists, and other professionals.",
+  "heroHeadline": "Present Your Expertise Professionally",
+  "heroSubheadline": "A website that reflects your professionalism and automates client management so you can focus on your practice.",
+  "problems": [
+    {
+      "problem": "DIY website looks unprofessional",
+      "description": "Losing credibility with a website that doesn't match your expertise"
+    },
+    {
+      "problem": "Back-and-forth scheduling emails",
+      "description": "Wasting hours coordinating appointments"
+    },
+    {
+      "problem": "Manual client onboarding",
+      "description": "Repeatedly sending the same forms and information"
+    }
+  ],
+  "solutions": [
+    {
+      "solution": "Professional Web Presence",
+      "description": "A polished website that builds trust before the first meeting",
+      "icon": "🏢"
+    },
+    {
+      "solution": "Self-Service Scheduling",
+      "description": "Clients book consultations based on your real-time availability",
+      "icon": "📅"
+    },
+    {
+      "solution": "Automated Onboarding",
+      "description": "New clients receive forms, agreements, and welcome info automatically",
+      "icon": "📋"
+    }
+  ],
+  "caseStudies": [
+    {
+      "name": "Coastal Counseling LLC",
+      "result": "Saved 10 hours per week",
+      "quote": "Automation handles all the admin work. I just show up and help my clients."
+    }
+  ]
+}

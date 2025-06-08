@@ -1,0 +1,44 @@
+{
+  "title": "Retail & E-commerce Websites",
+  "description": "Online stores and retail websites that compete with the big guys, without the big fees.",
+  "heroHeadline": "Sell More, Pay Less",
+  "heroSubheadline": "Get an online store that's yours to control, with automation that handles the busy work of retail.",
+  "problems": [
+    {
+      "problem": "Platform fees eating profits",
+      "description": "Giving away 3-5% on every sale to platform providers"
+    },
+    {
+      "problem": "Can't compete with Amazon",
+      "description": "Losing local customers to big box convenience"
+    },
+    {
+      "problem": "Inventory everywhere",
+      "description": "Managing stock across store, website, and marketplaces"
+    }
+  ],
+  "solutions": [
+    {
+      "solution": "Your Own Online Store",
+      "description": "Professional e-commerce site with minimal transaction fees",
+      "icon": "🛍️"
+    },
+    {
+      "solution": "Local Pickup Options",
+      "description": "Compete with same-day delivery using buy online, pickup in store",
+      "icon": "📦"
+    },
+    {
+      "solution": "Inventory Sync",
+      "description": "Automatic inventory updates across all channels",
+      "icon": "📊"
+    }
+  ],
+  "caseStudies": [
+    {
+      "name": "Madison Boutique",
+      "result": "Saved $2,000/month in fees",
+      "quote": "Moving off the big platforms to our own site was the best decision we made."
+    }
+  ]
+}

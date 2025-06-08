@@ -149,6 +149,64 @@ collections:
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Icon", name: "icon", widget: "string"}
               
+      # Services Overview Page
+      - name: "services-overview"
+        label: "Services Overview Page"
+        file: "content/pages/services-overview.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "SEO Description", name: "description", widget: "text"}
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - label: "Comparison Section"
+            name: "comparison"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Services"
+                name: "services"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Price", name: "price", widget: "string"}
+                  - {label: "Timeline", name: "timeline", widget: "string"}
+                  - {label: "Best For", name: "bestFor", widget: "string"}
+                  - {label: "Includes", name: "includes", widget: "list"}
+                  
+      # Resources Page
+      - name: "resources"
+        label: "Resources Page"
+        file: "content/pages/resources.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "SEO Description", name: "description", widget: "text"}
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - label: "Resource Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Resources"
+                name: "resources"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Type", name: "type", widget: "select", options: ["tool", "guide", "template"]}
+                  - {label: "Link", name: "link", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+              
   # Services Collection
   - name: "services"
     label: "Services"

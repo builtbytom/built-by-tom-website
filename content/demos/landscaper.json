@@ -1,0 +1,71 @@
+{
+  "businessName": "Sterling Scapes of CT",
+  "industry": "Landscaping",
+  "tagline": "Transform Your Outdoor Space",
+  "description": "Professional landscaping website with instant quotes, scheduling, and automated follow-ups.",
+  "contact": {
+    "phone": "(203) 555-LAWN",
+    "email": "info@sterlingscapes.com",
+    "address": "Sterling, CT",
+    "hours": "Mon-Sat 7AM-6PM"
+  },
+  "colors": {
+    "primary": "#2C3E33",
+    "secondary": "#6A7A68",
+    "accent": "#8B9556",
+    "background": "#F5F5F0",
+    "text": "#2C3E33"
+  },
+  "hero": {
+    "headline": "Your Dream Landscape Awaits",
+    "subheadline": "Professional landscaping services throughout Connecticut. Get an instant quote online.",
+    "ctaText": "Get Free Quote",
+    "secondaryCta": "View Our Work",
+    "backgroundImage": null
+  },
+  "features": [
+    {
+      "title": "Instant Online Quotes",
+      "description": "Get accurate estimates 24/7 without waiting for callbacks",
+      "icon": "💰"
+    },
+    {
+      "title": "Easy Scheduling",
+      "description": "Book services online and get automatic reminders",
+      "icon": "📅"
+    },
+    {
+      "title": "Before & After Gallery",
+      "description": "See our transformations and get inspired",
+      "icon": "📸"
+    }
+  ],
+  "gallery": [],
+  "menuItems": [
+    {
+      "category": "Lawn Care",
+      "items": [
+        {
+          "name": "Weekly Mowing",
+          "description": "Professional mowing, edging, and cleanup",
+          "price": "Starting at $45"
+        },
+        {
+          "name": "Spring Cleanup",
+          "description": "Complete yard preparation for the growing season",
+          "price": "$250-500"
+        }
+      ]
+    },
+    {
+      "category": "Landscaping",
+      "items": [
+        {
+          "name": "Design & Installation",
+          "description": "Custom landscape design and professional installation",
+          "price": "Free consultation"
+        }
+      ]
+    }
+  ]
+}

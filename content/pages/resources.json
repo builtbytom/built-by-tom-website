@@ -1,0 +1,70 @@
+{
+  "title": "Resources",
+  "description": "Free tools, guides, and resources to help Connecticut small businesses succeed online.",
+  "hero": {
+    "headline": "Free Resources for Small Business Success",
+    "subheadline": "Practical guides, tools, and tips to help you grow your business online."
+  },
+  "sections": [
+    {
+      "title": "Quick Wins",
+      "description": "Simple changes that make a big difference",
+      "resources": [
+        {
+          "title": "5-Minute Website Speed Test",
+          "description": "Check if your site is losing customers to slow loading times",
+          "type": "tool",
+          "link": "#",
+          "icon": "⚡"
+        },
+        {
+          "title": "Google My Business Checklist",
+          "description": "Make sure locals can find you when they search",
+          "type": "guide",
+          "link": "#",
+          "icon": "📍"
+        }
+      ]
+    },
+    {
+      "title": "Growing Your Business",
+      "description": "Strategies that actually work for small businesses",
+      "resources": [
+        {
+          "title": "Automation Starter Guide",
+          "description": "Find out which tasks you should automate first",
+          "type": "guide",
+          "link": "#",
+          "icon": "🤖"
+        },
+        {
+          "title": "Local SEO Basics",
+          "description": "Get found by customers in your area",
+          "type": "guide",
+          "link": "#",
+          "icon": "🔍"
+        }
+      ]
+    },
+    {
+      "title": "Industry Guides",
+      "description": "Specific advice for your type of business",
+      "resources": [
+        {
+          "title": "Restaurant Marketing Guide",
+          "description": "Fill more tables without expensive ads",
+          "type": "guide",
+          "link": "#",
+          "icon": "🍽️"
+        },
+        {
+          "title": "Home Services Growth Kit",
+          "description": "Book more jobs and reduce no-shows",
+          "type": "guide",
+          "link": "#",
+          "icon": "🏠"
+        }
+      ]
+    }
+  ]
+}

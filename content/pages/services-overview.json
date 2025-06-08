@@ -1,0 +1,66 @@
+{
+  "title": "Services Overview",
+  "description": "Compare all services and find the right solution for your business needs and budget.",
+  "hero": {
+    "headline": "Find the Right Solution for Your Business",
+    "subheadline": "Whether you need a new website, automation to save time, or a complete business transformation - I have a solution that fits."
+  },
+  "comparison": {
+    "title": "Compare Services",
+    "description": "Not sure which service is right for you? Here's a quick comparison:",
+    "services": [
+      {
+        "name": "Website Development",
+        "price": "$3,500",
+        "timeline": "3 weeks",
+        "bestFor": "Businesses that need a professional online presence",
+        "includes": [
+          "5-7 page custom website",
+          "Mobile responsive design",
+          "SEO optimization",
+          "Content management system",
+          "30 days of support"
+        ]
+      },
+      {
+        "name": "Business Automation",
+        "price": "$797/package",
+        "timeline": "2-3 weeks",
+        "bestFor": "Businesses drowning in repetitive tasks",
+        "includes": [
+          "Lead response automation",
+          "Appointment reminders",
+          "Review collection",
+          "Custom workflows",
+          "30 days of support"
+        ]
+      },
+      {
+        "name": "Complete System",
+        "price": "$4,997",
+        "timeline": "4 weeks",
+        "bestFor": "Businesses ready for complete transformation",
+        "includes": [
+          "Everything in Website",
+          "All automation packages",
+          "Integrated systems",
+          "Comprehensive training",
+          "60 days of support"
+        ]
+      },
+      {
+        "name": "Website Review",
+        "price": "$297",
+        "timeline": "1 week",
+        "bestFor": "Businesses that need clarity before investing",
+        "includes": [
+          "Complete website audit",
+          "Systems assessment",
+          "Prioritized action plan",
+          "1-hour strategy call",
+          "Detailed report"
+        ]
+      }
+    ]
+  }
+}

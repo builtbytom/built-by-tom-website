@@ -1,0 +1,66 @@
+{
+  "businessName": "The Haven Practice",
+  "industry": "Mental Health",
+  "tagline": "A quiet space to reconnect with yourself",
+  "description": "Modern, calming therapy practice website with confidential booking and encrypted forms.",
+  "contact": {
+    "phone": "(203) 555-CALM",
+    "email": "hello@havenpractice.com",
+    "address": "Downtown New Haven, CT",
+    "hours": "By appointment only"
+  },
+  "colors": {
+    "primary": "#A09CB0",
+    "secondary": "#B2C9C2",
+    "accent": "#C6A982",
+    "background": "#F7F1F1",
+    "text": "#3E3B40"
+  },
+  "hero": {
+    "headline": "A quiet space to reconnect with yourself",
+    "subheadline": "Professional therapy services in a confidential, calming environment",
+    "ctaText": "Schedule Consultation",
+    "secondaryCta": null,
+    "backgroundImage": null
+  },
+  "features": [
+    {
+      "title": "Confidential Booking",
+      "description": "Book appointments discreetly online",
+      "icon": "🔒"
+    },
+    {
+      "title": "Encrypted Forms",
+      "description": "Secure intake forms you complete at home",
+      "icon": "📝"
+    },
+    {
+      "title": "Flexible Scheduling",
+      "description": "Evening and weekend appointments available",
+      "icon": "📅"
+    }
+  ],
+  "gallery": [],
+  "menuItems": [
+    {
+      "category": "Services",
+      "items": [
+        {
+          "name": "Individual Therapy",
+          "description": "One-on-one sessions tailored to your needs",
+          "price": "$150/session"
+        },
+        {
+          "name": "Couples Therapy",
+          "description": "Strengthen your relationship with guided support",
+          "price": "$200/session"
+        },
+        {
+          "name": "Group Sessions",
+          "description": "Connect with others on similar journeys",
+          "price": "$75/session"
+        }
+      ]
+    }
+  ]
+}

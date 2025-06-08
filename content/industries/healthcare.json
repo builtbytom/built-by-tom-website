@@ -1,0 +1,44 @@
+{
+  "title": "Healthcare Practice Websites",
+  "description": "HIPAA-compliant websites and systems for medical practices, dentists, chiropractors, and wellness providers.",
+  "heroHeadline": "Patient-Friendly, HIPAA-Compliant",
+  "heroSubheadline": "Modern healthcare websites that make it easy for patients to find you, book appointments, and stay engaged with their care.",
+  "problems": [
+    {
+      "problem": "Phone tag with patients",
+      "description": "Staff spending hours playing phone tag for simple appointments"
+    },
+    {
+      "problem": "Missed appointments cost money",
+      "description": "Empty slots from forgotten appointments hurt revenue"
+    },
+    {
+      "problem": "Forms still on clipboards",
+      "description": "Patients filling out the same info every visit"
+    }
+  ],
+  "solutions": [
+    {
+      "solution": "Patient Portal",
+      "description": "Let patients book, reschedule, and manage appointments online",
+      "icon": "🏥"
+    },
+    {
+      "solution": "Smart Reminders",
+      "description": "Automated text/email reminders that actually work",
+      "icon": "⏰"
+    },
+    {
+      "solution": "Digital Intake Forms",
+      "description": "Patients complete forms at home before appointments",
+      "icon": "📝"
+    }
+  ],
+  "caseStudies": [
+    {
+      "name": "Elm Street Dental",
+      "result": "90% reduction in no-shows",
+      "quote": "The reminder system paid for itself in the first month. Our schedule stays full now."
+    }
+  ]
+}

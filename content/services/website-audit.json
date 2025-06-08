@@ -1,0 +1,64 @@
+{
+  "title": "Website & Systems Review",
+  "description": "Get clarity on what's working, what's not, and exactly what to fix first. A comprehensive audit with actionable recommendations.",
+  "price": "$297",
+  "timeline": "1 week",
+  "hero": {
+    "headline": "Get Clarity on What to Fix First",
+    "subheadline": "Stop guessing what's wrong with your website and systems. Get a professional review with a clear action plan.",
+    "backgroundColor": "#334155"
+  },
+  "features": [
+    {
+      "title": "Comprehensive Website Audit",
+      "description": "Full analysis of your current site's performance, SEO, mobile responsiveness, and user experience.",
+      "icon": "🔍"
+    },
+    {
+      "title": "Systems Assessment",
+      "description": "Review of your current tools, automation gaps, and workflow inefficiencies.",
+      "icon": "⚙️"
+    },
+    {
+      "title": "Prioritized Action Plan",
+      "description": "Clear roadmap showing exactly what to fix first for maximum impact.",
+      "icon": "📋"
+    },
+    {
+      "title": "1-Hour Strategy Call",
+      "description": "Live call to discuss findings and answer all your questions.",
+      "icon": "📞"
+    }
+  ],
+  "process": [
+    {
+      "title": "Schedule Your Review",
+      "description": "Book your audit and receive access to submit your information.",
+      "timeline": "Day 1"
+    },
+    {
+      "title": "Deep Dive Analysis",
+      "description": "I analyze your website and systems, looking for opportunities.",
+      "timeline": "Days 2-4"
+    },
+    {
+      "title": "Receive Your Report & Call",
+      "description": "Get your detailed report and join me for a strategy call.",
+      "timeline": "Day 5-7"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What if I don't have a website yet?",
+      "answer": "Perfect! We'll review your business needs and create a strategic plan for your online presence from scratch."
+    },
+    {
+      "question": "Is this just a sales pitch?",
+      "answer": "No. You get real value whether you hire me or not. The report is yours to keep and implement yourself if you choose."
+    },
+    {
+      "question": "What's included in the report?",
+      "answer": "15-20 page detailed analysis covering website performance, SEO opportunities, automation possibilities, and a prioritized action plan."
+    }
+  ]
+}
