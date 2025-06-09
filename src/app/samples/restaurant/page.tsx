@@ -42,12 +42,16 @@ export default function RestaurantSample() {
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] bg-gradient-to-br from-[#2D2A26] via-[#3B4A3F] to-[#2D2A26] overflow-hidden">
+        {restaurantDemo.hero.backgroundImage && (
+          <Image
+            src={restaurantDemo.hero.backgroundImage}
+            alt="Bella Vista Restaurant"
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
         <div className="absolute inset-0 bg-black/30"></div>
-        
-        {/* Hero image background */}
-        <div className="absolute inset-0 bg-[#3B4A3F]">
-          {/* Image placeholder */}
-        </div>
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-32 pb-20">
           <div className="text-center">
@@ -128,8 +132,13 @@ export default function RestaurantSample() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Appetizer */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-[#DCA953]/20 to-[#DCA953]/10">
-                {/* Appetizer image placeholder */}
+              <div className="relative h-48">
+                <Image
+                  src="/images/Burrata-Caprese.webp"
+                  alt="Burrata Caprese"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="text-[#A86754] font-semibold text-sm mb-2">APPETIZER</div>
@@ -143,8 +152,13 @@ export default function RestaurantSample() {
 
             {/* Entree */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-[#DCA953]/20 to-[#DCA953]/10">
-                {/* Entree image placeholder */}
+              <div className="relative h-48">
+                <Image
+                  src="/images/Osso-Buco.webp"
+                  alt="Osso Buco"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="text-[#A86754] font-semibold text-sm mb-2">ENTRÉE</div>
@@ -158,8 +172,13 @@ export default function RestaurantSample() {
 
             {/* Dessert */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-[#DCA953]/20 to-[#DCA953]/10">
-                {/* Dessert image placeholder */}
+              <div className="relative h-48">
+                <Image
+                  src="/images/Tiramisu.webp"
+                  alt="Tiramisu"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="text-[#A86754] font-semibold text-sm mb-2">DESSERT</div>
@@ -442,12 +461,15 @@ export default function RestaurantSample() {
 
           {/* Gallery Grid */}
           <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all">
-                <div className="aspect-w-4 aspect-h-3 bg-gradient-to-br from-[#DCA953]/20 to-[#3B4A3F]/20">
-                  <div className="flex items-center justify-center h-64 text-[#2D2A26]/30">
-                    [Gallery Image {item}]
-                  </div>
+            {restaurantDemo.gallery.map((image, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <div className="relative h-64">
+                  <Image
+                    src={image}
+                    alt={`Bella Vista Restaurant Gallery ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>

@@ -21,7 +21,7 @@
     "subheadline": "Fresh ingredients, timeless recipes, unforgettable moments.",
     "ctaText": "Reserve Your Table",
     "secondaryCta": "Order Online",
-    "backgroundImage": null
+    "backgroundImage": "/images/bella-vista-hero.webp"
   },
   "features": [
     {
@@ -40,7 +40,15 @@
       "icon": "⭐"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    "/images/indoor-seating-bella-vista.webp",
+    "/images/outdoor-seating-bella-vista.webp",
+    "/images/pizza-bella-vista.webp",
+    "/images/pasta-primavera.webp",
+    "/images/bella-vista-lifestyle.webp",
+    "/images/bella-vista-front-door.webp"
+  ],
+  "chefImage": "/images/chef-marco.webp",
   "menuItems": [
     {
       "category": "Appetizers",
@@ -48,7 +56,8 @@
         {
           "name": "Burrata Caprese",
           "description": "Creamy burrata, heirloom tomatoes, basil oil, aged balsamic",
-          "price": "$18"
+          "price": "$18",
+          "image": "/images/Burrata-Caprese.webp"
         }
       ]
     },
@@ -58,7 +67,19 @@
         {
           "name": "Osso Buco",
           "description": "Braised veal shank, saffron risotto, gremolata",
-          "price": "$42"
+          "price": "$42",
+          "image": "/images/Osso-Buco.webp"
+        }
+      ]
+    },
+    {
+      "category": "Desserts",
+      "items": [
+        {
+          "name": "Tiramisu",
+          "description": "Traditional Italian dessert with espresso-soaked ladyfingers and mascarpone",
+          "price": "$12",
+          "image": "/images/Tiramisu.webp"
         }
       ]
     }
