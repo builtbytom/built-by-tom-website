@@ -139,7 +139,7 @@ export default function BeverageDemoPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div 
           className="absolute inset-0 z-0"
           style={{
@@ -247,8 +247,14 @@ export default function BeverageDemoPage() {
 
       {/* Quiz Modal */}
       {showQuiz && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl p-8 max-w-lg w-full">
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => { setShowQuiz(false); setQuizStep(0); }}>
+          <div className="bg-white rounded-3xl p-8 max-w-lg w-full relative" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => { setShowQuiz(false); setQuizStep(0); }}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl"
+            >
+              ×
+            </button>
             {quizStep < quizQuestions.length ? (
               <>
                 <h3 className="text-2xl font-bold mb-6">
@@ -288,16 +294,28 @@ export default function BeverageDemoPage() {
                 <p className="text-gray-600 mb-6">
                   {flavorProfiles[selectedFlavor].description}
                 </p>
-                <button
-                  onClick={() => {
-                    setShowQuiz(false);
-                    setQuizStep(0);
-                  }}
-                  className="px-8 py-3 rounded-full text-white"
-                  style={{ backgroundColor: beverageData.colors.primary }}
-                >
-                  Order Now
-                </button>
+                <div className="flex gap-4 justify-center">
+                  <button
+                    onClick={() => {
+                      setShowQuiz(false);
+                      setQuizStep(0);
+                    }}
+                    className="px-8 py-3 rounded-full text-white"
+                    style={{ backgroundColor: beverageData.colors.primary }}
+                  >
+                    Order Now
+                  </button>
+                  <button
+                    onClick={() => {
+                      setShowQuiz(false);
+                      setQuizStep(0);
+                    }}
+                    className="px-8 py-3 rounded-full border-2"
+                    style={{ borderColor: beverageData.colors.primary, color: beverageData.colors.primary }}
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             )}
           </div>
