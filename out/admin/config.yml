@@ -1,0 +1,405 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+# Enable editorial workflow for drafts
+publish_mode: editorial_workflow
+
+collections:
+  # Pages Collection - For editing all main pages
+  - name: "pages"
+    label: "Pages"
+    files:
+      # Homepage
+      - name: "home"
+        label: "Homepage"
+        file: "content/pages/home.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Primary Button Text", name: "primaryButtonText", widget: "string"}
+              - {label: "Primary Button Link", name: "primaryButtonLink", widget: "string"}
+              - {label: "Secondary Button Text", name: "secondaryButtonText", widget: "string", required: false}
+              - {label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false}
+              
+          - label: "It's OK Section"
+            name: "itsOkSection"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Text", name: "text", widget: "string"}
+                  
+          - label: "Services Overview"
+            name: "servicesOverview"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+              - label: "Service Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Price", name: "price", widget: "string"}
+                  - {label: "Features", name: "features", widget: "list"}
+                  - {label: "Link", name: "link", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+                  
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Content", name: "content", widget: "markdown"}
+              - {label: "Years Experience", name: "yearsExperience", widget: "string"}
+              - {label: "Profile Image", name: "profileImage", widget: "image", required: false}
+              
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Testimonials"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Business", name: "business", widget: "string"}
+                  - {label: "Quote", name: "quote", widget: "text"}
+                  - {label: "Avatar", name: "avatar", widget: "image", required: false}
+                  
+          - label: "Quiz Section"
+            name: "quiz"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Questions"
+                name: "questions"
+                widget: "list"
+                fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - label: "Options"
+                    name: "options"
+                    widget: "list"
+                    fields:
+                      - {label: "Text", name: "text", widget: "string"}
+                      - {label: "Points", name: "points", widget: "number"}
+                      
+      # About Page
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "SEO Description", name: "description", widget: "text"}
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - label: "Story Section"
+            name: "story"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Content", name: "content", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image", required: false}
+          - label: "Values"
+            name: "values"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              
+      # Contact Page
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/pages/contact.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "SEO Description", name: "description", widget: "text"}
+          - {label: "Hero Headline", name: "heroHeadline", widget: "string"}
+          - {label: "Hero Subheadline", name: "heroSubheadline", widget: "text"}
+          - {label: "Form Headline", name: "formHeadline", widget: "string"}
+          - {label: "Form Description", name: "formDescription", widget: "text"}
+          - label: "Contact Methods"
+            name: "contactMethods"
+            widget: "list"
+            fields:
+              - {label: "Method", name: "method", widget: "string"}
+              - {label: "Value", name: "value", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              
+      # Services Overview Page
+      - name: "services-overview"
+        label: "Services Page"
+        file: "content/pages/services-overview.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "SEO Description", name: "description", widget: "text"}
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - label: "Comparison Section"
+            name: "comparison"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Services"
+                name: "services"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Price", name: "price", widget: "string"}
+                  - {label: "Timeline", name: "timeline", widget: "string"}
+                  - {label: "Best For", name: "bestFor", widget: "string"}
+                  - {label: "Includes", name: "includes", widget: "list"}
+                  
+      # Resources Page
+      - name: "resources"
+        label: "Resources Page"
+        file: "content/pages/resources.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "SEO Description", name: "description", widget: "text"}
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - label: "Resource Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Resources"
+                name: "resources"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Type", name: "type", widget: "select", options: ["tool", "guide", "template"]}
+                  - {label: "Link", name: "link", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+              
+  # Services Collection
+  - name: "services"
+    label: "Services"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Service Name", name: "title", widget: "string"}
+      - {label: "SEO Description", name: "description", widget: "text"}
+      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Timeline", name: "timeline", widget: "string"}
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - {label: "Background Color", name: "backgroundColor", widget: "color", required: false}
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Icon", name: "icon", widget: "string"}
+      - label: "Process Steps"
+        name: "process"
+        widget: "list"
+        fields:
+          - {label: "Step Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Timeline", name: "timeline", widget: "string"}
+      - label: "FAQ"
+        name: "faq"
+        widget: "list"
+        fields:
+          - {label: "Question", name: "question", widget: "string"}
+          - {label: "Answer", name: "answer", widget: "text"}
+          
+  # Industry Pages
+  - name: "industries"
+    label: "Industry Pages"
+    folder: "content/industries"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Industry Name", name: "title", widget: "string"}
+      - {label: "SEO Description", name: "description", widget: "text"}
+      - {label: "Hero Headline", name: "heroHeadline", widget: "string"}
+      - {label: "Hero Subheadline", name: "heroSubheadline", widget: "text"}
+      - label: "Problems"
+        name: "problems"
+        widget: "list"
+        fields:
+          - {label: "Problem", name: "problem", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+      - label: "Solutions"
+        name: "solutions"
+        widget: "list"
+        fields:
+          - {label: "Solution", name: "solution", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Icon", name: "icon", widget: "string"}
+      - label: "Case Studies"
+        name: "caseStudies"
+        widget: "list"
+        fields:
+          - {label: "Business Name", name: "name", widget: "string"}
+          - {label: "Result", name: "result", widget: "string"}
+          - {label: "Quote", name: "quote", widget: "text"}
+          
+  # Sample/Demo Pages
+  - name: "demos"
+    label: "Demo Websites"
+    folder: "content/demos"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Business Name", name: "businessName", widget: "string"}
+      - {label: "Industry", name: "industry", widget: "string"}
+      - {label: "Tagline", name: "tagline", widget: "string"}
+      - {label: "SEO Description", name: "description", widget: "text"}
+      - label: "Contact Info"
+        name: "contact"
+        widget: "object"
+        fields:
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Hours", name: "hours", widget: "string"}
+      - label: "Color Scheme"
+        name: "colors"
+        widget: "object"
+        fields:
+          - {label: "Primary", name: "primary", widget: "color"}
+          - {label: "Secondary", name: "secondary", widget: "color"}
+          - {label: "Accent", name: "accent", widget: "color"}
+          - {label: "Background", name: "background", widget: "color"}
+          - {label: "Text", name: "text", widget: "color"}
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - {label: "CTA Text", name: "ctaText", widget: "string"}
+          - {label: "Secondary CTA", name: "secondaryCta", widget: "string", required: false}
+          - {label: "Background Image", name: "backgroundImage", widget: "image", required: false}
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Icon", name: "icon", widget: "string"}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        field: {label: "Image", name: "image", widget: "image"}
+      - label: "Menu/Services"
+        name: "menuItems"
+        widget: "list"
+        fields:
+          - {label: "Category", name: "category", widget: "string"}
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Price", name: "price", widget: "string"}
+              
+  # Global Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "content/settings/general.json"
+        fields:
+          - {label: "Site Title", name: "siteTitle", widget: "string"}
+          - {label: "Site Description", name: "siteDescription", widget: "text"}
+          - {label: "Contact Email", name: "contactEmail", widget: "string"}
+          - {label: "Contact Phone", name: "contactPhone", widget: "string"}
+          - {label: "Business Address", name: "address", widget: "text"}
+          - {label: "Logo", name: "logo", widget: "image", required: false}
+          - {label: "Favicon", name: "favicon", widget: "image", required: false}
+          
+      - name: "navigation"
+        label: "Navigation"
+        file: "content/settings/navigation.json"
+        fields:
+          - label: "Main Menu"
+            name: "mainMenu"
+            widget: "list"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+              - label: "Submenu"
+                name: "submenu"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
+          - label: "Footer Sections"
+            name: "footerSections"
+            widget: "list"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
+                  
+      - name: "theme"
+        label: "Theme & Colors"
+        file: "content/settings/theme.json"
+        fields:
+          - {label: "Primary Color", name: "primaryColor", widget: "color", default: "#1e293b"}
+          - {label: "Secondary Color", name: "secondaryColor", widget: "color", default: "#334155"}
+          - {label: "Accent Color", name: "accentColor", widget: "color", default: "#3B82F6"}
+          - {label: "Success Color", name: "successColor", widget: "color", default: "#10b981"}
+          - {label: "Warning Color", name: "warningColor", widget: "color", default: "#f59e0b"}
+          - {label: "Error Color", name: "errorColor", widget: "color", default: "#ef4444"}
+          - {label: "Text Color", name: "textColor", widget: "color", default: "#64748b"}
+          - {label: "Background Color", name: "backgroundColor", widget: "color", default: "#f8fafc"}
+          - {label: "Font Family", name: "fontFamily", widget: "select", options: ["Figtree", "Inter", "Roboto", "Open Sans", "Lato"], default: "Figtree"}
