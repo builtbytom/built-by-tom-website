@@ -6,7 +6,7 @@ media_folder: "public/images"
 public_folder: "/images"
 
 # Enable editorial workflow for drafts
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 collections:
   # Pages Collection - For editing all main pages
@@ -320,7 +320,7 @@ collections:
           - {label: "Subheadline", name: "subheadline", widget: "text"}
           - {label: "CTA Text", name: "ctaText", widget: "string"}
           - {label: "Secondary CTA", name: "secondaryCta", widget: "string", required: false}
-          - {label: "Background Image", name: "backgroundImage", widget: "image", required: false}
+          - {label: "Hero Background Image (Restaurant: Interior/exterior shot)", name: "backgroundImage", widget: "image", required: false}
       - label: "Features"
         name: "features"
         widget: "list"
@@ -328,10 +328,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Icon", name: "icon", widget: "string"}
-      - label: "Gallery"
+      - label: "Photo Gallery (Restaurant: Food/ambiance photos)"
         name: "gallery"
         widget: "list"
         field: {label: "Image", name: "image", widget: "image"}
+      - label: "Chef/Owner Portrait (Restaurant demos)"
+        name: "chefImage"
+        widget: "image"
+        required: false
       - label: "Menu/Services"
         name: "menuItems"
         widget: "list"
@@ -344,6 +348,7 @@ collections:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
               - {label: "Price", name: "price", widget: "string"}
+              - {label: "Item Photo", name: "image", widget: "image", required: false}
               
   # Global Settings
   - name: "settings"
