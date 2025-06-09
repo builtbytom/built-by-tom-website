@@ -6,7 +6,7 @@ media_folder: "public/images"
 public_folder: "/images"
 
 # Enable editorial workflow for drafts
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 collections:
   # Pages Collection - For editing all main pages
