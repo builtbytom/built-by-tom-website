@@ -2,7 +2,52 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { Playfair_Display, Cormorant_Garamond, Lato } from 'next/font/google';
-import restaurantDemo from '../../../../content/demos/restaurant.json';
+import restaurantDemoData from '../../../../content/demos/restaurant.json';
+
+interface RestaurantDemo {
+  businessName: string;
+  industry: string;
+  tagline: string;
+  description: string;
+  contact: {
+    phone: string;
+    email: string;
+    address: string;
+    hours: string;
+  };
+  colors: {
+    primary: string;
+    secondary: string;
+    accent: string;
+    background: string;
+    text: string;
+  };
+  hero: {
+    headline: string;
+    subheadline: string;
+    ctaText: string;
+    secondaryCta: string;
+    backgroundImage: string | null;
+  };
+  features: Array<{
+    title: string;
+    description: string;
+    icon: string;
+  }>;
+  gallery: string[];
+  chefImage?: string;
+  menuItems: Array<{
+    category: string;
+    items: Array<{
+      name: string;
+      description: string;
+      price: string;
+      image?: string;
+    }>;
+  }>;
+}
+
+const restaurantDemo = restaurantDemoData as RestaurantDemo;
 
 const playfair = Playfair_Display({ 
   subsets: ['latin'],
@@ -241,9 +286,9 @@ export default function RestaurantSample() {
             
             <div className="relative">
               <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
-                {(restaurantDemo as any).chefImage ? (
+                {restaurantDemo.chefImage ? (
                   <Image
-                    src={(restaurantDemo as any).chefImage}
+                    src={restaurantDemo.chefImage}
                     alt="Chef Marco Rossi"
                     width={400}
                     height={500}
