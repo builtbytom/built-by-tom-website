@@ -101,7 +101,7 @@ export default function BeverageDemoPage() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: beverageData.colors.background }}>
-        <style jsx global>{`
+      <style jsx global>{`
         @keyframes float {
           0%, 100% { transform: translateY(0) rotate(0deg); }
           33% { transform: translateY(-30px) rotate(120deg); }
@@ -112,9 +112,18 @@ export default function BeverageDemoPage() {
         }
       `}</style>
 
+      {/* Demo Banner */}
+      <div className="bg-gray-900 text-white py-3 text-center relative z-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="text-sm font-medium">
+            🎨 This is a sample beverage website showing what I could build for your business
+          </p>
+        </div>
+      </div>
+
       {/* Header */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isSticky ? 'bg-white shadow-lg' : 'bg-transparent'
+      <header className={`sticky top-0 z-40 transition-all duration-300 ${
+        isSticky ? 'bg-white shadow-lg' : 'bg-white/90 backdrop-blur-sm'
       }`}>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Image 
@@ -124,10 +133,10 @@ export default function BeverageDemoPage() {
             height={60}
             className="h-12 w-auto"
           />
-          <nav className="hidden md:flex space-x-8">
-            <a href="#flavors" className="hover:text-[#20C4B8] transition-colors">Flavors</a>
-            <a href="#story" className="hover:text-[#20C4B8] transition-colors">Our Story</a>
-            <a href="#find" className="hover:text-[#20C4B8] transition-colors">Find Us</a>
+          <nav className="hidden md:flex space-x-8 items-center">
+            <a href="#flavors" className="hover:text-[#20C4B8] transition-colors" style={{ color: beverageData.colors.text }}>Flavors</a>
+            <a href="#story" className="hover:text-[#20C4B8] transition-colors" style={{ color: beverageData.colors.text }}>Our Story</a>
+            <a href="#find" className="hover:text-[#20C4B8] transition-colors" style={{ color: beverageData.colors.text }}>Find Us</a>
             <button 
               className="px-6 py-2 rounded-full text-white transition-all hover:scale-105"
               style={{ backgroundColor: beverageData.colors.primary }}
@@ -139,7 +148,7 @@ export default function BeverageDemoPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 z-0"
           style={{
