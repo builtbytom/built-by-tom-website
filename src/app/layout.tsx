@@ -34,11 +34,20 @@ export const metadata: Metadata = {
     siteName: "Built By Tom",
     title: "Built By Tom - I Build Calm",
     description: "Fix the mess. Build what's missing. Websites and systems that just work.",
+    images: [
+      {
+        url: "/images/BBT-Social-Card-3.png",
+        width: 1200,
+        height: 630,
+        alt: "Built By Tom - I Build Calm",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Built By Tom - I Build Calm",
     description: "Fix the mess. Build what's missing. Websites and systems that just work.",
+    images: ["/images/BBT-Social-Card-3.png"],
   },
   robots: {
     index: true,
