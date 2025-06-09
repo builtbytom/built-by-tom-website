@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { Playfair_Display, Cormorant_Garamond, Lato } from 'next/font/google';
+import restaurantDemo from '@/content/demos/restaurant.json';
 
 const playfair = Playfair_Display({ 
   subsets: ['latin'],
@@ -220,12 +222,21 @@ export default function RestaurantSample() {
             
             <div className="relative">
               <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
-                <div className="bg-gradient-to-br from-[#3B4A3F] to-[#2D2A26] h-96">
-                  {/* Chef photo placeholder */}
-                  <div className="flex items-center justify-center h-full text-white/30 text-xl">
-                    [Chef Marco Portrait]
+                {(restaurantDemo as any).chefImage ? (
+                  <Image
+                    src={(restaurantDemo as any).chefImage}
+                    alt="Chef Marco Rossi"
+                    width={400}
+                    height={500}
+                    className="object-cover w-full h-96"
+                  />
+                ) : (
+                  <div className="bg-gradient-to-br from-[#3B4A3F] to-[#2D2A26] h-96">
+                    <div className="flex items-center justify-center h-full text-white/30 text-xl">
+                      [Chef Marco Portrait]
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
