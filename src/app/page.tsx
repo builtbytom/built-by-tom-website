@@ -27,7 +27,7 @@ export default function Home() {
                   {/* Photo Container - Compact on mobile */}
                   <div className="relative w-32 h-32 rounded-2xl overflow-hidden border-3 border-white/20 shadow-xl">
                     <Image 
-                      src="/tom-headshot.png" 
+                      src="/built-by-tom-headshot.webp" 
                       alt="Tom - Built By Tom Founder"
                       width={128}
                       height={128}
@@ -110,7 +110,7 @@ export default function Home() {
                 {/* Photo Container - Smaller */}
                 <div className="relative w-64 h-64 lg:w-72 lg:h-72 rounded-2xl overflow-hidden border-3 border-white/20 shadow-xl">
                   <Image 
-                    src="/tom-headshot.png" 
+                    src="/built-by-tom-headshot.webp" 
                     alt="Tom - Built By Tom Founder"
                     width={288}
                     height={288}

@@ -36,7 +36,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-full blur-xl"></div>
                 <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
                   <Image 
-                    src="/tom-headshot.png" 
+                    src="/built-by-tom-headshot.webp" 
                     alt="Tom - Founder of Built By Tom"
                     width={128}
                     height={128}
@@ -118,7 +118,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-sage-light/15 rounded-3xl blur-xl transform scale-110"></div>
                 <div className="relative w-96 h-96 rounded-3xl overflow-hidden border-4 border-white/20 shadow-2xl">
                   <Image 
-                    src="/tom-headshot.png" 
+                    src="/built-by-tom-headshot.webp" 
                     alt="Tom - Founder of Built By Tom"
                     width={384}
                     height={384}
