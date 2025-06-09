@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { Playfair_Display, Cormorant_Garamond, Lato } from 'next/font/google';
-import restaurantDemo from '@/content/demos/restaurant.json';
+import restaurantDemo from '../../../../content/demos/restaurant.json';
 
 const playfair = Playfair_Display({ 
   subsets: ['latin'],
