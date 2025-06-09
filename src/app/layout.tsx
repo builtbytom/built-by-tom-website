@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   creator: "Built By Tom",
   publisher: "Built By Tom",
   metadataBase: new URL('https://ibuildcalm.com'),
+  icons: {
+    icon: [
+      {
+        url: '/images/BBT Favicon2 (64 x 64 px).png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/images/BBT Favicon Dark2.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
