@@ -1,0 +1,90 @@
+{
+  "businessName": "Isla Blū",
+  "industry": "Craft Beverage",
+  "tagline": "Vacation in a Bottle",
+  "description": "Caribbean-inspired craft soda company with bold flavors, vibrant branding, and automated ordering systems.",
+  "contact": {
+    "phone": "(203) 555-SODA",
+    "email": "hello@islablu.com",
+    "address": "New Haven, CT",
+    "hours": "Order online 24/7"
+  },
+  "colors": {
+    "primary": "#FF8B73",
+    "secondary": "#20C4B8",
+    "accent": "#FFD93D",
+    "background": "#FFF8F3",
+    "text": "#2D2A26"
+  },
+  "hero": {
+    "headline": "Vacation in a Bottle",
+    "subheadline": "Small-batch Caribbean craft sodas that transport you to paradise with every sip",
+    "ctaText": "Explore Flavors",
+    "secondaryCta": "Find Retailers",
+    "backgroundImage": "/isla-blu-lifestyle.webp"
+  },
+  "features": [
+    {
+      "title": "Find Your Flavor Quiz",
+      "description": "Answer 3 questions and discover your perfect tropical match",
+      "icon": "🌴"
+    },
+    {
+      "title": "Subscribe & Save",
+      "description": "Monthly deliveries with exclusive flavors and 15% off",
+      "icon": "📦"
+    },
+    {
+      "title": "Stockist Locator",
+      "description": "Find Isla Blū at your favorite local spots",
+      "icon": "📍"
+    }
+  ],
+  "gallery": [
+    "/isla-blu-product-lineup.webp",
+    "/isla-blu-pineapple.webp",
+    "/Isla-blu-hibiscus.webp"
+  ],
+  "menuItems": [
+    {
+      "category": "Signature Flavors",
+      "items": [
+        {
+          "name": "Mango Calypso",
+          "description": "Sun-ripened mango with a hint of Caribbean spice",
+          "price": "$4.99"
+        },
+        {
+          "name": "Pineapple Punch",
+          "description": "Golden pineapple with a splash of citrus sunshine",
+          "price": "$4.99"
+        },
+        {
+          "name": "Hibiscus Chill",
+          "description": "Floral hibiscus with cooling mint notes",
+          "price": "$4.99"
+        },
+        {
+          "name": "Lime Breeze",
+          "description": "Zesty key lime with sparkling effervescence",
+          "price": "$4.99"
+        }
+      ]
+    },
+    {
+      "category": "Limited Editions",
+      "items": [
+        {
+          "name": "Coconut Sunset",
+          "description": "Creamy coconut meets passion fruit - Summer exclusive",
+          "price": "$5.99"
+        },
+        {
+          "name": "Guava Dream",
+          "description": "Pink guava paradise - Limited batch",
+          "price": "$5.99"
+        }
+      ]
+    }
+  ]
+}

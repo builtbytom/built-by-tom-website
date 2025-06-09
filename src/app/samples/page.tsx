@@ -44,6 +44,15 @@ export default function SamplesPage() {
       color: 'from-[#A09CB0] to-[#B2C9C2]',
       icon: '🌿'
     },
+    {
+      title: 'Craft Beverage Website',
+      subtitle: 'Isla Blū',
+      description: 'Caribbean-inspired craft soda brand with vibrant design, flavor quiz, subscription service, and stockist locator.',
+      features: ['Find Your Flavor Quiz', 'Subscribe & Save', 'Stockist Locator', 'Vibrant Branding'],
+      link: '/samples/beverage',
+      color: 'from-[#FF8B73] to-[#20C4B8]',
+      icon: '🌴'
+    },
     // Future samples can be added here
   ];
 
