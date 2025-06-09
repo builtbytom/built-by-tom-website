@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import beverageData from '../../../../content/demos/beverage.json';
@@ -32,15 +32,6 @@ export default function BeverageDemoPage() {
   const [selectedFlavor, setSelectedFlavor] = useState<FlavorKey>('mango');
   const [showQuiz, setShowQuiz] = useState(false);
   const [quizStep, setQuizStep] = useState(0);
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 100);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const flavorProfiles: Record<FlavorKey, { name: string; color: string; description: string; vibe: string }> = {
     mango: {
@@ -121,31 +112,6 @@ export default function BeverageDemoPage() {
         </div>
       </div>
 
-      {/* Header */}
-      <header className={`sticky top-0 z-40 transition-all duration-300 ${
-        isSticky ? 'bg-white shadow-lg' : 'bg-white/90 backdrop-blur-sm'
-      }`}>
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Image 
-            src="/isla-blu-logo.png" 
-            alt="Isla Blū" 
-            width={120} 
-            height={60}
-            className="h-12 w-auto"
-          />
-          <nav className="hidden md:flex space-x-8 items-center">
-            <a href="#flavors" className="hover:text-[#20C4B8] transition-colors" style={{ color: beverageData.colors.text }}>Flavors</a>
-            <a href="#story" className="hover:text-[#20C4B8] transition-colors" style={{ color: beverageData.colors.text }}>Our Story</a>
-            <a href="#find" className="hover:text-[#20C4B8] transition-colors" style={{ color: beverageData.colors.text }}>Find Us</a>
-            <button 
-              className="px-6 py-2 rounded-full text-white transition-all hover:scale-105"
-              style={{ backgroundColor: beverageData.colors.primary }}
-            >
-              Order Online
-            </button>
-          </nav>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -161,6 +127,13 @@ export default function BeverageDemoPage() {
         <BubbleAnimation />
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+          <Image 
+            src="/isla-blu-logo.png" 
+            alt="Isla Blū" 
+            width={200} 
+            height={100}
+            className="mx-auto mb-8 drop-shadow-2xl"
+          />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             {beverageData.hero.headline}
           </h1>
