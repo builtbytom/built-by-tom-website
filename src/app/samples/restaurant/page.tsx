@@ -177,12 +177,12 @@ export default function RestaurantSample() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Appetizer */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="relative h-48">
+              <div className="relative h-64">
                 <Image
                   src="/images/Burrata-Caprese.webp"
                   alt="Burrata Caprese"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
               <div className="p-6">
@@ -197,12 +197,12 @@ export default function RestaurantSample() {
 
             {/* Entree */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="relative h-48">
+              <div className="relative h-64">
                 <Image
                   src="/images/Osso-Buco.webp"
                   alt="Osso Buco"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
               <div className="p-6">
@@ -217,12 +217,12 @@ export default function RestaurantSample() {
 
             {/* Dessert */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="relative h-48">
+              <div className="relative h-64">
                 <Image
                   src="/images/Tiramisu.webp"
                   alt="Tiramisu"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
               <div className="p-6">
@@ -513,7 +513,9 @@ export default function RestaurantSample() {
                     src={image}
                     alt={`Bella Vista Restaurant Gallery ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className={`object-cover ${
+                      image.includes('front-door') ? 'object-[center_75%]' : 'object-center'
+                    }`}
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
