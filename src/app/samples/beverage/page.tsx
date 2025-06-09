@@ -206,9 +206,161 @@ export default function BeverageDemoPage() {
         </div>
       </section>
 
+      {/* Interactive Quiz Section */}
+      <section className="py-20" style={{ backgroundColor: beverageData.colors.secondary + '10' }}>
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4" style={{ color: beverageData.colors.text }}>
+            Which Flavor Are You?
+          </h2>
+          <p className="text-center text-gray-600 mb-12 text-lg">
+            Take our 30-second quiz and get a personalized flavor recommendation
+          </p>
+          
+          {!showQuiz ? (
+            <div className="text-center">
+              <button
+                onClick={() => setShowQuiz(true)}
+                className="px-12 py-6 rounded-full text-white text-xl font-semibold transition-all hover:scale-105 shadow-2xl"
+                style={{ backgroundColor: beverageData.colors.primary }}
+              >
+                Start the Quiz →
+              </button>
+            </div>
+          ) : (
+            <div className="bg-white rounded-3xl p-8 shadow-xl">
+              {quizStep < quizQuestions.length ? (
+                <>
+                  <div className="mb-6">
+                    <div className="flex justify-between items-center mb-4">
+                      <span className="text-sm text-gray-500">Question {quizStep + 1} of {quizQuestions.length}</span>
+                      <button
+                        onClick={() => { setShowQuiz(false); setQuizStep(0); }}
+                        className="text-gray-400 hover:text-gray-600"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div 
+                        className="h-2 rounded-full transition-all"
+                        style={{ 
+                          width: `${((quizStep + 1) / quizQuestions.length) * 100}%`,
+                          backgroundColor: beverageData.colors.secondary
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-6">
+                    {quizQuestions[quizStep].question}
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {quizQuestions[quizStep].answers.map((answer, i) => (
+                      <button
+                        key={i}
+                        onClick={() => {
+                          setSelectedFlavor(answer.flavor);
+                          setQuizStep(quizStep + 1);
+                        }}
+                        className="p-4 text-left rounded-xl hover:scale-102 transition-all border-2"
+                        style={{ 
+                          borderColor: beverageData.colors.secondary + '30',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.borderColor = beverageData.colors.secondary;
+                          e.currentTarget.style.backgroundColor = beverageData.colors.secondary + '10';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.borderColor = beverageData.colors.secondary + '30';
+                          e.currentTarget.style.backgroundColor = 'transparent';
+                        }}
+                      >
+                        {answer.text}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <div className="text-center">
+                  <h3 className="text-3xl font-bold mb-4">Your Perfect Match!</h3>
+                  <div 
+                    className="text-6xl font-bold mb-4"
+                    style={{ color: flavorProfiles[selectedFlavor].color }}
+                  >
+                    {flavorProfiles[selectedFlavor].name}
+                  </div>
+                  <p className="text-gray-600 mb-6">
+                    {flavorProfiles[selectedFlavor].description}
+                  </p>
+                  <div className="flex gap-4 justify-center">
+                    <button
+                      className="px-8 py-3 rounded-full text-white"
+                      style={{ backgroundColor: beverageData.colors.primary }}
+                    >
+                      Order This Flavor
+                    </button>
+                    <button
+                      onClick={() => {
+                        setShowQuiz(false);
+                        setQuizStep(0);
+                      }}
+                      className="px-8 py-3 rounded-full border-2"
+                      style={{ borderColor: beverageData.colors.primary, color: beverageData.colors.primary }}
+                    >
+                      Take Again
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Flavor Contest Section */}
+      <section className="py-20 bg-gradient-to-br from-[#FFD93D] to-[#FF8B73] text-white">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Create Our Next Flavor!
+            </h2>
+            <p className="text-xl opacity-90">
+              Vote for your dream combination and see it come to life
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { name: 'Passion Paradise', votes: 342, ingredients: 'Passion Fruit + Vanilla + Coconut' },
+              { name: 'Citrus Sunset', votes: 298, ingredients: 'Blood Orange + Grapefruit + Mint' },
+              { name: 'Berry Blast', votes: 256, ingredients: 'Açai + Blueberry + Lemon' }
+            ].map((flavor, i) => (
+              <div key={i} className="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+                <h3 className="text-2xl font-bold mb-2">{flavor.name}</h3>
+                <p className="mb-4 opacity-90">{flavor.ingredients}</p>
+                <div className="mb-4">
+                  <div className="bg-white/30 rounded-full h-4 overflow-hidden">
+                    <div 
+                      className="bg-white h-full transition-all"
+                      style={{ width: `${(flavor.votes / 342) * 100}%` }}
+                    />
+                  </div>
+                  <p className="text-sm mt-2">{flavor.votes} votes</p>
+                </div>
+                <button className="w-full py-3 bg-white text-gray-800 rounded-full font-semibold hover:scale-105 transition-all">
+                  Vote for This
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Features Grid */}
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-6xl px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12" style={{ color: beverageData.colors.text }}>
+            Why Isla Blū?
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {beverageData.features.map((feature, index) => (
               <div 
@@ -227,82 +379,121 @@ export default function BeverageDemoPage() {
         </div>
       </section>
 
-      {/* Quiz Modal */}
-      {showQuiz && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => { setShowQuiz(false); setQuizStep(0); }}>
-          <div className="bg-white rounded-3xl p-8 max-w-lg w-full relative" onClick={(e) => e.stopPropagation()}>
-            <button
-              onClick={() => { setShowQuiz(false); setQuizStep(0); }}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl"
-            >
-              ×
-            </button>
-            {quizStep < quizQuestions.length ? (
-              <>
-                <h3 className="text-2xl font-bold mb-6">
-                  {quizQuestions[quizStep].question}
-                </h3>
-                <div className="space-y-3">
-                  {quizQuestions[quizStep].answers.map((answer, i) => (
-                    <button
-                      key={i}
-                      onClick={() => {
-                        setSelectedFlavor(answer.flavor);
-                        setQuizStep(quizStep + 1);
-                      }}
-                      className="w-full p-4 text-left rounded-xl hover:scale-102 transition-all"
-                      style={{ 
-                        backgroundColor: beverageData.colors.secondary + '20',
-                        borderWidth: '2px',
-                        borderColor: 'transparent'
-                      }}
-                      onMouseEnter={(e) => e.currentTarget.style.borderColor = beverageData.colors.secondary}
-                      onMouseLeave={(e) => e.currentTarget.style.borderColor = 'transparent'}
-                    >
-                      {answer.text}
-                    </button>
-                  ))}
-                </div>
-              </>
-            ) : (
+      {/* Our Story Section */}
+      <section id="story" className="py-20 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{ 
+            backgroundImage: 'url(/isla-blu-lifestyle.webp)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+        <div className="container mx-auto max-w-4xl px-4 relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12" style={{ color: beverageData.colors.text }}>
+            Born on the Beach
+          </h2>
+          <div className="prose prose-lg mx-auto text-center">
+            <p className="text-gray-700 mb-6 text-lg">
+              Isla Blū started with a simple question: Why can't soda feel like vacation?
+            </p>
+            <p className="text-gray-600 mb-6">
+              After countless summers mixing fresh fruit juices on Caribbean beaches, we decided to bottle that feeling. 
+              Each flavor is inspired by a different island memory - from sunset bonfires in Jamaica to morning 
+              surf sessions in Costa Rica.
+            </p>
+            <p className="text-gray-600 mb-8">
+              We use real fruit, natural cane sugar, and a splash of sparkling water. No artificial anything. 
+              Just pure, fizzy sunshine in a bottle.
+            </p>
+            <div className="grid grid-cols-3 gap-8 mt-12">
               <div className="text-center">
-                <h3 className="text-3xl font-bold mb-4">Your Perfect Match!</h3>
-                <div 
-                  className="text-6xl font-bold mb-4"
-                  style={{ color: flavorProfiles[selectedFlavor].color }}
-                >
-                  {flavorProfiles[selectedFlavor].name}
-                </div>
-                <p className="text-gray-600 mb-6">
-                  {flavorProfiles[selectedFlavor].description}
-                </p>
-                <div className="flex gap-4 justify-center">
-                  <button
-                    onClick={() => {
-                      setShowQuiz(false);
-                      setQuizStep(0);
-                    }}
-                    className="px-8 py-3 rounded-full text-white"
-                    style={{ backgroundColor: beverageData.colors.primary }}
-                  >
-                    Order Now
-                  </button>
-                  <button
-                    onClick={() => {
-                      setShowQuiz(false);
-                      setQuizStep(0);
-                    }}
-                    className="px-8 py-3 rounded-full border-2"
-                    style={{ borderColor: beverageData.colors.primary, color: beverageData.colors.primary }}
-                  >
-                    Close
-                  </button>
-                </div>
+                <div className="text-4xl font-bold" style={{ color: beverageData.colors.primary }}>12</div>
+                <p className="text-sm text-gray-600">Small Batches Monthly</p>
               </div>
-            )}
+              <div className="text-center">
+                <div className="text-4xl font-bold" style={{ color: beverageData.colors.secondary }}>100%</div>
+                <p className="text-sm text-gray-600">Natural Ingredients</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold" style={{ color: beverageData.colors.accent }}>4</div>
+                <p className="text-sm text-gray-600">Caribbean Islands Visited</p>
+              </div>
+            </div>
           </div>
         </div>
-      )}
+      </section>
+
+      {/* Instagram Feed Section */}
+      <section className="py-20" style={{ backgroundColor: beverageData.colors.background }}>
+        <div className="container mx-auto max-w-6xl px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4" style={{ color: beverageData.colors.text }}>
+            #IslaBlūMoments
+          </h2>
+          <p className="text-center text-gray-600 mb-12">Follow us @islablusoda for daily sunshine</p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+              <div 
+                key={i} 
+                className="aspect-square rounded-2xl overflow-hidden hover:scale-105 transition-all cursor-pointer"
+                style={{ 
+                  backgroundColor: i % 2 === 0 ? beverageData.colors.primary : beverageData.colors.secondary,
+                  opacity: 0.3 + (i * 0.1)
+                }}
+              >
+                {/* Instagram image placeholder */}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Find Us Section */}
+      <section id="find" className="py-20 bg-gradient-to-br" style={{ backgroundColor: beverageData.colors.secondary + '20' }}>
+        <div className="container mx-auto max-w-6xl px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12" style={{ color: beverageData.colors.text }}>
+            Where to Find Us
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-6" style={{ color: beverageData.colors.text }}>
+                Online Store
+              </h3>
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <p className="text-gray-600 mb-6">
+                  Get Isla Blū delivered straight to your door. Free shipping on orders over $30!
+                </p>
+                <button 
+                  className="w-full py-4 rounded-full text-white font-semibold"
+                  style={{ backgroundColor: beverageData.colors.primary }}
+                >
+                  Shop Online →
+                </button>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold mb-6" style={{ color: beverageData.colors.text }}>
+                Local Retailers
+              </h3>
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <p className="text-gray-600 mb-6">
+                  Find us at these Connecticut locations:
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Whole Foods (New Haven, Westport)</li>
+                  <li>• Village Markets (Greenwich)</li>
+                  <li>• Shore Line Grocers (Madison)</li>
+                  <li>• The Fresh Market (Hartford)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Demo Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-gray-900 to-gray-800 text-white p-4 z-40">
