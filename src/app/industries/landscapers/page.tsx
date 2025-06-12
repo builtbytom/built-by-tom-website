@@ -210,7 +210,7 @@ export default function LandscapersPage() {
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                I'll set up a complete automation system tailored to your business, lead capture, email flows, internal alerts, whatever you need. Want both? We'll figure out a package that makes sense.
+                I'll set up a complete automation system tailored to your business, lead capture, email flows, internal alerts, whatever you need. Want both? I'll figure out a package that makes sense.
               </p>
             </div>
           </div>

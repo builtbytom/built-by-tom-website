@@ -243,10 +243,10 @@ export default function WebsiteAudit() {
               </div>
               <div>
                 <h3 className="font-bold text-xl text-foreground mb-2">
-                  We have our live review call
+                  I have our live review call
                 </h3>
                 <p className="text-text-light">
-                  We&apos;ll hop on a 1-hour screen share call where I thoroughly review your website 
+                  I&apos;ll hop on a 1-hour screen share call where I thoroughly review your website 
                   AND identify automation opportunities. Plenty of time to dig into what matters most to you.
                 </p>
               </div>

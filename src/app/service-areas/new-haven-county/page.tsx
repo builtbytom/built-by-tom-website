@@ -105,7 +105,7 @@ export default function NewHavenCounty() {
             Most tech people work with clients they've never met, for businesses they've never set foot in. That's not how I work.
           </p>
           <p className="text-xl text-text-light mb-12 leading-relaxed">
-            After a decade running businesses here, I know what works in New Haven County—and what falls flat. You know your business best. I just know what broke mine, and what'll break yours if we don't fix it.
+            After a decade running businesses here, I know what works in New Haven County—and what falls flat. You know your business best. I just know what broke mine, and what'll break yours if I don't fix it.
           </p>
           
           {/* Home Base Card */}
@@ -116,7 +116,7 @@ export default function NewHavenCounty() {
                 <h3 className="font-bold text-2xl text-foreground mb-2">Home Base: North Haven</h3>
                 <p className="text-text-light mb-4">This is where I learned the hard lessons, usually the hard way.</p>
                 <p className="text-foreground">
-                  We can meet at Starbucks on Washington Ave, your office, or just jump on a Google Meet. Whatever works for you. Because fixing things starts with actually seeing what's broken.
+                  I can meet you at Starbucks on Washington Ave, your office, or just jump on a Google Meet. Whatever works for you. Because fixing things starts with actually seeing what's broken.
                 </p>
               </div>
             </div>

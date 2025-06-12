@@ -223,7 +223,7 @@ export default function CoachesTherapistsPage() {
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                Automated booking, reminders, follow-ups, client communication systems—whatever makes your practice run without you babysitting it. Want both? We'll figure out something that works for your practice.
+                Automated booking, reminders, follow-ups, client communication systems—whatever makes your practice run without you babysitting it. Want both? I'll figure out something that works for your practice.
               </p>
             </div>
           </div>

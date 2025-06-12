@@ -117,7 +117,7 @@ export default function AutomationSimulator() {
             <div className="text-sm text-gray-700">
               Hi {customData.customer.split(' ')[0]},<br/><br/>
               Your {customData.service} is confirmed.<br/>
-              We'll see you soon!<br/><br/>
+              I'll see you soon!<br/><br/>
               - {selectedBusiness.name} Team
             </div>
           </div>
@@ -327,13 +327,13 @@ export default function AutomationSimulator() {
                       </div>
                       
                       <div className="text-lg text-gray-700">
-                        <p className="font-semibold">That's enough time to:</p>
-                        <p className="text-base text-primary mt-1 mb-3 italic">This is the calm we build for businesses like yours.</p>
-                        <ul className="mt-2 space-y-1">
+                        <p className="font-semibold mb-3">That's enough time to:</p>
+                        <ul className="space-y-1 mb-4">
                           <li>• Handle 3x more bookings without hiring staff</li>
                           <li>• Focus on growing your business instead of admin work</li>
                           <li>• Actually take a lunch break (remember those?)</li>
                         </ul>
+                        <p className="text-base text-primary italic">This is the calm I build for businesses like yours.</p>
                       </div>
                       
                       {/* Try Another Business Button */}

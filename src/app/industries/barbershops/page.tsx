@@ -217,7 +217,7 @@ export default function BarbershopsPage() {
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                Automated reminders, follow-ups, review requests, staff scheduling, whatever you need. Want both? We'll figure out a package that makes sense.
+                Automated reminders, follow-ups, review requests, staff scheduling, whatever you need. Want both? I'll figure out a package that makes sense.
               </p>
             </div>
           </div>

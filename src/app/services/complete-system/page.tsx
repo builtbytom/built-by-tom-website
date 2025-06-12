@@ -685,7 +685,7 @@ export default function CompleteSystemServices() {
                 Why 6 weeks instead of 3 weeks like individual packages?
               </h3>
               <p className="text-text-light">
-                Integration takes time to do right. We roll out each automation in phases, test how they work together, and fine-tune the handoffs. Better to take 6 weeks and get it perfect than rush and break things later.
+                Integration takes time to do right. I roll out each automation in phases, test how they work together, and fine-tune the handoffs. Better to take 6 weeks and get it perfect than rush and break things later.
               </p>
             </div>
 

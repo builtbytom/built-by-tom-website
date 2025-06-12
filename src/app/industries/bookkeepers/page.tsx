@@ -206,7 +206,7 @@ export default function BookkeepersPage() {
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                Custom-tailored client onboarding, document collection, status updates, staff workflows-the works. Want both? We'll figure out a package that fits.
+                Custom-tailored client onboarding, document collection, status updates, staff workflows-the works. Want both? I'll figure out a package that fits.
               </p>
             </div>
           </div>

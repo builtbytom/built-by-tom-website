@@ -642,7 +642,7 @@ export default function WebsiteServices() {
                   </div>
                   <div className="ml-8 flex-1">
                     <h3 className="font-display font-bold text-2xl text-foreground mb-2">Week 1: Discovery & Design</h3>
-                    <p className="text-text-light mb-4">We talk. I listen. Then I design something that actually fits your business.</p>
+                    <p className="text-text-light mb-4">You talk. I listen. Then I design something that actually fits your business.</p>
                     <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
                       <ul className="space-y-2 text-foreground">
                         <li>• 30-minute strategy call</li>

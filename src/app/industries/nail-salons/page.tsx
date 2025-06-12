@@ -228,7 +228,7 @@ export default function NailSalonsPage() {
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                Automated booking, reminders, waitlists, review requests, and client retention systems that run themselves. Want both? We'll figure out a package that works for your salon.
+                Automated booking, reminders, waitlists, review requests, and client retention systems that run themselves. Want both? I'll figure out a package that works for your salon.
               </p>
             </div>
           </div>

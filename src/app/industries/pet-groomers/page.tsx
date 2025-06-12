@@ -234,7 +234,7 @@ export default function PetGroomersPage() {
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                Automated reminders, review requests, "pet's ready" texts, waitlist management, and client retention systems that run themselves. Want both? We'll figure out a package that works for your shop.
+                Automated reminders, review requests, "pet's ready" texts, waitlist management, and client retention systems that run themselves. Want both? I'll figure out a package that works for your shop.
               </p>
             </div>
           </div>

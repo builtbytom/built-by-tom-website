@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <li className="pt-2">
                 <Link href="/industries" className="hover:text-sage-light transition-colors">
-                  Industries We Serve
+                  Industries I Serve
                 </Link>
               </li>
               <li>
@@ -64,11 +64,6 @@ const Footer = () => {
               <li>
                 <Link href="/about" className="hover:text-sage-light transition-colors">
                   About
-                </Link>
-              </li>
-              <li>
-                <Link href="/samples" className="hover:text-sage-light transition-colors">
-                  Live Demos
                 </Link>
               </li>
               <li>

@@ -208,6 +208,7 @@ export default function WebsiteHealthQuiz() {
   const [email, setEmail] = useState('');
   const [requestingReport, setRequestingReport] = useState(false);
   const [reportRequested, setReportRequested] = useState(false);
+  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleAnswer = (answer: string) => {
     const newAnswers = [...answers, { questionId: questions[currentQuestion].id, answer }];
@@ -216,7 +217,12 @@ export default function WebsiteHealthQuiz() {
     if (currentQuestion < questions.length - 1) {
       setTimeout(() => setCurrentQuestion(currentQuestion + 1), 300);
     } else {
-      setTimeout(() => setShowResults(true), 300);
+      // Show calculating state immediately when quiz is complete
+      setIsCalculating(true);
+      setTimeout(() => {
+        setIsCalculating(false);
+        setShowResults(true);
+      }, 800);
     }
   };
 
@@ -248,6 +254,27 @@ export default function WebsiteHealthQuiz() {
 
   const score = showResults ? calculateScore(answers) : 0;
   const actionItems = showResults ? getActionItems(answers) : [];
+
+  // Show calculating animation when quiz is complete
+  if (isCalculating) {
+    return (
+      <div className="relative bg-gradient-to-br from-teal-50 via-purple-50 to-indigo-50 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border-2 border-teal-200 overflow-hidden">
+        <div className="relative max-w-2xl mx-auto text-center py-12">
+          <div className="mb-8">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full animate-spin">
+              <div className="w-16 h-16 bg-white rounded-full"></div>
+            </div>
+          </div>
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-4">
+            Calculating Your Results...
+          </h2>
+          <p className="text-text-light text-lg">
+            Analyzing your answers to give you personalized recommendations
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   if (showResults) {
     return (

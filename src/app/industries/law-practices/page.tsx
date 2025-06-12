@@ -234,7 +234,7 @@ export default function LawPracticesPage() {
               </h3>
               <div className="text-3xl font-bold text-primary mb-2">$1,797</div>
               <p className="text-text-light">
-                Document requests, e-signatures, billing reminders, review requests—all the boring stuff that eats your day, handled automatically. Want both? We'll build something that fits your practice.
+                Document requests, e-signatures, billing reminders, review requests—all the boring stuff that eats your day, handled automatically. Want both? I'll build something that fits your practice.
               </p>
             </div>
           </div>

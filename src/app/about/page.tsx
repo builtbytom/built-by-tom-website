@@ -169,8 +169,8 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-sage-light/10 rounded-3xl transform group-hover:scale-105 transition-transform duration-300"></div>
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 text-center h-full">
                 <div className="text-5xl mb-4">🛠️</div>
-                <div className="text-foreground font-semibold text-lg mb-2">Custom WMS</div>
-                <div className="text-text-light">Built from scratch when nothing else worked</div>
+                <div className="text-foreground font-semibold text-lg mb-2">Custom Warehouse System</div>
+                <div className="text-text-light">Built inventory tracking from scratch when off-the-shelf software failed</div>
               </div>
             </div>
 
@@ -250,10 +250,10 @@ export default function About() {
                     <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100">
                       <h3 className="font-display font-bold text-2xl text-foreground mb-4">The Wild Ride Begins</h3>
                       <p className="text-lg text-foreground leading-relaxed mb-4">
-                        Then, I dove headfirst into founding an Amazon FBA business. For 10 years, I lived the wild ride – the exhilarating growth, the sleepless nights, and the constant battle to keep things running.
+                        Then, along with my two best friends, I dove headfirst into founding an Amazon FBA business. It was a true team effort – while I handled all the technical systems and operations, we built something incredible together. For 10 years, I lived the wild ride – the exhilarating growth, the sleepless nights, and the constant battle to keep things running.
                       </p>
                       <div className="bg-secondary/5 rounded-lg p-4">
-                        <p className="text-secondary font-semibold text-sm">Growth Phase: Bootstrapped from zero to $100M+ total sales</p>
+                        <p className="text-secondary font-semibold text-sm">Growth Phase: We bootstrapped from zero to $100M+ total sales</p>
                       </div>
                     </div>
                   </div>
@@ -271,7 +271,7 @@ export default function About() {
                     <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100">
                       <h3 className="font-display font-bold text-2xl text-foreground mb-4">Success Created Its Own Problems</h3>
                       <p className="text-lg text-foreground leading-relaxed mb-4">
-                        We bootstrapped that FBA company from zero, and as we scaled to multi-million dollar sales, I hit a wall. Our biggest &apos;success&apos; was creating our biggest nightmare: inventory chaos. We were drowning in stock we couldn&apos;t track.
+                        We bootstrapped that FBA company from zero, and as we scaled to multi-million dollar sales, I hit a wall. My biggest &apos;success&apos; was creating my biggest nightmare: inventory chaos. I was drowning in stock I couldn&apos;t track.
                       </p>
                       <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                         <p className="text-red-700 font-semibold text-sm">Reality Check: Off-the-shelf software was too expensive, too complex, or just plain wrong.</p>
@@ -294,8 +294,8 @@ export default function About() {
                       <p className="text-lg text-foreground leading-relaxed mb-4">
                         Fueled by about 3,000 YouTube videos and sheer determination, I built a custom inventory tracking system from scratch using Google Sheets and AppSheet. Think of it like a super-powered spreadsheet that tracked every single item, order, and expiration date automatically. It wasn&apos;t fancy, but it worked.
                       </p>
-                      <div className="bg-accent/5 rounded-lg p-4">
-                        <p className="text-accent font-semibold text-sm">The Breakthrough: It was the &apos;calm&apos; I desperately needed in that specific storm.</p>
+                      <div className="bg-accent/10 rounded-lg p-4 border border-accent/20">
+                        <p className="text-foreground font-semibold text-sm"><span className="text-accent">The Breakthrough:</span> It was the &apos;calm&apos; I desperately needed in that specific storm.</p>
                       </div>
                     </div>
                   </div>
@@ -355,7 +355,7 @@ export default function About() {
               </p>
 
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                They crystallized into one, clear realization: my real passion wasn&apos;t just in the &apos;what&apos; we sold, but in the &apos;how&apos; we operated. It was in untangling the messy knots, solving the operational puzzles, and building those &ldquo;Oh, thank goodness, that finally works!&rdquo; moments.
+                They crystallized into one, clear realization: my real passion wasn&apos;t just in the &apos;what&apos; I sold, but in the &apos;how&apos; I operated. It was in untangling the messy knots, solving the operational puzzles, and building those &ldquo;Oh, thank goodness, that finally works!&rdquo; moments.
               </p>
 
               <p className="text-lg text-foreground leading-relaxed">

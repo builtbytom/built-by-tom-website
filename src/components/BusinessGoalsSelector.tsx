@@ -24,7 +24,7 @@ const goals: Goal[] = [
       "Review Management: Automatic requests for feedback from happy customers",
       "Local Authority Signals: Makes Google trust your location and services"
     ],
-    realExample: "Carrie's cleaning service went from 2 calls/month to 3-4 calls/week after we rebuilt her site with proper local SEO. She now dominates 'house cleaning near me' searches.",
+    realExample: "Carrie's cleaning service went from 2 calls/month to 3-4 calls/week after I rebuilt her site with proper local SEO. She now dominates 'house cleaning near me' searches.",
     result: "Instead of hoping customers find you, they'll see you first when they search for what you do in your area"
   },
   {
@@ -94,7 +94,7 @@ const goals: Goal[] = [
       "Conversion Monitoring: Track which pages turn visitors into customers",
       "ROI Documentation: Measure actual business impact of improvements"
     ],
-    realExample: "A landscaper discovered 80% of his traffic came from one blog post about lawn care. We optimized it and tripled his leads without spending on ads.",
+    realExample: "A landscaper discovered 80% of his traffic came from one blog post about lawn care. I optimized it and tripled his leads without spending on ads.",
     result: "You'll know exactly how your website contributes to growth and where to focus for maximum return"
   }
 ];

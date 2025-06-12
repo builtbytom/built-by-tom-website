@@ -581,7 +581,7 @@ export default function AutomationServices() {
                   </div>
                   <div className="ml-8 flex-1">
                     <h3 className="font-display font-bold text-2xl text-foreground mb-2">Week 1: Map Your Workflow</h3>
-                    <p className="text-text-light mb-4">We talk through your current process and identify the biggest time-wasters.</p>
+                    <p className="text-text-light mb-4">I talk through your current process with you and identify the biggest time-wasters.</p>
                     <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
                       <ul className="space-y-2 text-foreground">
                         <li>• 30-minute workflow audit</li>
@@ -622,7 +622,7 @@ export default function AutomationServices() {
                   </div>
                   <div className="ml-8 flex-1">
                     <h3 className="font-display font-bold text-2xl text-foreground mb-2">Week 3: Go Live & Monitor</h3>
-                    <p className="text-text-light mb-4">Your automation goes live and we monitor the first week to ensure everything runs smoothly.</p>
+                    <p className="text-text-light mb-4">Your automation goes live and I monitor the first week to ensure everything runs smoothly.</p>
                     <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
                       <ul className="space-y-2 text-foreground">
                         <li>• Automation goes live</li>
