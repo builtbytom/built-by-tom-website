@@ -17,92 +17,73 @@ const slugToFilename: Record<string, string> = {
 };
 
 function formatContent(content: string): string {
-  // Convert markdown-like syntax to HTML with enhanced styling
-  let formatted = content
-    // Headers with better spacing and visual hierarchy
-    .replace(/^### (.*?)$/gm, `
-      <h3 class="font-bold text-2xl text-primary mb-4 mt-12 flex items-center">
-        <span class="w-1 h-8 bg-accent rounded-full mr-4"></span>
-        $1
-      </h3>`)
-    .replace(/^## (.*?)$/gm, `
-      <div class="my-16">
-        <h2 class="font-display font-bold text-3xl lg:text-4xl text-foreground mb-6 leading-tight">
-          $1
-        </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
-      </div>`)
-    .replace(/^# (.*?)$/gm, '<h1 class="font-display font-bold text-4xl lg:text-5xl text-foreground mb-8 leading-tight">$1</h1>')
+  // Simple formatting that preserves the content structure
+  const lines = content.split('\n');
+  let formatted = '';
+  let inList = false;
+  
+  lines.forEach((line, index) => {
+    const trimmedLine = line.trim();
     
-    // Bold and italic with better styling
-    .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="font-bold text-primary"><em>$1</em></strong>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-primary">$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em class="italic text-text-light">$1</em>')
+    // Skip empty lines
+    if (!trimmedLine) {
+      if (inList) {
+        formatted += '</ul>';
+        inList = false;
+      }
+      return;
+    }
     
-    // Line breaks with better paragraph styling
-    .replace(/\n\n/g, '</p><p class="text-lg text-text-light leading-relaxed mb-8">')
+    // Headers (lines that are followed by a paragraph and are title-case or all caps)
+    if (index < lines.length - 1 && 
+        trimmedLine.length < 80 && 
+        !trimmedLine.includes('.') && 
+        !trimmedLine.includes('?') &&
+        lines[index + 1].trim() !== '' &&
+        (trimmedLine.match(/^[A-Z]/) || trimmedLine === trimmedLine.toUpperCase())) {
+      if (inList) {
+        formatted += '</ul>';
+        inList = false;
+      }
+      formatted += `<h2 class="font-display font-bold text-2xl lg:text-3xl text-foreground mb-6 mt-12">${trimmedLine}</h2>`;
+      return;
+    }
     
-    // Lists with better styling
-    .replace(/^- (.*?)$/gm, `
-      <li class="flex items-start mb-4">
-        <svg class="w-6 h-6 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-        </svg>
-        <span class="text-lg">$1</span>
-      </li>`)
-    .replace(/(<li.*?<\/li>\s*)+/g, '<ul class="mb-10 space-y-2">$&</ul>');
-  
-  // Add callout boxes for important sections
-  formatted = formatted
-    .replace(/\*\*The Problem:\*\*/g, `
-      <div class="bg-red-50 border-l-4 border-red-400 p-6 mb-6 rounded-r-lg">
-        <div class="flex items-center mb-2">
-          <svg class="w-6 h-6 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+    // Numbered lists (lines starting with number and period)
+    if (trimmedLine.match(/^\d+\./)) {
+      if (!inList) {
+        formatted += '<ul class="mb-8 space-y-3">';
+        inList = true;
+      }
+      const listContent = trimmedLine.replace(/^\d+\.\s*/, '');
+      formatted += `
+        <li class="flex items-start">
+          <svg class="w-6 h-6 text-accent mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
           </svg>
-          <strong class="text-red-900 text-xl">The Problem:</strong>
-        </div>
-        <div class="text-red-800">`)
-    .replace(/\*\*The Cost:\*\*/g, `</div></div>
-      <div class="bg-amber-50 border-l-4 border-amber-400 p-6 mb-6 rounded-r-lg">
-        <div class="flex items-center mb-2">
-          <svg class="w-6 h-6 text-amber-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          <strong class="text-amber-900 text-xl">The Cost:</strong>
-        </div>
-        <div class="text-amber-800">`)
-    .replace(/\*\*The Fix:\*\*/g, `</div></div>
-      <div class="bg-green-50 border-l-4 border-green-400 p-6 mb-6 rounded-r-lg">
-        <div class="flex items-center mb-2">
-          <svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          <strong class="text-green-900 text-xl">The Fix:</strong>
-        </div>
-        <div class="text-green-800">`);
-  
-  // Close any open divs from callout boxes
-  if (formatted.includes('text-green-800">')) {
-    formatted = formatted.replace(/(<div class="text-green-800">(?:(?!<\/div><\/div>).)*?)(<h|\s*<p|\s*$)/g, '$1</div></div>$2');
-  }
-  
-  // Wrap in paragraph tags with better styling
-  formatted = '<p class="text-lg text-text-light leading-relaxed mb-8 first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left">' + formatted + '</p>';
-  
-  // Clean up empty paragraphs
-  formatted = formatted.replace(/<p[^>]*>\s*<\/p>/g, '');
-  
-  // Add pull quotes for emphasis
-  formatted = formatted.replace(/"([^"]{30,150})"/g, (match, quote) => {
-    if (quote.includes('<') || quote.includes('>')) return match;
-    return `<blockquote class="relative my-12 pl-8 pr-4 py-4 border-l-4 border-accent bg-gradient-to-r from-accent/5 to-transparent">
-      <svg class="absolute -left-4 -top-4 w-8 h-8 text-accent/20" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-      </svg>
-      <span class="text-xl font-medium text-foreground italic">${quote}</span>
-    </blockquote>`;
+          <span class="text-lg text-text-light">${listContent}</span>
+        </li>`;
+      return;
+    }
+    
+    // Regular paragraphs
+    if (inList) {
+      formatted += '</ul>';
+      inList = false;
+    }
+    
+    // Check if this might be a sub-header (shorter lines without ending punctuation)
+    if (trimmedLine.length < 60 && !trimmedLine.endsWith('.') && !trimmedLine.endsWith('?') && !trimmedLine.endsWith(':')) {
+      formatted += `<h3 class="font-bold text-xl text-primary mb-4 mt-8">${trimmedLine}</h3>`;
+    } else {
+      formatted += `<p class="text-lg text-text-light leading-relaxed mb-6">${trimmedLine}</p>`;
+    }
   });
+  
+  // Close any open lists
+  if (inList) {
+    formatted += '</ul>';
+  }
   
   return formatted;
 }
