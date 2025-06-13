@@ -4,16 +4,16 @@ import path from 'path';
 
 // Map slugs to filenames
 const slugToFilename: Record<string, string> = {
-  'what-i-learned-spending-50000-on-the-wrong-thing': 'What I Learned Spending $50,000 on the Wrong Thing .txt',
-  'why-your-website-needs-to-be-built-for-phones-first': 'Why your website needs to be built for phones first .txt',
-  'website-wellness-score-is-your-site-helping-or-hurting': 'Website Wellness Score- Is your site helping or hurting? .txt',
-  'what-should-be-on-your-homepage-and-what-shouldnt': 'What should be on your homepage (and what shouldn\'t) .txt',
+  'what-i-learned-spending-50000-on-the-wrong-thing': 'What I Learned Spending $50,000 on the Wrong Thing.txt',
+  'why-your-website-needs-to-be-built-for-phones-first': 'Why your website needs to be built for phones first.txt',
+  'website-wellness-score-is-your-site-helping-or-hurting': 'Website Wellness Score- Is your site helping or hurting.txt',
+  'what-should-be-on-your-homepage-and-what-shouldnt': 'What should be on your homepage and what shouldnt.txt',
   'website-automation-that-actually-helps-you': 'Website Automation That Actually Helps You.txt',
   'do-i-need-a-new-website': 'do i need a new website resource.txt',
-  'local-seo-basics-for-small-business-websites': 'Local SEO basics for small business websites .txt',
-  'what-to-do-if-you-already-paid-for-website-you-hate': 'What to do if you already paid for a website you hate? .txt',
+  'local-seo-basics-for-small-business-websites': 'Local SEO basics for small business websites.txt',
+  'what-to-do-if-you-already-paid-for-website-you-hate': 'What to do if you already paid for a website you hate.txt',
   'why-your-google-business-profile-is-costing-you-customers': 'Why Your Google Business Profile Is Costing You Customers.txt',
-  'how-ai-is-changing-google-search-and-what-it-means-for-small-businesses': 'ow AI Is Changing Google Search (And What It Means for Small Businesses) .txt'
+  'how-ai-is-changing-google-search-and-what-it-means-for-small-businesses': 'How AI Is Changing Google Search And What It Means for Small Businesses.txt'
 };
 
 function formatContent(content: string): string {
