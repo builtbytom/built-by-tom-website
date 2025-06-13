@@ -234,8 +234,8 @@ export default function WebsiteHealthQuiz() {
     setRequestingReport(true);
     
     try {
-      // Call the n8n webhook via API proxy to avoid CORS issues
-      const webhookUrl = '/api/quiz-report';
+      // Call the n8n webhook via Netlify Function to avoid CORS issues
+      const webhookUrl = '/.netlify/functions/quiz-report';
       
       const response = await fetch(webhookUrl, {
         method: 'POST',
