@@ -67,6 +67,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   }
   
   // Read the article content
+  // When built, process.cwd() is in the built-by-tom directory
   const resourcesPath = path.join(process.cwd(), '..', 'Resources');
   const filePath = path.join(resourcesPath, filename);
   
