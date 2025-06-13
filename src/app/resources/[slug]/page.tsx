@@ -11,7 +11,7 @@ const slugToFilename: Record<string, string> = {
   'website-automation-that-actually-helps-you': 'Website Automation That Actually Helps You.txt',
   'do-i-need-a-new-website': 'do i need a new website resource.txt',
   'local-seo-basics-for-small-business-websites': 'Local SEO basics for small business websites.txt',
-  'what-to-do-if-you-already-paid-for-website-you-hate': 'What to do if you already paid for a website you hate.txt',
+  'what-to-do-if-you-already-paid-for-a-website-you-hate': 'What to do if you already paid for a website you hate.txt',
   'why-your-google-business-profile-is-costing-you-customers': 'Why Your Google Business Profile Is Costing You Customers.txt',
   'how-ai-is-changing-google-search-and-what-it-means-for-small-businesses': 'How AI Is Changing Google Search And What It Means for Small Businesses.txt'
 };
