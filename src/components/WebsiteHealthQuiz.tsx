@@ -234,8 +234,8 @@ export default function WebsiteHealthQuiz() {
     setRequestingReport(true);
     
     try {
-      // Call the n8n webhook
-      const webhookUrl = 'http://srv820887.hstgr.cloud:5678/webhook/website-quiz-report';
+      // Call the n8n webhook via API proxy to avoid CORS issues
+      const webhookUrl = '/api/quiz-report';
       
       const response = await fetch(webhookUrl, {
         method: 'POST',
@@ -256,6 +256,8 @@ export default function WebsiteHealthQuiz() {
       setReportRequested(true);
     } catch (error) {
       console.error('Error requesting report:', error);
+      // Show error to user
+      alert('There was an error submitting your request. Please try again or contact tom@ibuildcalm.com');
     } finally {
       setRequestingReport(false);
     }
