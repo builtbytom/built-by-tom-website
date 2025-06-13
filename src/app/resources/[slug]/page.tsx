@@ -103,15 +103,25 @@ function formatContent(content: string): string {
         return;
       }
       
-      // Detect headers (short lines, often questions or statements without punctuation at specific positions)
-      if (trimmed.length < 60 && 
+      // Detect headers (short lines, often questions or statements)
+      if (trimmed.length < 80 && 
           index > 0 && 
-          (trimmed.endsWith('?') || !trimmed.match(/[.!,]$/)) &&
-          (index === 0 || lines[index - 1].trim() === '')) {
+          lines[index - 1].trim() === '' &&
+          (index < lines.length - 1 && lines[index + 1].trim() !== '')) {
         
-        // Check if next line exists and is longer (indicates this is likely a header)
-        if (index < lines.length - 1 && lines[index + 1].trim().length > trimmed.length) {
-          processedLines.push(`<h2 class="font-display font-bold text-2xl lg:text-3xl text-foreground mb-6 mt-12">${trimmed}</h2>`);
+        // Additional checks for header patterns
+        const isQuestion = trimmed.endsWith('?');
+        const hasNoEndPunctuation = !trimmed.match(/[.!,]$/);
+        const isUpperCase = trimmed === trimmed.toUpperCase();
+        const isTitleCase = trimmed.split(' ').filter(w => w.length > 3).every(w => w[0] === w[0].toUpperCase());
+        
+        if (isQuestion || hasNoEndPunctuation || isUpperCase || isTitleCase) {
+          processedLines.push(`
+            <div class="mt-16 mb-8">
+              <h2 class="font-display font-bold text-2xl lg:text-3xl text-foreground mb-3">${trimmed}</h2>
+              <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+            </div>
+          `);
           return;
         }
       }
@@ -188,10 +198,37 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     content = '# Article Not Available\n\nSorry, this article is temporarily unavailable.';
   }
   
-  // Extract title from content (first line)
+  // Extract title and clean content
   const lines = content.split('\n');
-  const title = lines[0].replace(/^#\s*/, '');
-  const formattedContent = formatContent(lines.slice(1).join('\n'));
+  let title = '';
+  let contentStartIndex = 0;
+  
+  // Look for a proper markdown title or use the first non-empty line
+  for (let i = 0; i < Math.min(lines.length, 5); i++) {
+    const line = lines[i].trim();
+    if (line.startsWith('# ')) {
+      title = line.replace(/^#\s*/, '');
+      contentStartIndex = i + 1;
+      break;
+    } else if (line && !line.toLowerCase().includes('share') && line.length > 10) {
+      title = line;
+      contentStartIndex = i + 1;
+      break;
+    }
+  }
+  
+  // Skip metadata lines (description, Share:, etc.)
+  while (contentStartIndex < lines.length) {
+    const line = lines[contentStartIndex].trim();
+    if (line.toLowerCase() === 'share:' || line.toLowerCase() === 'share' || 
+        (contentStartIndex === 1 && line.length > 40)) {
+      contentStartIndex++;
+    } else {
+      break;
+    }
+  }
+  
+  const formattedContent = formatContent(lines.slice(contentStartIndex).join('\n'));
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-sage-light/10">
@@ -245,12 +282,30 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
 
+        {/* Article Introduction */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+            <div className="prose prose-lg max-w-none">
+              {/* First paragraph as featured intro */}
+              <div className="text-xl lg:text-2xl text-text-light leading-relaxed mb-8 font-light">
+                {(() => {
+                  const firstPara = formattedContent.match(/<p[^>]*>(.*?)<\/p>/);
+                  if (firstPara && firstPara[1]) {
+                    return <div dangerouslySetInnerHTML={{ __html: firstPara[1] }} />;
+                  }
+                  return null;
+                })()}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Main Article */}
-        <div className="bg-white">
+        <div className="bg-white pt-8">
           <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div 
               className="article-content"
-              dangerouslySetInnerHTML={{ __html: formattedContent }}
+              dangerouslySetInnerHTML={{ __html: formattedContent.replace(/<p[^>]*>.*?<\/p>/, '') }}
             />
           </article>
         </div>

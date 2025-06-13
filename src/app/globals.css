@@ -25,7 +25,7 @@
 /* Article Content Styles */
 @layer components {
   .article-content h2 {
-    @apply relative pb-4;
+    @apply relative pb-4 scroll-mt-24;
   }
   
   .article-content h3 {
@@ -46,6 +46,23 @@
   
   .article-content > *:first-child {
     @apply mt-0;
+  }
+  
+  /* Ensure proper spacing between elements */
+  .article-content > * + * {
+    @apply mt-6;
+  }
+  
+  .article-content h2 + * {
+    @apply mt-6;
+  }
+  
+  .article-content h3 + * {
+    @apply mt-4;
+  }
+  
+  .article-content div + p {
+    @apply mt-8;
   }
   
   @media (min-width: 1024px) {
