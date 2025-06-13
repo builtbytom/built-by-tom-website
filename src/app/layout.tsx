@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import NetlifyIdentity from "@/components/NetlifyIdentity";
+import ReCaptchaProvider from "@/components/ReCaptchaProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -142,12 +143,14 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <NetlifyIdentity />
-        <Navigation />
-        <main>
-          {children}
-        </main>
-        <Footer />
+        <ReCaptchaProvider>
+          <NetlifyIdentity />
+          <Navigation />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </ReCaptchaProvider>
       </body>
     </html>
   );

@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import Link from 'next/link';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 interface QuizAnswer {
   questionId: string;
@@ -210,6 +211,11 @@ export default function WebsiteHealthQuiz() {
   const [requestingReport, setRequestingReport] = useState(false);
   const [reportRequested, setReportRequested] = useState(false);
   const [isCalculating, setIsCalculating] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
+  
+  // Calculate score and action items
+  const score = showResults ? calculateScore(answers) : 0;
+  const actionItems = showResults ? getActionItems(answers) : [];
 
   const handleAnswer = (answer: string) => {
     const newAnswers = [...answers, { questionId: questions[currentQuestion].id, answer }];
@@ -227,13 +233,24 @@ export default function WebsiteHealthQuiz() {
     }
   };
 
-  const handleRequestReport = async (e: React.FormEvent) => {
+  const handleRequestReport = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     
     setRequestingReport(true);
     
     try {
+      // Execute reCAPTCHA verification
+      let recaptchaToken = '';
+      if (executeRecaptcha) {
+        try {
+          recaptchaToken = await executeRecaptcha('submit_quiz_report');
+        } catch (recaptchaError) {
+          console.error('reCAPTCHA error:', recaptchaError);
+          // Continue without reCAPTCHA token if it fails
+        }
+      }
+      
       // Call the n8n webhook via Netlify Function to avoid CORS issues
       const webhookUrl = '/.netlify/functions/quiz-report';
       
@@ -245,7 +262,8 @@ export default function WebsiteHealthQuiz() {
           domain: domain || (window.location.hostname === 'localhost' ? 'example.com' : window.location.hostname),
           quizScore: score,
           quizAnswers: answers,
-          actionItems: actionItems
+          actionItems: actionItems,
+          recaptchaToken
         })
       });
       
@@ -261,10 +279,7 @@ export default function WebsiteHealthQuiz() {
     } finally {
       setRequestingReport(false);
     }
-  };
-
-  const score = showResults ? calculateScore(answers) : 0;
-  const actionItems = showResults ? getActionItems(answers) : [];
+  }, [email, domain, score, answers, actionItems, executeRecaptcha]);
 
   // Show calculating animation when quiz is complete
   if (isCalculating) {
