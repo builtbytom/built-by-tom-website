@@ -67,8 +67,80 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://ibuildcalm.com/#website',
+        url: 'https://ibuildcalm.com',
+        name: 'Built By Tom',
+        description: 'Custom websites and automation systems for small businesses',
+        publisher: {
+          '@id': 'https://ibuildcalm.com/#organization'
+        }
+      },
+      {
+        '@type': 'LocalBusiness',
+        '@id': 'https://ibuildcalm.com/#organization',
+        name: 'Built By Tom',
+        alternateName: 'I Build Calm',
+        description: 'Custom websites and automation systems that help small businesses grow',
+        url: 'https://ibuildcalm.com',
+        email: 'tom@ibuildcalm.com',
+        telephone: '(555) 123-4567',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'North Haven',
+          addressRegion: 'CT',
+          addressCountry: 'US'
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 41.3909,
+          longitude: -72.8598
+        },
+        areaServed: [
+          {
+            '@type': 'City',
+            name: 'North Haven'
+          },
+          {
+            '@type': 'City',
+            name: 'New Haven'
+          },
+          {
+            '@type': 'City',
+            name: 'Hamden'
+          },
+          {
+            '@type': 'City',
+            name: 'Wallingford'
+          },
+          {
+            '@type': 'City',
+            name: 'Branford'
+          }
+        ],
+        priceRange: '$$',
+        openingHoursSpecification: {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '17:00'
+        }
+      }
+    ]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased">
         <NetlifyIdentity />
         <Navigation />
