@@ -21,3 +21,36 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+/* Article Content Styles */
+@layer components {
+  .article-content h2 {
+    @apply relative pb-4;
+  }
+  
+  .article-content h3 {
+    @apply scroll-mt-20;
+  }
+  
+  .article-content p {
+    @apply max-w-[65ch] mx-auto;
+  }
+  
+  .article-content ul {
+    @apply max-w-[60ch] mx-auto;
+  }
+  
+  .article-content blockquote {
+    @apply max-w-[55ch] mx-auto;
+  }
+  
+  .article-content > *:first-child {
+    @apply mt-0;
+  }
+  
+  @media (min-width: 1024px) {
+    .article-content {
+      @apply text-lg;
+    }
+  }
+}
