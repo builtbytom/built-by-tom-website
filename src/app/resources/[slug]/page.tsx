@@ -17,75 +17,139 @@ const slugToFilename: Record<string, string> = {
 };
 
 function formatContent(content: string): string {
-  // Simple formatting that preserves the content structure
-  const lines = content.split('\n');
-  let formatted = '';
-  let inList = false;
+  // Check if content has markdown by looking for common patterns
+  const hasMarkdown = content.includes('##') || content.includes('**') || content.includes('###');
   
-  lines.forEach((line, index) => {
-    const trimmedLine = line.trim();
+  if (hasMarkdown) {
+    // Process as markdown
+    let formatted = content;
     
-    // Skip empty lines
-    if (!trimmedLine) {
-      if (inList) {
-        formatted += '</ul>';
+    // Process markdown headers first
+    formatted = formatted
+      .replace(/^### (.*?)$/gm, '<h3 class="font-bold text-xl lg:text-2xl text-primary mb-4 mt-10 pb-2 border-b border-gray-100">$1</h3>')
+      .replace(/^## (.*?)$/gm, '<h2 class="font-display font-bold text-2xl lg:text-3xl text-foreground mb-6 mt-12">$1</h2>')
+      .replace(/^# (.*?)$/gm, '<h1 class="font-display font-bold text-3xl lg:text-4xl text-foreground mb-8">$1</h1>');
+      
+    // Process italic text (description line)
+    formatted = formatted.replace(/^\*(.*?)\*$/gm, '<p class="text-xl text-text-light italic mb-8 leading-relaxed">$1</p>');
+    
+    // Process bold text
+    formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-foreground">$1</strong>');
+    
+    // Process markdown lists
+    formatted = formatted.replace(/^- (.*?)$/gm, '<li>$1</li>');
+    formatted = formatted.replace(/(<li>.*?<\/li>\s*)+/g, (match) => {
+      const items = match.trim().split('\n').map(item => {
+        const content = item.replace(/<\/?li>/g, '').trim();
+        return `
+          <li class="flex items-start mb-3">
+            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-text-light">${content}</span>
+          </li>`;
+      }).join('');
+      return `<ul class="mb-8 space-y-2">${items}</ul>`;
+    });
+    
+    // Process remaining paragraphs
+    const lines = formatted.split('\n');
+    const processedLines: string[] = [];
+    
+    lines.forEach((line) => {
+      const trimmed = line.trim();
+      
+      if (!trimmed || trimmed.startsWith('<')) {
+        processedLines.push(line);
+        return;
+      }
+      
+      // Skip "Share:" lines
+      if (trimmed === 'Share:') {
+        return;
+      }
+      
+      processedLines.push(`<p class="text-lg text-text-light leading-relaxed mb-6">${trimmed}</p>`);
+    });
+    
+    return processedLines.join('\n');
+    
+  } else {
+    // Process as plain text with intelligent detection
+    const lines = content.split('\n');
+    const processedLines: string[] = [];
+    let inList = false;
+    
+    lines.forEach((line, index) => {
+      const trimmed = line.trim();
+      
+      // Skip empty lines
+      if (!trimmed) {
+        if (inList) {
+          processedLines.push('</ul>');
+          inList = false;
+        }
+        return;
+      }
+      
+      // Skip "Share:" lines
+      if (trimmed === 'Share:' || trimmed.toLowerCase() === 'share') {
+        return;
+      }
+      
+      // Detect subtitle (second non-empty line that's descriptive)
+      if (index > 0 && index < 5 && trimmed.length > 40 && trimmed.includes(' ') && !lines.slice(0, index).some(l => l.trim().length > 10)) {
+        processedLines.push(`<p class="text-xl text-text-light italic mb-8 leading-relaxed">${trimmed}</p>`);
+        return;
+      }
+      
+      // Detect headers (short lines, often questions or statements without punctuation at specific positions)
+      if (trimmed.length < 60 && 
+          index > 0 && 
+          (trimmed.endsWith('?') || !trimmed.match(/[.!,]$/)) &&
+          (index === 0 || lines[index - 1].trim() === '')) {
+        
+        // Check if next line exists and is longer (indicates this is likely a header)
+        if (index < lines.length - 1 && lines[index + 1].trim().length > trimmed.length) {
+          processedLines.push(`<h2 class="font-display font-bold text-2xl lg:text-3xl text-foreground mb-6 mt-12">${trimmed}</h2>`);
+          return;
+        }
+      }
+      
+      // Detect numbered lists
+      if (trimmed.match(/^\d+\./)) {
+        if (!inList) {
+          processedLines.push('<ul class="mb-8 space-y-3">');
+          inList = true;
+        }
+        const listContent = trimmed.replace(/^\d+\.\s*/, '');
+        processedLines.push(`
+          <li class="flex items-start">
+            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-text-light">${listContent}</span>
+          </li>`);
+        return;
+      }
+      
+      // Close list if needed
+      if (inList && !trimmed.match(/^\d+\./)) {
+        processedLines.push('</ul>');
         inList = false;
       }
-      return;
-    }
+      
+      // Regular paragraph
+      processedLines.push(`<p class="text-lg text-text-light leading-relaxed mb-6">${trimmed}</p>`);
+    });
     
-    // Headers (lines that are followed by a paragraph and are title-case or all caps)
-    if (index < lines.length - 1 && 
-        trimmedLine.length < 80 && 
-        !trimmedLine.includes('.') && 
-        !trimmedLine.includes('?') &&
-        lines[index + 1].trim() !== '' &&
-        (trimmedLine.match(/^[A-Z]/) || trimmedLine === trimmedLine.toUpperCase())) {
-      if (inList) {
-        formatted += '</ul>';
-        inList = false;
-      }
-      formatted += `<h2 class="font-display font-bold text-2xl lg:text-3xl text-foreground mb-6 mt-12">${trimmedLine}</h2>`;
-      return;
-    }
-    
-    // Numbered lists (lines starting with number and period)
-    if (trimmedLine.match(/^\d+\./)) {
-      if (!inList) {
-        formatted += '<ul class="mb-8 space-y-3">';
-        inList = true;
-      }
-      const listContent = trimmedLine.replace(/^\d+\.\s*/, '');
-      formatted += `
-        <li class="flex items-start">
-          <svg class="w-6 h-6 text-accent mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-          </svg>
-          <span class="text-lg text-text-light">${listContent}</span>
-        </li>`;
-      return;
-    }
-    
-    // Regular paragraphs
+    // Close any open lists
     if (inList) {
-      formatted += '</ul>';
-      inList = false;
+      processedLines.push('</ul>');
     }
     
-    // Check if this might be a sub-header (shorter lines without ending punctuation)
-    if (trimmedLine.length < 60 && !trimmedLine.endsWith('.') && !trimmedLine.endsWith('?') && !trimmedLine.endsWith(':')) {
-      formatted += `<h3 class="font-bold text-xl text-primary mb-4 mt-8">${trimmedLine}</h3>`;
-    } else {
-      formatted += `<p class="text-lg text-text-light leading-relaxed mb-6">${trimmedLine}</p>`;
-    }
-  });
-  
-  // Close any open lists
-  if (inList) {
-    formatted += '</ul>';
+    return processedLines.join('\n');
   }
-  
-  return formatted;
 }
 
 export async function generateStaticParams() {
