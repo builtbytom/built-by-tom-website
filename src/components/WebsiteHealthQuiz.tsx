@@ -206,6 +206,7 @@ export default function WebsiteHealthQuiz() {
   const [answers, setAnswers] = useState<QuizAnswer[]>([]);
   const [showResults, setShowResults] = useState(false);
   const [email, setEmail] = useState('');
+  const [domain, setDomain] = useState('');
   const [requestingReport, setRequestingReport] = useState(false);
   const [reportRequested, setReportRequested] = useState(false);
   const [isCalculating, setIsCalculating] = useState(false);
@@ -232,17 +233,25 @@ export default function WebsiteHealthQuiz() {
     
     setRequestingReport(true);
     
-    // In production, this would call your N8N webhook
-    // For now, we'll simulate the request
     try {
-      // await fetch('/api/request-report', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email, answers })
-      // });
+      // Call the n8n webhook
+      const webhookUrl = 'http://srv820887.hstgr.cloud:5678/webhook/website-quiz-report';
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          email,
+          domain: domain || (window.location.hostname === 'localhost' ? 'example.com' : window.location.hostname),
+          quizScore: score,
+          quizAnswers: answers,
+          actionItems: actionItems
+        })
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to submit report request');
+      }
       
       setReportRequested(true);
     } catch (error) {
@@ -388,6 +397,14 @@ export default function WebsiteHealthQuiz() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email address"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  required
+                />
+                <input
+                  type="text"
+                  value={domain}
+                  onChange={(e) => setDomain(e.target.value)}
+                  placeholder="Your website (e.g., example.com)"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 />
