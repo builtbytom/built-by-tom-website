@@ -1,6 +1,4 @@
-import type { Handler } from '@netlify/functions';
-
-export const handler: Handler = async (event) => {
+exports.handler = async (event) => {
   // Only allow POST
   if (event.httpMethod !== 'POST') {
     return {
@@ -25,6 +23,9 @@ export const handler: Handler = async (event) => {
     
     return {
       statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify(data),
     };
   } catch (error) {
